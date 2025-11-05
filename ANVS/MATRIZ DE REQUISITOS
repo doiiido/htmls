@@ -1,0 +1,72 @@
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+</style>
+
+<h3>Matriz de Itens e Requisitos Mínimos para Habilitação Técnica (Aquisição de Servidores)</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Descrição do Objeto e Quantidade</th>
+            <th>Resumo dos Requisitos Mínimos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>
+                <h4>Servidor Tipo 1 (3 Unidades)</h4>
+                <p>Servidor de rede de alta performance, tipo Rack, com GPU Avançada.</p>
+                <p>Valor Estimado Unitário: R$ 444.116,4767 [SEI_25351..., p. 152, item 1].</p>
+            </td>
+            <td>
+                <ul>
+                    <li><b>Processadores:</b> 2 Processadores Físicos [RelacaoItens..., item 1, 2], Intel Xeon de, no mínimo, 5ª geração, com 32 Cores cada [SEI_25351..., p. 151, item 1.1; p. 181, item 2.9.2]. Devem suportar instruções para aceleração de IA (IAA, AMX, DSA) [SEI_25351..., p. 181, item 2.9.2].</li>
+                    <li><b>Memória RAM:</b> 2 TB (mínimo) [RelacaoItens..., item 1, 2], tipo DDR5 RDIMM com ECC [SEI_25351..., p. 151, item 1.1; p. 182, item 2.9.3].</li>
+                    <li><b>Armazenamento:</b> 3 unidades de 480 GB SSD NVMe (preferencialmente) [SEI_25351..., p. 151, item 1.1; p. 183, item 2.9.4]. Deve ser do tipo Mixed-Use e suportar RAID 5 [SEI_25351..., p. 183, item 2.9.4].</li>
+                    <li><b>GPU (Unidade de Processamento Gráfico):</b> 1 GPU Avançada Off-Board [SEI_25351..., p. 152, item 1; p. 117, item 15.1.2.1]. Deve possuir 48 GB de memória GDDR6 com ECC [SEI_25351..., p. 184, item 2.9.5]. Mínimo de 568 TENSOR CORES [SEI_25351..., p. 72, Tabela 2; p. 33, item 7.1.8.2].</li>
+                    <li><b>Conectividade de Rede:</b> Pelo menos 4 interfaces LAN Ethernet de 25 Gbps SFP28 [SEI_25351..., p. 187, item 2.9.10] e 4 interfaces SAN HBA de 32 Gbps [SEI_25351..., p. 187, item 2.9.10].</li>
+                    <li><b>Chassi/Fonte:</b> Tipo Rack [RelacaoItens..., item 1, 2], máximo 4U [SEI_25351..., p. 32, item 7.1.6.1; p. 47, item 8.7.10]. Fontes de alimentação redundantes (Swap/Hot Plug) [RelacaoItens..., item 1, 2; p. 188, item 2.9.11].</li>
+                    <li><b>Compatibilidade/SO:</b> Sem Sistema Operacional [RelacaoItens..., item 1, 2]. Deve suportar VMware ESX Bare-Metal [SEI_25351..., p. 151, item 1.1].</li>
+                    <li><b>Garantia/Suporte:</b> Mínimo de 60 (sessenta) meses [SEI_25351..., p. 151, item 1.1; p. 54, item 8.10.1]. Atendimento 24x7 (24 horas por dia, 7 dias por semana) na modalidade on-site [SEI_25351..., p. 151, item 1.1; p. 55, item 8.10.2].</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <h4>Servidor Tipo 2 (7 Unidades)</h4>
+                <p>Servidor de rede de alta performance, tipo Rack, com GPU Padrão/On-Board.</p>
+                <p>Valor Estimado Unitário: R$ 319.129,5875 [SEI_25351..., p. 152, item 2].</p>
+            </td>
+            <td>
+                <ul>
+                    <li><b>Processadores:</b> 2 Processadores Físicos [RelacaoItens..., item 1, 2], Intel Xeon de, no mínimo, 5ª geração, com 32 Cores cada [SEI_25351..., p. 151, item 1.1; p. 190, item 2.10.2].</li>
+                    <li><b>Memória RAM:</b> 2 TB (mínimo) [RelacaoItens..., item 1, 2], tipo DDR5 RDIMM com ECC [SEI_25351..., p. 151, item 1.1; p. 192, item 2.10.3].</li>
+                    <li><b>Armazenamento:</b> 3 unidades de 480 GB SSD NVMe (preferencialmente) [SEI_25351..., p. 151, item 1.1; p. 193, item 2.10.4]. Deve suportar RAID 5 [SEI_25351..., p. 194, item 2.10.6].</li>
+                    <li><b>GPU (Unidade de Processamento Gráfico):</b> GPU On-Board, com no mínimo 16 GB [SEI_25351..., p. 72, Tabela 2; p. 118, item 15.1.2.2]. A controladora de vídeo on-board deve ter, no mínimo, 16 MB de memória cache de vídeo [SEI_25351..., p. 194, item 2.10.5].</li>
+                    <li><b>Conectividade de Rede:</b> Pelo menos 4 interfaces LAN Ethernet de 25 Gbps SFP28 [SEI_25351..., p. 197, item 2.10.10] e 4 interfaces SAN HBA de 32 Gbps [SEI_25351..., p. 197, item 2.10.10].</li>
+                    <li><b>Chassi/Fonte:</b> Tipo Rack [RelacaoItens..., item 1, 2], máximo 4U [SEI_25351..., p. 32, item 7.1.6.1; p. 47, item 8.7.10]. Fontes de alimentação redundantes (Swap/Hot Plug) [RelacaoItens..., item 1, 2; p. 198, item 2.10.11].</li>
+                    <li><b>Compatibilidade/SO:</b> Sem Sistema Operacional [RelacaoItens..., item 1, 2]. Deve suportar VMware ESX Bare-Metal [SEI_25351..., p. 151, item 1.1].</li>
+                    <li><b>Garantia/Suporte:</b> Mínimo de 60 (sessenta) meses [SEI_25351..., p. 151, item 1.1; p. 54, item 8.10.1]. Atendimento 24x7 (24 horas por dia, 7 dias por semana) na modalidade on-site [SEI_25351..., p. 151, item 1.1; p. 55, item 8.10.2].</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
