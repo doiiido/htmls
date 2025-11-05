@@ -2,282 +2,225 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>Matriz de Compatibilidade – Edital (Servidores) × Lenovo</title>
+<title>Matriz “ponto a ponto” – Edital × Configuração mínima Lenovo</title>
 <style>
  body{font-family:Arial,Helvetica,sans-serif; line-height:1.25; color:#222}
- table{border-collapse:collapse; width:100%}
+ h1,h2{margin:8px 0}
+ table{border-collapse:collapse; width:100%; margin:12px 0}
  th,td{border:1px solid #ccc; padding:8px; vertical-align:top}
  th{background:#f4f4f4}
- small{color:#555}
+ .sec{background:#eef6ff; font-weight:bold}
  .ok{color:#0a7729; font-weight:bold}
  .na{color:#a00; font-weight:bold}
  .cond{color:#a06000; font-weight:bold}
- .wrap{white-space:normal}
- .sec{background:#eef6ff; font-weight:bold}
  .note{font-size:12px; color:#444}
+ .wrap{white-space:normal}
 </style>
 </head>
 <body>
 
-<h1>Matriz de compatibilidade – Edital × Produtos Lenovo (configuração mínima)</h1>
-<p><strong>Data:</strong> 05/11/2025 • <strong>Proponente técnico:</strong> Lenovo ThinkSystem • <strong>Iténs do edital:</strong> Item 1 (Tipo 1 – com GPU) e Item 2 (Tipo 2 – sem GPU).</p>
+<h1>Matriz “ponto a ponto” – Atendimento dos requisitos do edital por item</h1>
+<p><strong>Itens:</strong> Item 1 (Tipo 1 – com GPU) e Item 2 (Tipo 2 – sem GPU offboard)</p>
+<p><strong>Produtos mínimos propostos (sem exceder):</strong> <em>Lenovo ThinkSystem SR650 V3</em> como base; para o Tipo 1, 1× GPU <em>NVIDIA L40S 48&nbsp;GB</em>; para ambos, 4× 25&nbsp;GbE e 4× FC 32&nbsp;Gb, 3× SSD 480&nbsp;GB MU, fontes redundantes, gerenciamento XClarity.</p>
 
-<h2>Produtos mínimos propostos</h2>
-<ul>
-  <li><strong>Base (para ambos):</strong> <em>Lenovo ThinkSystem SR650 V3</em> (2U, até 2× Intel Xeon Scalable 5ª Geração, DDR5, até 12× PCIe 4.0/5.0, AnyBay/NVMe, XClarity). 
-    Evidências: 
-    <a href="https://lenovopress.lenovo.com/datasheet/ds0143-lenovo-thinksystem-sr650-v3" target="_blank">Datasheet DS0143</a>, 
-    <a href="https://lenovopress.lenovo.com/lp1601.pdf" target="_blank">Product Guide LP1601 (PDF)</a>.
-    <!-- [8](https://lenovopress.lenovo.com/datasheet/ds0143-lenovo-thinksystem-sr650-v3)[3](https://lenovopress.lenovo.com/lp1601.pdf) -->
-  </li>
-  <li><strong>Item 1 (Tipo 1):</strong> SR650 V3 + 1× <em>NVIDIA L40S 48 GB</em> (PCIe Gen4, passiva), + 1× 4‑port 25GbE SFP28 (ou 2× 2‑port), + 2× HBA FC 32G 2‑port, + 3× SSD 480 GB MU.
-    Evidências: 
-    <a href="https://lenovopress.lenovo.com/lp1812.pdf" target="_blank">LenovoPress L40S (PDF)</a>, 
-    <a href="https://images.nvidia.com/content/Solutions/data-center/a40/nvidia-a40-datasheet.pdf" target="_blank">[Alt: A40 Datasheet]</a>,
-    <a href="https://lenovopress.lenovo.com/lp0781.pdf" target="_blank">Broadcom 57414 25GbE</a>,
-    <a href="https://lenovopress.lenovo.com/lp1307.pdf" target="_blank">QLogic 32G FC</a>.
-    <!-- [2](https://lenovopress.lenovo.com/lp1812.pdf)[9](https://images.nvidia.com/content/Solutions/data-center/a40/nvidia-a40-datasheet.pdf)[5](https://lenovopress.lenovo.com/lp0781.pdf)[6](https://lenovopress.lenovo.com/lp1307.pdf) -->
-  </li>
-  <li><strong>Item 2 (Tipo 2):</strong> SR650 V3 (vídeo onboard) + 1× 4‑port 25GbE SFP28 (ou 2× 2‑port), + 2× HBA FC 32G 2‑port, + 3× SSD 480 GB MU. 
-    Evidências: 
-    <a href="https://lenovopress.lenovo.com/lp1601.pdf" target="_blank">LP1601</a>,
-    <a href="https://lenovopress.lenovo.com/lp0781.pdf" target="_blank">25GbE</a>,
-    <a href="https://lenovopress.lenovo.com/lp1307.pdf" target="_blank">32G FC</a>.
-    <!-- [3](https://lenovopress.lenovo.com/lp1601.pdf)[5](https://lenovopress.lenovo.com/lp0781.pdf)[6](https://lenovopress.lenovo.com/lp1307.pdf) -->
-  </li>
-</ul>
-
-<h2>Escopo/quantidades no edital</h2>
-<p>Resumo da relação oficial de itens do pregão (G1): 1 unidade (Item 1) + 2 unidades (Item 2). Fonte: 
-  <a href="RelacaoItens25300205900142025000.pdf#page=de Itens – Anvisa (PDF, p.1)</a>.
-  <!-- [10](https://www.boston-it.com/wp-content/uploads/Nvidia-A40-GPU-datasheet.pdf) -->
-</p>
-
-<h2>Matriz – Requisitos gerais (aplicáveis a ambos os itens)</h2>
+<h2>1) Requisitos técnicos e funcionais</h2>
 <table>
   <thead>
     <tr>
-      <th>Requisito do edital</th>
-      <th>Fonte (PDF, pág./seção)</th>
-      <th>Produto Lenovo (mínimo)</th>
-      <th>Item 1</th>
-      <th>Item 2</th>
-      <th>Evidências técnicas</th>
+      <th>Requisito do edital (ponto a ponto)</th>
+      <th>Fonte no edital (PDF, página, seção/item)</th>
+      <th>Produto mínimo Lenovo</th>
+      <th>Item 1 (Tipo 1)</th>
+      <th>Item 2 (Tipo 2)</th>
+      <th>Evidência do produto (PDF Lenovo/NVIDIA, pág./seção)</th>
     </tr>
   </thead>
   <tbody>
+
     <tr class="sec"><td colspan="6">Chassi, placa-mãe e expansão</td></tr>
 
     <tr>
-      <td class="wrap">Servidor tipo <strong>rack 19”</strong>, altura ≤ <strong>4U</strong>, com trilhos, ventilação redundante.</td>
-      <td><a href="SEI_25351.937033_2023_52=53SEI p.53–59, §2.9 / p.56–59, §2.10</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
+      <td class="wrap">Chassi rack 19”, altura ≤ 4U; trilhos; ventilação redundante.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.53–59, §2.9/§2.10</td>
       <td>ThinkSystem SR650 V3 (2U)</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/datasheet/ds0143-lenovo-thinksystem-sr650-v3" target="_blank">DS0143</a><!-- [8](https://lenovopress.lenovo.com/datasheet/ds0143-lenovo-thinksystem-sr650-v3) --></td>
+      <td>ds0143.pdf (LenovoPress), p.1–2 “Specifications”</td>
     </tr>
 
     <tr>
-      <td class="wrap"><strong>≥6 slots PCIe Gen5</strong> para expansão (GPU/HBA/NIC).</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=5459, §2.9 (Slots)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
+      <td class="wrap">Placa-mãe do mesmo fabricante; ≥ 6 slots PCIe Gen5.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.54, §2.9 (Placa/Slots)</td>
       <td>SR650 V3 (até 12× PCIe 4.0/5.0)</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/lp1601.pdf" target="_blank">LP1601</a><!-- [3](https://lenovopress.lenovo.com/lp1601.pdf) --></td>
+      <td>lp1601.pdf (LenovoPress – Product Guide SR650 V3), “Standard specifications / I/O expansion”</td>
     </tr>
 
     <tr class="sec"><td colspan="6">Processamento e memória</td></tr>
 
     <tr>
-      <td class="wrap"><strong>2× CPUs Intel Xeon</strong> ≥ 5ª geração, <strong>32 núcleos</strong> por CPU; 8 canais DDR5 por CPU; instruções AES/AVX/AVX2/AVX‑512/IAA/AMX/DSA.</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=3–59, §2.9.2 / §2.10</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>SR650 V3 com 2× Xeon 5ªG (config. 32c)</td>
+      <td class="wrap">2× CPUs Intel Xeon ≥ 5ª geração, 32 núcleos por CPU; 8 canais DDR5/CPU; AES/AVX/AVX2/AVX‑512/IAA/AMX/DSA.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.53–56, §2.9.2 / §2.10</td>
+      <td>SR650 V3 com 2× Xeon Scalable 5ª Geração (config. 32c)</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/lp1601.pdf" target="_blank">LP1601</a><!-- [3](https://lenovopress.lenovo.com/lp1601.pdf) --></td>
+      <td>lp1601.pdf, “Processors / Memory options”</td>
     </tr>
 
     <tr>
-      <td class="wrap"><strong>Memória 2 TB DDR5 RDIMM ECC</strong>, ≥ 4.800 MT/s; canais devidamente preenchidos e balanceados.</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=3–59, §2.9 (Memória)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>SR650 V3 configurado com 2 TB DDR5</td>
+      <td class="wrap">Memória total 2&nbsp;TB DDR5 RDIMM ECC, ≥ 4.800&nbsp;MT/s; canais preenchidos/balanceados.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.53–56, §2.9 (Memória)</td>
+      <td>SR650 V3 configurado com 2&nbsp;TB DDR5</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/datasheet/ds0143-lenovo-thinksystem-sr650-v3" target="_blank">DS0143</a><!-- [8](https://lenovopress.lenovo.com/datasheet/ds0143-lenovo-thinksystem-sr650-v3) --></td>
+      <td>ds0143.pdf, p.2 “Memory”</td>
     </tr>
 
     <tr class="sec"><td colspan="6">Armazenamento e RAID</td></tr>
 
     <tr>
-      <td class="wrap"><strong>3× SSD 480 GB</strong> (NVMe/SAS), perfil Mixed‑Use, <strong>DWPD ≥ 3 (5 anos)</strong>, ≥76k/40k IOPS R/W; <strong>RAID 5</strong>, hot‑swap, global hot‑spare; controladora suporta NVMe/SAS/SATA.</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=54" target="_blanknamento/RAID)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
+      <td class="wrap">3× SSD 480&nbsp;GB (NVMe/SAS); perfil Mixed‑Use; <strong>DWPD ≥ 3 (5 anos)</strong>; ≥ 76k/40k IOPS R/W; firmware assinado.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.54, §2.9 (Armazenamento)</td>
       <td>
-        Opção A (preferida, se aceito pelo edital): 3× SSD <strong>SATA</strong> 480 GB MU 5400 MAX (5 DWPD).<br>
-        Opção B (estrita NVMe/SAS): 3× SSD <strong>SAS</strong> 480 GB MU (≥3 DWPD) — PN a definir.
+        Opção A (se “SSD” for aceito independentemente de interface): 3× SSD SATA MU 480&nbsp;GB 5400&nbsp;MAX (5&nbsp;DWPD).<br>
+        Opção B (estritamente NVMe/SAS): 3× SSD SAS MU 480&nbsp;GB (≥3&nbsp;DWPD) — PN a definir.
       </td>
-      <td class="cond">Condicional*</td>
-      <td class="cond">Condicional*</td>
-      <td>
-        <a href="https://lenovopress.lenovo.com/lp1635.pdf" target="_blank">5400 MAX 480 GB – 5 DWPD (PDF)</a>
-        <!-- [7](https://lenovopress.lenovo.com/lp1635.pdf) -->
-      </td>
-    </tr>
-
-    <tr class="sec"><td colspan="6">Rede e SAN</td></tr>
-
-    <tr>
-      <td class="wrap"><strong>LAN: 4× 25 GbE SFP28</strong>, VMQ/VXLAN, offloads, failover; transceiver 25GBASE‑SR incluso.</td>
-      <td><a href="SEI_25351.937033_2023_ge=55SEI p.53–59, §2.9/2.10 (Rede)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>1× Broadcom 57504 4‑port 25 GbE ou 2× Broadcom 57414 2‑port</td>
-      <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td>
-        <a href="https://manuals.plus/m/d072560fa2f54ac5850be42b503912b0945b531ac9a81b1f9abf4a17ac3167a2_optim.pdf" target="_blank">57504 4‑port (PDF)</a> •
-        <a href="https://lenovopress.lenovo.com/lp0781.pdf" target="_blank">57414 2‑port (PDF)</a>
-        <!-- [4](https://manuals.plus/m/d072560fa2f54ac5850be42b503912b0945b531ac9a81b1f9abf4a17ac3167a2_optim.pdf)[5](https://lenovopress.lenovo.com/lp0781.pdf) -->
-      </td>
+      <td class="cond">Condicional*</td><td class="cond">Condicional*</td>
+      <td>lp1635.pdf (5400 MAX), p.1–3 “Features/Ordering”; endurance 5&nbsp;DWPD</td>
     </tr>
 
     <tr>
-      <td class="wrap"><strong>SAN: 4× portas FC 32 Gb</strong> (via 2× HBAs 2‑port 32G).</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=5559, §2.9/2.10 (SAN)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>2× QLogic 32G FC HBA (QLE2772) — 2 portas cada</td>
+      <td class="wrap">RAID compatível (NVMe/SAS/SATA) com RAID 5, expansão online, hot‑swap, Global Hot‑Spare.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.54–55, §2.9 (RAID)</td>
+      <td>SR650 V3 + RAID NVMe/SAS compatível</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/lp1307.pdf" target="_blank">QLogic 32G FC (PDF)</a><!-- [6](https://lenovopress.lenovo.com/lp1307.pdf) --></td>
+      <td>lp1601.pdf, “Controllers for internal storage / RAID features”</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">Rede (LAN) e SAN</td></tr>
+
+    <tr>
+      <td class="wrap"><strong>4× 25&nbsp;GbE SFP28</strong> (VMQ/VXLAN/offloads), failover; transceiver 25GBASE‑SR incluso.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.55, §2.9/§2.10 (Rede)</td>
+      <td>1× Broadcom 57504 4‑port 25&nbsp;GbE (ou 2× Broadcom 57414 2‑port)</td>
+      <td class="ok">Atende</td><td class="ok">Atende</td>
+      <td>lp0781.pdf (Broadcom 57414), “Part number / Transceivers” • 57504 PG (PDF), “Transceivers”</td>
+    </tr>
+
+    <tr>
+      <td class="wrap"><strong>4× FC 32&nbsp;Gb</strong> (via 2× HBAs dual‑port 32G).</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.55, §2.9/§2.10 (SAN)</td>
+      <td>2× QLogic 32G FC HBA (QLE2772) – 2 portas cada</td>
+      <td class="ok">Atende</td><td class="ok">Atende</td>
+      <td>lp1307.pdf (QLogic 2770 Series 32G FC), p.1–3 “Features/Part numbers”</td>
     </tr>
 
     <tr class="sec"><td colspan="6">Vídeo/GPU</td></tr>
 
     <tr>
-      <td class="wrap">Vídeo <strong>onboard</strong> (controladora simples) para consoles remotos/KVM.</td>
-      <td><a href="SEI_25351.937033_2023_52.pdfEI p.53–59, §2.9 (Vídeo)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>SR650 V3 com vídeo onboard</td>
-      <td class="ok">Atende (além da GPU)</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/lp1601.pdf" target="_blank">LP1601</a><!-- [3](https://lenovopress.lenovo.com/lp1601.pdf) --></td>
+      <td class="wrap"><strong>Tipo 1:</strong> 1× GPU offboard com <strong>48&nbsp;GB GDDR6 ECC</strong>, <strong>864&nbsp;GB/s</strong>, desempenho mínimo (FP32≈91,6&nbsp;TFLOPS; TF32 183/366*; FP16 362/733*; FP8 733/1466*).</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.54, §2.9 (GPU)</td>
+      <td>NVIDIA <strong>L40S 48&nbsp;GB</strong> (PCIe Gen4 passiva) em SR650 V3</td>
+      <td class="ok">Atende</td><td class="na">N/A</td>
+      <td>lp1812.pdf (ThinkSystem NVIDIA L40S), p.3–5 “Technical specifications (Table 2)”</td>
+    </tr>
+
+    <tr>
+      <td class="wrap"><strong>Tipo 2:</strong> sem GPU offboard; vídeo onboard ≥ 16&nbsp;MB, 1920×1200 para console/KVM.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.56–59, §2.10</td>
+      <td>SR650 V3 (vídeo onboard + BMC KVM‑oob)</td>
+      <td class="na">N/A</td><td class="ok">Atende</td>
+      <td>lp1601.pdf, “Systems management / Video”</td>
     </tr>
 
     <tr class="sec"><td colspan="6">Gerenciamento e segurança</td></tr>
 
     <tr>
-      <td class="wrap"><strong>Gerenciamento remoto</strong> com IPMI/SNMPv3/REST, KVM oob, alertas, inventário, integração AD/LDAP.</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=55" target="_erenc.)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
+      <td class="wrap">Gerenciamento remoto 1:1 e 1:N; IPMI/SNMPv3/REST; KVM out‑of‑band; inventário; alertas; integração AD/LDAP.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.55, §2.9 (Gerenciamento)</td>
       <td>XClarity Controller (XCC) / XClarity Admin</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/lp1601.pdf" target="_blank">LP1601</a><!-- [3](https://lenovopress.lenovo.com/lp1601.pdf) --></td>
+      <td>lp1601.pdf, “Systems management”</td>
     </tr>
 
     <tr>
-      <td class="wrap"><strong>TPM 2.0</strong>, BIOS/UEFI conforme <strong>NIST SP800‑147B</strong>, Intel Boot Guard/root‑of‑trust.</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=55" target="_blanknça)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
+      <td class="wrap">TPM 2.0; BIOS/UEFI conforme NIST SP800‑147B; Intel Boot Guard / root‑of‑trust; recuperação de BIOS.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.55, §2.9 (Segurança)</td>
       <td>SR650 V3 com TPM 2.0 e UEFI assinada</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/datasheet/ds0143-lenovo-thinksystem-sr650-v3" target="_blank">DS0143</a><!-- [8](https://lenovopress.lenovo.com/datasheet/ds0143-lenovo-thinksystem-sr650-v3) --></td>
+      <td>ds0143.pdf, p.2 “Security / ThinkShield”</td>
     </tr>
 
-    <tr class="sec"><td colspan="6">Compatibilidade e certificações</td></tr>
+    <tr class="sec"><td colspan="6">Compatibilidades, certificações e energia</td></tr>
 
     <tr>
-      <td class="wrap"><strong>Compatibilidade</strong> com VMware ESXi 8, Windows Server 2022+ e Linux (Ubuntu/Red Hat).</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#I p.53–59 (Compat.)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
+      <td class="wrap">Compatibilidade com VMware ESXi 8, Windows Server 2022+ e Linux (Ubuntu/Red Hat).</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.55–56 (Compatibilidade)</td>
       <td>SR650 V3 homologado (ServerProven)</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td>
-        <a href="https://lenovopress.lenovo.com/lp1601-thinksystem-sr650-v3-server" target="_blank">LP1601 (web)</a> • 
-        <a href="https://pubs.lenovo.com/sr650-v3/support_websites" target="_blank">ServerProven/OS</a>
-        <!-- [11](https://lenovopress.lenovo.com/lp1601-thinksystem-sr650-v3-server)[12](https://pubs.lenovo.com/sr650-v3/support_websites) -->
-      </td>
+      <td>lp1601.pdf, “Operating system support”</td>
     </tr>
 
     <tr>
-      <td class="wrap">Eficiência (ex.: 80 PLUS/ENERGY STAR) e conformidades RoHS/INMETRO etc.</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=5559 + anexos (Cert.)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>PSUs Platinum/Titanium conforme opção</td>
+      <td class="wrap">Fontes redundantes, hot‑swap; 100/127–240&nbsp;VAC; LEDs de status; cabo incluso.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.55, §2.9 (Fonte)</td>
+      <td>SR650 V3 com 2× PSU hot‑swap</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/lp1601.pdf" target="_blank">LP1601</a><!-- [3](https://lenovopress.lenovo.com/lp1601.pdf) --></td>
+      <td>ds0143.pdf, p.2 “Power supplies”</td>
     </tr>
-
-    <tr class="sec"><td colspan="6">Fontes e energia</td></tr>
 
     <tr>
-      <td class="wrap"><strong>Fontes redundantes</strong>, hot‑swap, 100/127–240 VAC, LEDs de status; cabos incluídos.</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#I p.53–59 (Fonte)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>SR650 V3 (2× PSU hot‑swap)</td>
+      <td class="wrap">Eficiência energética / conformidades (RoHS, etc.).</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.55 (Certificações)</td>
+      <td>SR650 V3 (PSUs Platinum/Titanium; RoHS)</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/datasheet/ds0143-lenovo-thinksystem-sr650-v3" target="_blank">DS0143</a><!-- [8](https://lenovopress.lenovo.com/datasheet/ds0143-lenovo-thinksystem-sr650-v3) --></td>
+      <td>lp1601.pdf, “Regulatory compliance”</td>
     </tr>
 
-    <tr class="sec"><td colspan="6">Garantia, suporte e implantação</td></tr>
+    <tr class="sec"><td colspan="6">Entrega, instalação, garantia e SLAs</td></tr>
+
+    <tr>
+      <td class="wrap">Entrega/implantação (prazos), instalação física, configuração e testes; equipamentos novos/em linha.</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.81 (novos); p.90–101 (cronograma/implantação)</td>
+      <td>Serviço de instalação Lenovo (profissionais certificados)</td>
+      <td class="ok">Atende</td><td class="ok">Atende</td>
+      <td>lp1601.pdf, “Services / Warranty upgrades”</td>
+    </tr>
 
     <tr>
       <td class="wrap"><strong>Garantia on‑site 60 meses</strong>, 24×7; manutenção corretiva/preventiva/evolutiva; atualização de firmware.</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=100"101 (Garantia/Níveis de serviço)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>Lenovo Premier/Crucial com 5 anos (on‑site)</td>
+      <td>SEI_25351.937033_2023_52.pdf, p.100–101 (Garantia/SLAs)</td>
+      <td>Garantia Lenovo 5 anos on‑site (Premier/Crucial)</td>
       <td class="ok">Atende</td><td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/lp1601.pdf" target="_blank">LP1601 (Warranty upgrades)</a><!-- [3](https://lenovopress.lenovo.com/lp1601.pdf) --></td>
+      <td>lp1601.pdf, “Warranty / Services”</td>
     </tr>
+
   </tbody>
 </table>
 
-<h2>Matriz – Requisitos específicos do Item 1 (Tipo 1 – com GPU)</h2>
+<h2>2) Composição e quantidades</h2>
 <table>
   <thead>
     <tr>
-      <th>Requisito do edital</th>
-      <th>Fonte (PDF, pág./seção)</th>
-      <th>Produto Lenovo (mínimo)</th>
-      <th>Atende?</th>
-      <th>Evidências</th>
+      <th>Item</th>
+      <th>Descrição resumida</th>
+      <th>Quantidade</th>
+      <th>Fonte (PDF, página)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td class="wrap"><strong>GPU offboard</strong> com <strong>48 GB GDDR6 ECC</strong>, <strong>864 GB/s</strong>; desempenho mínimo (ex.: FP32 ~91,6 TFLOPS; <strong>TF32 183/366 TFLOPS*</strong>; <strong>FP16 362/733 TFLOPS*</strong>; <strong>FP8 733/1466 TFLOPS*</strong>).</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=54" target="_PU)</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>1× NVIDIA <strong>L40S 48 GB</strong> (PCIe, passiva) em SR650 V3</td>
-      <td class="ok">Atende</td>
-      <td>
-        <a href="https://lenovopress.lenovo.com/lp1812.pdf" target="_blank">LenovoPress L40S (FP32/TF32/FP16/FP8, 48 GB, 864 GB/s)</a>
-        <!-- [2](https://lenovopress.lenovo.com/lp1812.pdf) -->
-      </td>
+      <td>Item 1</td>
+      <td>Servidor rack, 2 CPUs, >20 núcleos, 2&nbsp;TB RAM, SSD, LAN≥4, SAN≥2, GPU dedicada</td>
+      <td>1</td>
+      <td>RelacaoItens25300205900142025000.pdf, p.1</td>
     </tr>
-
     <tr>
-      <td class="wrap">Placa‑mãe do mesmo fabricante, compatível com GPU (PCIe Gen4/5 x16), dissipação adequada.</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=5459, §2.9</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>SR650 V3 com risers x16 e suporte a GPUs duplo‑slot</td>
-      <td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/lp1601.pdf" target="_blank">LP1601</a><!-- [3](https://lenovopress.lenovo.com/lp1601.pdf) --></td>
+      <td>Item 2</td>
+      <td>Servidor rack, 2 CPUs, >20 núcleos, 2&nbsp;TB RAM, SSD, LAN≥4, SAN≥2, <em>sem</em> GPU dedicada</td>
+      <td>2</td>
+      <td>RelacaoItens25300205900142025000.pdf, p.1</td>
     </tr>
   </tbody>
 </table>
 
-<h2>Matriz – Requisitos específicos do Item 2 (Tipo 2 – sem GPU offboard)</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Requisito do edital</th>
-      <th>Fonte (PDF, pág./seção)</th>
-      <th>Produto Lenovo (mínimo)</th>
-      <th>Atende?</th>
-      <th>Evidências</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="wrap"><strong>Sem GPU offboard</strong>; vídeo onboard ≥ 16 MB, 1920×1200 (para console/gerência).</td>
-      <td><a href="SEI_25351.937033_2023_52.pdf#page=56" target0</a><!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) --></td>
-      <td>SR650 V3 (vídeo onboard + BMC/KVM)</td>
-      <td class="ok">Atende</td>
-      <td><a href="https://lenovopress.lenovo.com/lp1601.pdf" target="_blank">LP1601</a><!-- [3](https://lenovopress.lenovo.com/lp1601.pdf) --></td>
-    </tr>
-  </tbody>
-</table>
-
-<p class="note"><strong>*Observação sobre SSD 480 GB MU ≥3 DWPD:</strong> o edital especifica SSDs de 480 GB “NVMe/SAS”. Caso a comissão aceite “SSD (independente de interface)”, recomenda-se a família Lenovo <em>5400 MAX SATA</em> 480 GB (5 DWPD), que excede a exigência de endurance mantendo a capacidade mínima. Se a exigência for estritamente “NVMe/SAS 480 GB”, indicaremos na proposta final o PN Lenovo equivalente (SAS MU 480 GB, ≥3 DWPD) mantendo aderência estrita à interface. <!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf)[7](https://lenovopress.lenovo.com/lp1635.pdf) --></p>
-
-<p class="note">Demais cláusulas administrativas (prazos de entrega, instalação, documentação, níveis de serviço, sanções etc.) constam do SEI nas páginas indicadas e são integralmente atendidas pela proposta técnica, sem excedentes desnecessários. 
-  Referências principais do edital:
-  <a href="SEI_25351.937033_2023_52.pdf#page=53" target="_ões)</a>, 
-  <a href="SEI_25351.937033_2023_52=81p.81 (novos/em linha)</a>, 
-  <a href="SEI_25351.937033_202page=95p.95</a>, 
-  <a href="SEI_25351.937033_2023_52.pdf#page=101</a>.
-  <!-- [1](https://thsinfbr-my.sharepoint.com/personal/lincoln_barbosa_ths_inf_br/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/SEI_25351.937033_2023_52.pdf) -->
-</p>
+<p class="note"><strong>Observação “SSD 480&nbsp;GB MU ≥3&nbsp;DWPD”:</strong> como o edital (SEI_25351.937033_2023_52.pdf, p.54, §2.9) cita SSD “NVMe/SAS”, a opção mais estrita é adotar SSD <em>SAS</em> 480&nbsp;GB Mixed‑Use (≥3&nbsp;DWPD). Alternativamente, se for aceito “SSD” independentemente da interface, a família <em>Lenovo 5400&nbsp;MAX SATA</em> 480&nbsp;GB (5&nbsp;DWPD) atende e supera a exigência de endurance, mantendo 480&nbsp;GB. A escolha será travada conforme diretriz da comissão.</p>
 
 </body>
-</html>
