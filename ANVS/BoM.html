@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Bill of Materials (BoM) – Configuração mínima aderente ao edital</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif; color:#222; line-height:1.25}
+  h1,h2,h3{margin:10px 0}
+  table{border-collapse:collapse; width:100%; margin:12px 0}
+  th,td{border:1px solid #ccc; padding:8px; vertical-align:top}
+  th{background:#f4f4f4}
+  .sec{background:#eef6ff; font-weight:bold}
+  .note{font-size:12px; color:#444}
+  ul{margin:6px 0}
+</style>
+</head>
+<body>
+
+<h1>Bill of Materials (BoM) – Produtos mínimos aderentes</h1>
+<p><strong>Escopo:</strong> Item 1 (Tipo 1 – com GPU) e Item 2 (Tipo 2 – sem GPU offboard), conforme especificações técnicas do edital. Configurações dimensionadas para <em>atender estritamente</em> aos requisitos, sem excedentes.</p>
+
+<hr>
+
+<h2>Item 1 – Servidor Tipo 1 (com GPU) – Quantidade: 1 (uma) unidade</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo de produto</th>
+      <th>Descrição mínima ofertada</th>
+      <th>Qtd.</th>
+      <th>Licenciamento necessário</th>
+      <th>Garantia/prazo</th>
+      <th>Part number (PN)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="sec"><td colspan="6">Servidor base e CPU/Memória</td></tr>
+    <tr>
+      <td>Servidor rack 2U</td>
+      <td>Lenovo ThinkSystem SR650 V3, 2U, trilhos, fontes redundantes hot‑swap</td>
+      <td>1</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>— (chassi configurável/CTO)</td>
+    </tr>
+    <tr>
+      <td>Processadores</td>
+      <td>2× Intel Xeon Scalable 5ª Geração, 32 núcleos cada (mínimo)</td>
+      <td>2</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+    <tr>
+      <td>Memória</td>
+      <td>DDR5 RDIMM ECC total 2&nbsp;TB (frequência ≥ 4800&nbsp;MT/s)</td>
+      <td>2&nbsp;TB</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">GPU</td></tr>
+    <tr>
+      <td>GPU (offboard)</td>
+      <td>NVIDIA L40S 48&nbsp;GB GDDR6 ECC, PCIe Gen4, passiva</td>
+      <td>1</td>
+      <td>Opcional: NVIDIA AI Enterprise ou RTX vWS (conforme uso). Não requerido para aderência mínima do edital.</td>
+      <td>3 anos padrão (pode seguir o pacote de 5 anos com o servidor, se contratado em conjunto)</td>
+      <td>4X67A90669</td>
+    </tr>
+    <tr>
+      <td>Acessório GPU</td>
+      <td>Cabo/Adaptador de alimentação auxiliar PCIe p/ GPU (conector 16‑pino CEM 5.0 ou equivalente, conforme necessidade do L40S)</td>
+      <td>1</td>
+      <td>—</td>
+      <td>5 anos (se parte do CTO do servidor)</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">Rede (LAN) 25&nbsp;GbE</td></tr>
+    <tr>
+      <td>Adaptador 25&nbsp;GbE</td>
+      <td>Broadcom 57504 10/25&nbsp;GbE SFP28, 4 portas PCIe (ou 2× 57414 2 portas)</td>
+      <td>1</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>4XC7A80566 (alternativa: 2× 4XC7A08238)</td>
+    </tr>
+    <tr>
+      <td>Transceptores 25G SR</td>
+      <td>SFP28 10/25G SR (LC, multimodo) para cada porta 25G</td>
+      <td>4</td>
+      <td>—</td>
+      <td>1 ano (opção), ou conforme bundle</td>
+      <td>4TC7A69045 (ou equivalente Lenovo 25G SR)</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">SAN (Fibre Channel) 32&nbsp;Gb</td></tr>
+    <tr>
+      <td>HBA FC 32G</td>
+      <td>QLogic 32G FC, 2 portas PCIe (duas placas para totalizar 4 portas)</td>
+      <td>2</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>4XC7A08276 (QLE2772 2‑port)</td>
+    </tr>
+    <tr>
+      <td>Transceptores FC 32G SW</td>
+      <td>SFP 32G SW para cada porta FC (se não inclusos)</td>
+      <td>4</td>
+      <td>—</td>
+      <td>1 ano (opção), ou conforme bundle</td>
+      <td>— (geralmente incluídos no kit; acrescentar se requerido)</td>
+    </tr>
+    <tr>
+      <td>Cabos óticos OM3</td>
+      <td>LC‑LC OM3, 3&nbsp;m (ou conforme site)</td>
+      <td>4</td>
+      <td>—</td>
+      <td>—</td>
+      <td>00MN505 (exemplo 3&nbsp;m)</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">Armazenamento local (sistema)</td></tr>
+    <tr>
+      <td>SSD 480&nbsp;GB (Mixed‑Use)</td>
+      <td>SSD 2.5" 480&nbsp;GB, Mixed‑Use, ≥3&nbsp;DWPD (5 anos). <strong>Observação:</strong> caso o órgão exija estritamente interface NVMe/SAS, fornecer SSD SAS MU 480&nbsp;GB (≥3&nbsp;DWPD). Caso aceite “SSD” independente de interface, usar SATA 5400&nbsp;MAX 480&nbsp;GB (5&nbsp;DWPD).</td>
+      <td>3</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>SATA opção: 4XB7A82289 (5400 MAX 480&nbsp;GB) • SAS NVMe: PN a confirmar no CTO</td>
+    </tr>
+    <tr>
+      <td>RAID/Backplane</td>
+      <td>Controladora/recursos RAID compatíveis RAID‑5 p/ NVMe/SAS/SATA, hot‑swap</td>
+      <td>1</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">Energia, trilhos e acessórios</td></tr>
+    <tr>
+      <td>Fontes de alimentação</td>
+      <td>2× PSUs redundantes hot‑swap (Platinum/Titanium)</td>
+      <td>2</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+    <tr>
+      <td>Kit de trilhos</td>
+      <td>Trilhos deslizantes p/ rack 19"</td>
+      <td>1</td>
+      <td>—</td>
+      <td>—</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+    <tr>
+      <td>Cabos de energia</td>
+      <td>Cabos AC compatíveis (padrão local)</td>
+      <td>2</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="note"><strong>Observação de aderência estrita (Item 1):</strong> a GPU L40S 48&nbsp;GB foi selecionada por atender exatamente a exigência de 48&nbsp;GB GDDR6 ECC e a largura de banda de memória de ~864&nbsp;GB/s. O armazenamento é dimensionado com 3× SSD de 480&nbsp;GB Mixed‑Use e RAID‑5, conforme edital.</p>
+
+<hr>
+
+<h2>Item 2 – Servidor Tipo 2 (sem GPU offboard) – Quantidade: 2 (duas) unidades</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo de produto</th>
+      <th>Descrição mínima ofertada</th>
+      <th>Qtd. por unidade</th>
+      <th>Licenciamento necessário</th>
+      <th>Garantia/prazo</th>
+      <th>Part number (PN)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="sec"><td colspan="6">Servidor base e CPU/Memória</td></tr>
+    <tr>
+      <td>Servidor rack 2U</td>
+      <td>Lenovo ThinkSystem SR650 V3, 2U, trilhos, fontes redundantes hot‑swap</td>
+      <td>1</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>— (chassi configurável/CTO)</td>
+    </tr>
+    <tr>
+      <td>Processadores</td>
+      <td>2× Intel Xeon Scalable 5ª Geração, 32 núcleos cada (mínimo)</td>
+      <td>2</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+    <tr>
+      <td>Memória</td>
+      <td>DDR5 RDIMM ECC total 2&nbsp;TB (frequência ≥ 4800&nbsp;MT/s)</td>
+      <td>2&nbsp;TB</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">Vídeo/gerenciamento</td></tr>
+    <tr>
+      <td>Vídeo onboard / BMC</td>
+      <td>Vídeo onboard para console; BMC com KVM‑oob (XClarity Controller)</td>
+      <td>1</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>—</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">Rede (LAN) 25&nbsp;GbE</td></tr>
+    <tr>
+      <td>Adaptador 25&nbsp;GbE</td>
+      <td>Broadcom 57504 10/25&nbsp;GbE SFP28, 4 portas PCIe (ou 2× 57414 2 portas)</td>
+      <td>1</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>4XC7A80566 (alternativa: 2× 4XC7A08238)</td>
+    </tr>
+    <tr>
+      <td>Transceptores 25G SR</td>
+      <td>SFP28 10/25G SR (LC, multimodo) para cada porta 25G</td>
+      <td>4</td>
+      <td>—</td>
+      <td>1 ano (opção), ou conforme bundle</td>
+      <td>4TC7A69045 (ou equivalente Lenovo 25G SR)</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">SAN (Fibre Channel) 32&nbsp;Gb</td></tr>
+    <tr>
+      <td>HBA FC 32G</td>
+      <td>QLogic 32G FC, 2 portas PCIe (duas placas para totalizar 4 portas)</td>
+      <td>2</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>4XC7A08276 (QLE2772 2‑port)</td>
+    </tr>
+    <tr>
+      <td>Transceptores FC 32G SW</td>
+      <td>SFP 32G SW para cada porta FC (se não inclusos)</td>
+      <td>4</td>
+      <td>—</td>
+      <td>1 ano (opção), ou conforme bundle</td>
+      <td>— (geralmente incluídos no kit; acrescentar se requerido)</td>
+    </tr>
+    <tr>
+      <td>Cabos óticos OM3</td>
+      <td>LC‑LC OM3, 3&nbsp;m (ou conforme site)</td>
+      <td>4</td>
+      <td>—</td>
+      <td>—</td>
+      <td>00MN505 (exemplo 3&nbsp;m)</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">Armazenamento local (sistema)</td></tr>
+    <tr>
+      <td>SSD 480&nbsp;GB (Mixed‑Use)</td>
+      <td>SSD 2.5" 480&nbsp;GB, Mixed‑Use, ≥3&nbsp;DWPD (5 anos). <strong>Observação:</strong> caso o órgão exija estritamente interface NVMe/SAS, fornecer SSD SAS MU 480&nbsp;GB (≥3&nbsp;DWPD). Caso aceite “SSD” independente de interface, usar SATA 5400&nbsp;MAX 480&nbsp;GB (5&nbsp;DWPD).</td>
+      <td>3</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>SATA opção: 4XB7A82289 (5400 MAX 480&nbsp;GB) • SAS/NVMe: PN a confirmar no CTO</td>
+    </tr>
+    <tr>
+      <td>RAID/Backplane</td>
+      <td>Controladora/recursos RAID compatíveis RAID‑5 p/ NVMe/SAS/SATA, hot‑swap</td>
+      <td>1</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+
+    <tr class="sec"><td colspan="6">Energia, trilhos e acessórios</td></tr>
+    <tr>
+      <td>Fontes de alimentação</td>
+      <td>2× PSUs redundantes hot‑swap (Platinum/Titanium)</td>
+      <td>2</td>
+      <td>—</td>
+      <td>5 anos on‑site 24×7</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+    <tr>
+      <td>Kit de trilhos</td>
+      <td>Trilhos deslizantes p/ rack 19"</td>
+      <td>1</td>
+      <td>—</td>
+      <td>—</td>
+      <td>— (seleção CTO)</td>
+    </tr>
+    <tr>
+      <td>Cabos de energia</td>
+      <td>Cabos AC compatíveis (padrão local)</td>
+      <td>2</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Consolidação de quantidades – Grupo (1× Tipo 1) + (2× Tipo 2)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Tipo de produto</th>
+      <th>Descrição resumida</th>
+      <th>Qtd. total</th>
+      <th>PN principal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Servidor SR650 V3 (chassi)</td>
+      <td>2U, fontes redundantes, trilhos</td>
+      <td>3</td>
+      <td>— (CTO)</td>
+    </tr>
+    <tr>
+      <td>CPU Intel Xeon 5ªG (32c)</td>
+      <td>2 por servidor</td>
+      <td>6</td>
+      <td>— (CTO)</td>
+    </tr>
+    <tr>
+      <td>Memória DDR5 RDIMM ECC</td>
+      <td>2&nbsp;TB por servidor</td>
+      <td>6&nbsp;TB</td>
+      <td>— (CTO)</td>
+    </tr>
+    <tr>
+      <td>GPU L40S 48&nbsp;GB</td>
+      <td>Somente no Tipo 1</td>
+      <td>1</td>
+      <td>4X67A90669</td>
+    </tr>
+    <tr>
+      <td>NIC 25&nbsp;GbE 4‑port</td>
+      <td>1 por servidor (ou 2× 2‑port)</td>
+      <td>3</td>
+      <td>4XC7A80566 (ou 4XC7A08238 ×2 por servidor)</td>
+    </tr>
+    <tr>
+      <td>SFP28 25G SR</td>
+      <td>4 por servidor</td>
+      <td>12</td>
+      <td>4TC7A69045</td>
+    </tr>
+    <tr>
+      <td>HBA FC 32G 2‑port</td>
+      <td>2 por servidor</td>
+      <td>6</td>
+      <td>4XC7A08276</td>
+    </tr>
+    <tr>
+      <td>SFP 32G SW</td>
+      <td>4 por servidor (se não inclusos nos HBAs)</td>
+      <td>12</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Cabos LC‑LC OM3 3&nbsp;m</td>
+      <td>FC e/ou 25G conforme necessidade</td>
+      <td>12</td>
+      <td>00MN505</td>
+    </tr>
+    <tr>
+      <td>SSD 480&nbsp;GB MU</td>
+      <td>3 por servidor (≥3&nbsp;DWPD)</td>
+      <td>9</td>
+      <td>4XB7A82289 (SATA 5400 MAX) • SAS/NVMe: PN a confirmar</td>
+    </tr>
+    <tr>
+      <td>PSUs hot‑swap</td>
+      <td>2 por servidor</td>
+      <td>6</td>
+      <td>— (CTO)</td>
+    </tr>
+    <tr>
+      <td>Trilhos</td>
+      <td>1 kit por servidor</td>
+      <td>3</td>
+      <td>— (CTO)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Licenciamentos (mínimos)</h3>
+<ul>
+  <li><strong>Sistema operacional/hipervisor:</strong> não requerido pelo edital (entrega “sem SO”).</li>
+  <li><strong>NVIDIA:</strong> <em>não obrigatório</em> para aderência mínima. Caso o órgão deseje VDI/estação virtual ou frameworks corporativos de IA:
+    <ul>
+      <li>NVIDIA RTX vWS (virtual workstation) – por GPU/concorrência.</li>
+      <li>NVIDIA AI Enterprise – por GPU ou por servidor, conforme política vigente.</li>
+    </ul>
+  </li>
+</ul>
+
+<p class="note">
+<strong>Validações finais:</strong> (1) Confirmar junto ao cliente a interface exigida para os SSDs de 480&nbsp;GB (NVMe/SAS estrito x “SSD” genérico). Se estrito NVMe/SAS, substituir a opção SATA (PN 4XB7A82289) por SSD SAS Mixed‑Use 480&nbsp;GB (≥3&nbsp;DWPD) com PN do portfólio vigente no CTO. (2) Confirmar necessidade de transceptores adicionais (alguns HBAs já acompanham SFPs 32G SW). (3) Ajustar quantidade e comprimento de patch cords conforme o data center.
+</p>
+
+</body>
