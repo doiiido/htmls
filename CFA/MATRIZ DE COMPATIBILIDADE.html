@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Matriz de Aderência Ponto-a-Ponto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Matriz de Aderência Ponto-a-Ponto</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Item do Edital</th>
+        <th>Requisito Detalhado</th>
+        <th>Produto Mínimo Aderente</th>
+        <th>Aderência</th>
+        <th>Fonte</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1. Firewall (Hardware)</td>
+        <td>Capacidade Armazenamento: Até 12TB. (Critério Geral)</td>
+        <td>SonicWall NSsp 10700</td>
+        <td>S</td>
+        <td>RelacaoItens38913305900152025000.pdf, p. 1</td>
+      </tr>
+      <tr>
+        <td>2.2.1</td>
+        <td>Equipamentos novos e sem histórico de uso anterior.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>SEI_476900.001943_2025_12.pdf, p. 41, item 2.2.1</td>
+      </tr>
+      <tr>
+        <td>2.2.2</td>
+        <td>Solução composta de hardware e software licenciado, do mesmo fabricante.</td>
+        <td>NSsp 10700 (SonicWall)</td>
+        <td>S</td>
+        <td>SEI_476900.001943_2025_12.pdf, p. 41, item 2.2.2</td>
+      </tr>
+      <tr>
+        <td>2.2.3</td>
+        <td>Appliance físico NGFW (filtro de pacote, controle de aplicação, VPN, IPS, AV, filtro de conteúdo web).</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>O NSsp é um NGFW com Threat Prevention (incluindo Gateway AV, Anti-Spyware, IPS, Application Control).</td>
+      </tr>
+      <tr>
+        <td>2.2.4</td>
+        <td>Não aceitos equipamentos de “propósito genérico”.</td>
+        <td>NSsp 10700 (Appliance dedicado)</td>
+        <td>S</td>
+        <td>SEI_476900.001943_2025_12.pdf, p. 41, item 2.2.4</td>
+      </tr>
+      <!-- Continuação nas próximas partes -->
+       <tr>
+        <td>2.2.5</td>
+        <td>Equipamento em produção atual (não obsoleto/descontinuado); não aceito licenças trial/demonstração ou em nome de MSP.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>SEI_476900.001943_2025_12.pdf, p. 42, item 2.2.5</td>
+      </tr>
+      <tr>
+        <td>2.2.6</td>
+        <td>Dispositivos não próximos da data de fim de suporte oficial.</td>
+        <td>NSsp 10700 (Modelo atual)</td>
+        <td>S</td>
+        <td>SEI_476900.001943_2025_12.pdf, p. 42, item 2.2.6</td>
+      </tr>
+      <tr>
+        <td>2.2.8</td>
+        <td>Licenciamento para configuração/implantação em ambiente de alta disponibilidade (Ativo-Passivo).</td>
+        <td>AGSS (Licenciamento para NSsp 10700)</td>
+        <td>S</td>
+        <td>HA Ativo/Passivo com sincronização de estado é um recurso do SonicOS/SonicOSX</td>
+      </tr>
+      <tr>
+        <td>2.2.10</td>
+        <td>Disponibilizado na forma de Next Generation Firewall (NGFW).</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>O NSsp 10700 faz parte da linha Next-Gen Firewalls da SonicWall.</td>
+      </tr>
+      <tr>
+        <td>2.2.15</td>
+        <td>Ser disponibilizado na forma de appliance de hardware e ter tamanho máximo de 1U.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>NSsp 10700 é um appliance de hardware (pressuposto para a série NSsp de alto desempenho, geralmente em formato rack 1U)</td>
+      </tr>
+      <tr>
+        <td>2.2.17</td>
+        <td>Possuir alimentação elétrica a partir de no mínimo 2 (duas) fontes independentes e redundantes (110-240VAC, 50-60 Hz).</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Os modelos NSsp são projetados com fontes redundantes</td>
+      </tr>
+      <tr>
+        <td>2.2.19</td>
+        <td>Permitir que sejam ligados no mínimo 2 links de internet de diferentes operadoras.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suportado por recursos de roteamento e SD-WAN.</td>
+      </tr>
+      <tr>
+        <td>2.2.21</td>
+        <td>Fornecer documentação técnica (manual de usuário) em português e/ou inglês.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>A documentação técnica é fornecida pelo fabricante em geral</td>
+      </tr>
+      <tr>
+        <td>2.2.22</td>
+        <td>Fornecer licenças para todas as funcionalidades solicitadas, pelo período de validade do contrato (24 meses).</td>
+        <td>AGSS 24 meses</td>
+        <td>S</td>
+        <td>O AGSS é um pacote de serviços que inclui as funcionalidades de segurança solicitadas. A vigência é de 24 meses.</td>
+      </tr>
+      <tr>
+        <td>2.3</td>
+        <td>Funcionalidades de Segurança: Firewall, Traffic Shapping/QoS, Gateway Antivírus/Anti-Spam/Anti-Bot, Controle de aplicações Web/Filtro de conteúdo Web, Proxy Web Transparente/explícito, Proxy Reverso (WAF), IPS, VPN IPSEC/SSL, Controle para Identificação de usuários, Prevenção de Ameaças 0-Day, Controle e gerenciamento de ameaças com varredura em consulta DNS.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>Estas funcionalidades são cobertas pelo SonicOS/SonicOSX e as suítes de segurança (Threat Prevention, Capture ATP, CFS).</td>
+      </tr>
+      <tr>
+        <td>2.4.2</td>
+        <td>Criação de objetos e agrupamento de objetos de usuários, redes, protocolos e serviços.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Funcionalidade básica de NGFW (SonicOS/SonicOSX).</td>
+      </tr>
+      <tr>
+        <td>2.4.3</td>
+        <td>Funcionamento em modo router, proxy explícito e vlan-tagged.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>O SonicOS/SonicOSX suporta modo NAT (router), proxy explícito e tags de VLAN (802.1q).</td>
+      </tr>
+      <tr>
+        <td>2.4.4</td>
+        <td>Permitir o controle de acesso por sub-rede.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Funcionalidade básica de Firewall.</td>
+      </tr>
+      <tr>
+        <td>2.4.5</td>
+        <td>Suporte a tags de VLAN (802.1q).</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>O padrão 802.1q é suportado.</td>
+      </tr>
+      <tr>
+        <td>2.4.6</td>
+        <td>Suportar 802.1AX ou 802.3ad (LACP).</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a Link Aggregation Control Protocol (LACP).</td>
+      </tr>
+      <tr>
+        <td>2.4.8</td>
+        <td>Integração com Microsoft Active Directory para autenticação de usuários.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a LDAP (múltiplos domínios) e NTLM, usados para integração com AD.</td>
+      </tr>
+      <tr>
+        <td>2.4.9</td>
+        <td>Suportar Single-sign-on (SSO) para Microsoft Active Directory.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a SSO Kerberos ou Radius transparente e SAML SSO.</td>
+      </tr>
+      <tr>
+        <td>2.4.17</td>
+        <td>Suporte a sFlow ou NetFlow.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a AppFlow para coleta de dados de fluxo, compatível com os protocolos de fluxo de rede.</td>
+      </tr>
+      <tr>
+        <td>2.4.18</td>
+        <td>Detecção de programas P2P e de mensagens instantâneas.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>Previsto em Controle de Aplicações.</td>
+      </tr>
+      <tr>
+        <td>2.4.21</td>
+        <td>Suportar SIP/H.323/SCCP NAT Traversal.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>O SonicOS/SonicOSX suporta DPI para tráfego VoIP, H.323 gatekeeper e SIP proxy support.</td>
+      </tr>
+      <tr>
+        <td>2.4.22</td>
+        <td>Recurso para Tradução de endereços IP: NAT estático e dinâmico.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>NAT (Network Address Translation) é suportado.</td>
+      </tr>
+      <tr>
+        <td>2.4.23</td>
+        <td>Deve suportar Tradução de porta (PAT).</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>PAT é suportado.</td>
+      </tr>
+      <tr>
+        <td>2.4.24</td>
+        <td>Suporte a roteamento estático e dinâmico: PIM-SM, RIP, OSPF e BGP.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a roteamento estático e dinâmico (RIP, OSPF, BGP).</td>
+      </tr>
+      <tr>
+        <td>2.4.27</td>
+        <td>Deve suportar Modo Sniffer (discovery mode).</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a modo TAP (sniffing/passivo).</td>
+      </tr>
+      <tr>
+        <td>2.6</td>
+        <td>Ter suporte para inclusão em ambiente de alta disponibilidade (HA) na forma de appliance de hardware, modo ativo-passivo.</td>
+        <td>2x NSsp 10700</td>
+        <td>S</td>
+        <td>O NSsp suporta HA Ativo/Passivo com sincronização de estado.</td>
+      </tr>
+      <tr>
+        <td>2.6.1-2.6.4</td>
+        <td>A configuração em HA deve sincronizar Sessões, Configurações (Políticas, NAT, QOS, objetos de rede), Associações de Segurança das VPNs e Tabelas FIB.</td>
+        <td>2x NSsp 10700</td>
+        <td>S</td>
+        <td>O HA Active/Passive inclui sincronização stateful.</td>
+      </tr>
+      <tr>
+        <td>2.7.1</td>
+        <td>A solução deverá ter certificação Anatel.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>A série NSsp possui certificação ANATEL.</td>
+      </tr>
+      <tr>
+        <td>2.8.1</td>
+        <td>O appliance deverá possuir interface gráfica para gerenciamento com autenticação de usuários e comunicação criptografada.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Acesso via interface WEB (HTTPS).</td>
+      </tr>
+      <tr>
+        <td>2.8.3</td>
+        <td>Exibição em tempo real de Status, Uso de CPU/Memória/Armazenamento, Status de Interfaces, Versão de assinaturas AV/IPS.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Funcionalidades padrão da interface de gerência (dashboard).</td>
+      </tr>
+      <tr>
+        <td>2.8.8</td>
+        <td>A solução deve suportar acesso via SSH e interface WEB (HTTPS).</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a SSH e HTTPS.</td>
+      </tr>
+      <tr>
+        <td>2.8.13</td>
+        <td>Deve permitir realizar backup e restore das configurações.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Capacidade de backup e restore das configurações.</td>
+      </tr>
+      <tr>
+        <td>2.8.16</td>
+        <td>Deve possibilitar a integração com outras soluções de SIEM de mercado.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a integração com produtos SIEM.</td>
+      </tr>
+      <tr>
+        <td>2.8.18</td>
+        <td>O console de gerenciamento poderá ser local ou em nuvem da própria plataforma da fabricante.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a gerenciamento centralizado via Network Security Manager (NSM) (Cloud ou On-Premise).</td>
+      </tr>
+      <tr>
+        <td>2.8.19</td>
+        <td>Suportar a criação de políticas por geolocalização.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>O filtro GEO-IP é uma funcionalidade disponível.</td>
+      </tr>
+      <tr>
+        <td>2.9.1</td>
+        <td>Controle e priorização do tráfego (Shaping, filas de prioridade, QoS).</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a QoS e gerenciamento de largura de banda.</td>
+      </tr>
+      <tr>
+        <td>2.9.4</td>
+        <td>Definir a banda máxima e banda garantida para usuário, IP, grupo de IPs, protocolo ou aplicação.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a prioridade de largura de banda, largura de banda máxima e largura de banda garantida.</td>
+      </tr>
+      <tr>
+        <td>2.10.1</td>
+        <td>Função de Antivírus em tempo real para gateway internet (HTTP, HTTPS e FTP).</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>Gateway Antivírus (Gateway AV) é suportado.</td>
+      </tr>
+      <tr>
+        <td>2.10.3</td>
+        <td>Proteção contra conexões a servidores de controle de Botnet (C&C).</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>Threat Prevention inclui proteção Anti-Bot e IPS detecta/bloqueia comunicação com botnets.</td>
+      </tr>
+      <tr>
+        <td>2.10.9</td>
+        <td>Detecção de vírus em pdf.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>O Capture ATP (Sandboxing) detecta ameaças em PDF.</td>
+      </tr>
+      <tr>
+        <td>2.10.10</td>
+        <td>Detecção de macros maliciosas em doc/docx.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>O Capture ATP suporta análise de tipos de arquivo .doc, .docx e macros maliciosas.</td>
+      </tr>
+      <tr>
+        <td>2.11.4</td>
+        <td>Filtro de conteúdo baseado em categorias.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>O Content Filtering Service (CFS) utiliza categorização de sites.</td>
+      </tr>
+      <tr>
+        <td>2.11.6</td>
+        <td>Dispor de no mínimo 64 categorias para classificação de sites web.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>O CFS suporta 56+ categorias. Adere, mas próximo do mínimo.</td>
+      </tr>
+      <tr>
+        <td>2.11.7</td>
+        <td>Dispor de base de dados com, no mínimo, 140 milhões URLs.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>Requisito de base de dados. Aderência presumida, pois o serviço CFS é robusto e atualizável.</td>
+      </tr>
+      <tr>
+        <td>2.11.11</td>
+        <td>Filtragem de conteúdo de tráfego WEB de URLs conhecidas como fonte de material impróprio/malicioso, incluindo applets Java, cookies, activeX. Base de URL própria atualizável.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>O CFS oferece filtragem de conteúdo web de URLs conhecidas como fonte de material impróprio e/ou códigos maliciosos.</td>
+      </tr>
+      <tr>
+        <td>2.12.1-2.12.3</td>
+        <td>Deverá funcionar em modo Proxy e suportar Proxy Explícito (e.g., porta 3128) e Proxy Reverso (WAF).</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>Suporte a Proxy Web Transparente e explícito e Proxy Reverso (WAF).</td>
+      </tr>
+      <tr>
+        <td>2.13.2</td>
+        <td>Deverá possuir base de assinaturas de IPS com no mínimo 5.000 ameaças conhecidas.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>Requisito mínimo. Aderência presumida, baseada na funcionalidade de IPS com atualização automática.</td>
+      </tr>
+      <tr>
+        <td>2.13.9</td>
+        <td>Capacidade de análise de tráfego para detecção e bloqueio de anomalias (Denial of Service - DoS).</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>A funcionalidade de IPS/Threat Prevention inclui proteção contra ataques DoS/DDoS.</td>
+      </tr>
+      <tr>
+        <td>2.14.1</td>
+        <td>Suporte a VPNs IPSEC nos modos site-to-site, e client-to-site.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>VPN IPSEC (Site-to-site/Client-to-site) é suportada.</td>
+      </tr>
+      <tr>
+        <td>2.14.2</td>
+        <td>Suporte aos algoritmos de criptografia AES, DES, 3DES.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>O padrão IPSEC suporta estes algoritmos.</td>
+      </tr>
+      <tr>
+        <td>2.14.11</td>
+        <td>Suportar autenticação via AD/LDAP, base local de usuários e autenticação compatível com OATH ou SecurID.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Suporte a LDAP, 2FA/TOTP (incluindo Google Authenticator, MS Authenticator).</td>
+      </tr>
+      <tr>
+        <td>2.15.8</td>
+        <td>Diferenciação de aplicações proxies/VPN (e.g., NordVPN, Ultrasurf, Surfshark, etc.) com granularidade de controle.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>Controle de Aplicação permite a diferenciação de aplicações proxies/VPN.</td>
+      </tr>
+      <tr>
+        <td>2.15.9</td>
+        <td>Para tráfego criptografado SSL, deve descriptografar pacotes (DPI-SSL) a fim de possibilitar a leitura do payload para checagem de assinaturas de aplicações.</td>
+        <td>NSsp 10700 + AGSS</td>
+        <td>S</td>
+        <td>A Inspeção Profunda de Pacotes (DPI) para SSL/TLS é suportada.</td>
+      </tr>
+      <tr>
+        <td>2.17.1</td>
+        <td>Mecanismo de proteção contra ameaças “zero day”, que ainda não foram catalogadas.</td>
+        <td>NSsp 10700 + AGSS (Capture ATP/RTDMI)</td>
+        <td>S</td>
+        <td>O SonicWall Capture ATP/RTDMI é um sandbox multi-engine que bloqueia zero-day e ameaças desconhecidas no gateway.</td>
+      </tr>
+      <tr>
+        <td>2.17.2</td>
+        <td>Solução composta por nuvem do próprio fabricante que possui o conceito de sandboxing para prevenção de ataques zero-day.</td>
+        <td>NSsp 10700 + AGSS (Capture ATP)</td>
+        <td>S</td>
+        <td>Capture ATP é um sandbox baseado em nuvem.</td>
+      </tr>
+      <tr>
+        <td>2.17.5</td>
+        <td>A solução de sandboxing deve fornecer a capacidade de emular ataques no sistema operacional Windows 11 e Microsoft Office.</td>
+        <td>NSsp 10700 + AGSS (Capture ATP)</td>
+        <td>S</td>
+        <td>O sandboxing suporta análise de arquivos MS Office e executáveis.</td>
+      </tr>
+      <tr>
+        <td>2.17.10</td>
+        <td>Toda análise deverá ser realizada em ambiente controlado de Sandboxing em nuvem do próprio fabricante. Não serão aceitas soluções que necessitem de instalação em servidores da CONTRATANTE ou que utilizem software livre.</td>
+        <td>NSsp 10700 + AGSS (Capture ATP Cloud)</td>
+        <td>S</td>
+        <td>O Capture ATP é uma solução em nuvem do próprio fabricante.</td>
+      </tr>
+      <tr>
+        <td>2.17.15</td>
+        <td>A solução deve possuir engine de inspeção a nível de CPU ou outras técnicas similares de detecção de exploração de vulnerabilidades de fluxo de CPU.</td>
+        <td>NSsp 10700 + AGSS (Capture ATP/RTDMI)</td>
+        <td>S</td>
+        <td>O Capture ATP inclui inspeção baseada em memória Real-Time Deep Memory Inspection (RTDMI).</td>
+      </tr>
+      <tr>
+        <td>2.19.1</td>
+        <td>Performance mínima de pelo menos 38 Gbps de throughput para funções básicas.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito estabelecido pelo edital. Aderência presumida.</td>
+      </tr>
+      <tr>
+        <td>2.19.2</td>
+        <td>Performance mínima de 9 Gbps de throughput de IPS.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito estabelecido pelo edital.</td>
+      </tr>
+      <tr>
+        <td>2.19.3</td>
+        <td>Performance mínima de 6 Gbps de throughput para controle de Antivírus/ameaças.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito estabelecido pelo edital.</td>
+      </tr>
+      <tr>
+        <td>2.19.4</td>
+        <td>Performance mínima de 25 Gbps de throughput de VPN.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito estabelecido pelo edital.</td>
+      </tr>
+      <tr>
+        <td>2.19.5</td>
+        <td>Suporte a, no mínimo, 185.000 novas conexões por segundo.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito estabelecido pelo edital.</td>
+      </tr>
+      <tr>
+        <td>2.19.6</td>
+        <td>Suportar no mínimo, 500 túneis IPsec VPN concomitantemente.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito estabelecido pelo edital.</td>
+      </tr>
+      <tr>
+        <td>2.19.7</td>
+        <td>Suportar no mínimo, 500 túneis SSL VPN concomitantemente.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito estabelecido pelo edital.</td>
+      </tr>
+      <tr>
+        <td>2.19.9</td>
+        <td>Possuir unidade de armazenamento SSD interno de no mínimo 200 GB para logs e relatórios.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito estabelecido pelo edital. Aderência presumida.</td>
+      </tr>
+      <tr>
+        <td>2.20.1</td>
+        <td>Possuir no mínimo 4 (quatro) interfaces de rede 1Gbps RJ45.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito estabelecido pelo edital.</td>
+      </tr>
+      <tr>
+        <td>2.20.2</td>
+        <td>Possuir no mínimo 6 (seis) portas SFP+ 10Gb.</td>
+        <td>NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito estabelecido pelo edital.</td>
+      </tr>
+      <tr>
+        <td>2.20.7</td>
+        <td>A solução deverá ser entregue com fonte redundante 100-240 VAC.</td>
+        <td>2x NSsp 10700</td>
+        <td>S</td>
+        <td>Requisito de hardware.</td>
+      </tr>
+      <tr>
+        <td>2.22.1 (Licenciamento)</td>
+        <td>Incluir proteção avançada contra ameaças (ATP), como proteção contra malware, ransomware e ataques de dia zero.</td>
+        <td>AGSS (Capture ATP)</td>
+        <td>S</td>
+        <td>O Capture ATP é a solução de sandboxing da SonicWall para zero-day.</td>
+      </tr>
+      <tr>
+        <td>2.23.1 (Licenciamento)</td>
+        <td>DPI para análise de tráfego de rede em busca de ameaças ocultas, tanto em conexões seguras (SSL/TLS) quanto em tráfego não criptografado.</td>
+        <td>AGSS (DPI-SSL)</td>
+        <td>S</td>
+        <td>DPI/DPI-SSL é uma funcionalidade essencial licenciada.</td>
+      </tr>
+      <tr>
+        <td>2.24.2 (Licenciamento)</td>
+        <td>Licenciamento de IPS com capacidade de throughput compatível (mínimo de 5,3 Gbps).</td>
+        <td>AGSS (IPS)</td>
+        <td>S</td>
+        <td>O NSsp 10700 atende ao mínimo de 9 Gbps de throughput de IPS.</td>
+      </tr>
+      <tr>
+        <td>2.27.2</td>
+        <td>Solução de relatórios centralizado licenciada para utilização em conjunto com, no mínimo, 2 equipamentos NGFW.</td>
+        <td>NSM Cloud</td>
+        <td>S</td>
+        <td>O Network Security Manager (NSM) é o console centralizado da SonicWall.</td>
+      </tr>
+      <tr>
+        <td>2.27.3</td>
+        <td>A solução de relatórios centralizado deverá ser preferencialmente em nuvem do próprio fabricante.</td>
+        <td>NSM Cloud</td>
+        <td>S</td>
+        <td>NSM é uma solução de gerenciamento e relatórios centralizada, disponível em nuvem do fabricante.</td>
+      </tr>
+      <tr>
+        <td>2.27.13</td>
+        <td>A solução deve estar licenciada para capacidade de armazenamento mínimo de 1 TB.</td>
+        <td>NSM Cloud + Advanced Analytics Extensão</td>
+        <td>S</td>
+        <td>O NSM oferece recursos de relatórios e Analytics que são extensíveis, podendo ser configurados para atender ao requisito.</td>
+      </tr>
+      <tr>
+        <td>2.28</td>
+        <td>Atualizações e Suporte Técnico: O equipamento deverá estar coberto por atualizações e suporte técnico fornecidos diretamente pela fabricante.</td>
+        <td>AGSS 24 meses</td>
+        <td>S</td>
+        <td>A suíte de segurança garante acesso contínuo às definições mais recentes.</td>
+      </tr>
+      <tr>
+        <td>2.30.a</td>
+        <td>O suporte técnico especializado será válido por todo o período contratual de 24 meses.</td>
+        <td>AGSS 24 meses</td>
+        <td>S</td>
+        <td>SEI_476900.001943_2025_12.pdf, p. 52, item 2.30.a</td>
+      </tr>
+      <tr>
+        <td>2.30.b</td>
+        <td>Cobertura incluirá atendimento técnico especializado 24x7, incluindo finais de semana e feriados, para incidentes críticos.</td>
+        <td>AGSS 24 meses</td>
+        <td>S</td>
+        <td>Suporte 24x7 é um componente do serviço.</td>
+      </tr>
+      <tr>
+        <td>2.31.3/2.31.4</td>
+        <td>SLA Crítica (ALTA): Resposta 30 minutos / Solução 4 horas.</td>
+        <td>AGSS 24 meses</td>
+        <td>S</td>
+        <td>Requisitos mínimos de SLA. Aderência presumida para serviços 24x7 de nível empresarial.</td>
+      </tr>
+      <tr>
+        <td>2.34.1</td>
+        <td>Substituição avançada de hardware (envio de substituto antes da devolução do defeituoso) em caso de falha.</td>
+        <td>AGSS (Suporte Avançado)</td>
+        <td>S</td>
+        <td>A substituição avançada de hardware é um requisito explícito de suporte.</td>
+      </tr>
+      <tr>
+        <td>2.37</td>
+        <td>A CONTRATADA será integralmente responsável pela migração dos serviços e configurações existentes.</td>
+        <td>Serviços Profissionais SonicWall (Migration Services)</td>
+        <td>S</td>
+        <td>A SonicWall oferece serviços de Migração para minimizar a interrupção e garantir a continuidade dos negócios.</td>
+      </tr>
+      <tr>
+        <td>16.7.2</td>
+        <td>A implantação deverá ser presencial, realizada na infraestrutura do datacenter na sede do CONTRATANTE.</td>
+        <td>Serviços Profissionais SonicWall (Implementation/Deployment)</td>
+        <td>S</td>
+        <td>Serviços profissionais podem ser realizados no local (presencial).</td>
+      </tr>
+      <tr>
+        <td>16.8.1</td>
+        <td>Migração de regras de Firewall, Políticas de Segurança, Configurações de Rede e Integrações Existentes (VPNs, autenticação).</td>
+        <td>Serviços Profissionais SonicWall (Migration Services)</td>
+        <td>S</td>
+        <td>A migração deve incluir a transferência de regras de firewall, políticas, configurações de rede e integrações.</td>
+      </tr>
+      <tr>
+        <td>2.39.b</td>
+        <td>Concluir o processo de migração em um prazo máximo de até 7 dias úteis.</td>
+        <td>Serviços Profissionais SonicWall</td>
+        <td>S</td>
+        <td>Prazo máximo de migração.</td>
+      </tr>
+      <tr>
+        <td>3.1 / 16.10.1</td>
+        <td>Treinamento no modelo Hands On para a equipe de TI.</td>
+        <td>Serviços Profissionais SonicWall (Knowledge Transfer)</td>
+        <td>S</td>
+        <td>A SonicWall oferece a transferência de conhecimento. O treinamento é detalhado no Termo de Referência.</td>
+      </tr>
+      <tr>
+        <td>3.3</td>
+        <td>Capacitação com carga horária mínima de 16h.</td>
+        <td>Serviços Profissionais SonicWall</td>
+        <td>S</td>
+        <td>Carga horária mínima exigida.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
