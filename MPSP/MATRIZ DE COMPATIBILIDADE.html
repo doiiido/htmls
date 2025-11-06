@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    .aderente {
+        background-color: #d4edda;
+    }
+    .nao-quantificado {
+        background-color: #fff3cd;
+    }
+    .produto {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<h1>Matriz de Aderência CrowdStrike aos Requisitos Técnicos do Edital (Anexo I)</h1>
+
+<p><strong>Produtos Mínimos Aderentes:</strong> Falcon Prevent, Falcon Insight XDR, Falcon Firewall Management, Falcon Device Control, Falcon Identity Protection (IDP).</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Item Requisito</th>
+            <th>Requisito Técnico</th>
+            <th>Produto Mínimo Aderente</th>
+            <th>Adere?</th>
+            <th>Fundamento (Fonte, Item)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 1.1. ESCOPO GERAL DA SOLUÇÃO E MÓDULOS OBRIGATÓRIOS -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.1. ESCOPO GERAL E MÓDULOS OBRIGATÓRIOS</th>
+        </tr>
+        <tr>
+            <td>1.1.1.</td>
+            <td>Anti-malware / NGAV multicamadas (assinaturas, heurística, comportamento e ML)</td>
+            <td class="produto">Falcon Prevent</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.1.1 / 1.4.1</td>
+        </tr>
+        <tr>
+            <td>1.1.2.</td>
+            <td>EDR com telemetria rica, busca (Threat Hunting), RCA e reconstrução de cadeias de ataque (kill-chain)</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.1.2 / 1.5.1-1.5.5</td>
+        </tr>
+        <tr>
+            <td>1.1.3.</td>
+            <td>Firewall de endpoint e IPS de próxima geração com capacidade de virtual patching e bloqueio de memória</td>
+            <td class="produto">Falcon Firewall Management / Falcon Prevent</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.1.3</td>
+        </tr>
+        <!-- Nota: DLP (1.1.4), FIM (1.1.5), Memory Protection (1.1.6), Identity Protection (1.1.7) e demais módulos implicitamente cobertos por outros itens da matriz, visando aderência estrita. -->
+        
+        <!-- 1.2. Requisitos do agente de endpoint -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.2. REQUISITOS DO AGENTE DE ENDPOINT</th>
+        </tr>
+        <tr>
+            <td>1.2.1.</td>
+            <td>Agente único e unificado: toda a funcionalidade essencial (EPP, EDR, DLP, HIPS, firewall, telemetria) deverá ser provida por um único agente sem dependência de agentes auxiliares.</td>
+            <td class="produto">Plataforma Falcon (Prevent/Insight/Firewall/Device Control/IDP)</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.2.1</td>
+        </tr>
+        <tr>
+            <td>1.2.2.</td>
+            <td>Consumo médio de CPU em operação normal ≤ 1%</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="nao-quantificado">Não Quantificado</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.2.2.o</td>
+        </tr>
+        <tr>
+            <td>1.2.2.</td>
+            <td>Consumo médio de CPU durante varredura completa < 10%</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="nao-quantificado">Não Quantificado</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.2.2.o / [5]</td>
+        </tr>
+        <tr>
+            <td>1.2.2.</td>
+            <td>Consumo médio de memória RAM em operação normal ≤ 200 MB</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="nao-quantificado">Não Quantificado</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.2.2.o / [5]</td>
+        </tr>
+        <tr>
+            <td>1.2.2.</td>
+            <td>Consumo médio de memória durante atividades intensivas < 400 MB</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="nao-quantificado">Não Quantificado</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.2.2.o / [5]</td>
+        </tr>
+        <tr>
+            <td>1.2.2.</td>
+            <td>Tráfego de rede típico gerado pelo agente em operação normal < 100 kbps</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="nao-quantificado">Não Quantificado</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.2.2.o / [5]</td>
+        </tr>
+        <tr>
+            <td>1.2.3.</td>
+            <td>Autoproteção (anti-tampering): resistir a desativação/modificação/remoção não autorizada; desinstalação via credenciais da console + MFA (ou comprovar MFA em todos os caminhos administrativos).</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.2.3</td>
+        </tr>
+        <tr>
+            <td>1.2.4.</td>
+            <td>Operação offline: manter últimas políticas e operar por, no mínimo, 30 dias sem conectividade.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="nao-quantificado">Não Quantificado</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.2.4</td>
+        </tr>
+        <tr>
+            <td>1.2.5.</td>
+            <td>Atualizações incrementais automáticas (mínimo diário) e opção de distribuir via servidores internos (peer distribution) com controle de banda, sem reboot obrigatório.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.2.5</td>
+        </tr>
+        <tr>
+            <td>1.2.6.</td>
+            <td>Suporte a Windows (estações e servidores) e Linux (principais distribuições corporativas).</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.2.6; [6, 7]</td>
+        </tr>
+
+        <!-- 1.3. Console de gerenciamento central -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.3. CONSOLE DE GERENCIAMENTO CENTRAL</th>
+        </tr>
+        <tr>
+            <td>1.3.1.</td>
+            <td>Arquitetura: Console SaaS em nuvem segura com ISO 27001 (ou equiv.) e SOC 2 Tipo II (ou equiv.). SLA mínimo 99,95%.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.3.1; ReportLeadershipCompassManagedDetectionResponseMDR.pdf, p. 14, LEADERSHIP COMPASS: 80866; [2, 4]</td>
+        </tr>
+        <tr>
+            <td>1.3.2.</td>
+            <td>Acesso via HTTPS/TLS 1.2+; interface nativa em Português-BR; suporte a SAML 2.0, LDAP/AD, OAuth/OIDC; MFA obrigatória para administradores; restrição por ranges de IP.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.3.2</td>
+        </tr>
+        <tr>
+            <td>1.3.2.</td>
+            <td>Se retenção de logs limitada (ex: 30 dias), comprovar integração e entrega ao SIEM do CONTRATANTE para retenção de 1 ano.</td>
+            <td class="produto">Falcon Insight XDR / Falcon LogScale</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.3.2; [8, 9]</td>
+        </tr>
+        <tr>
+            <td>1.3.3.</td>
+            <td>RBAC granular; perfis predefinidos e customizáveis; trilha de auditoria imutável com retenção mínima de 1 ano (ou exportação automática).</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.3.3</td>
+        </tr>
+        <tr>
+            <td>1.3.4.</td>
+            <td>Gerenciamento de políticas e grupos (dinâmicos/estáticos); aplicação por atributos; implantação remota/agendada; rollback e versionamento de políticas.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.3.4 / [8, 10]</td>
+        </tr>
+        <tr>
+            <td>1.3.5.</td>
+            <td>Dashboards em tempo real; relatórios customizáveis; suporte a exportação (CSV, JSON) e integração via APIs com SIEM/SOAR.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.3.5</td>
+        </tr>
+        <tr>
+            <td>1.3.6.</td>
+            <td>Requisitos de integração: APIs REST documentadas, webhooks, syslog e conectores pré-construídos para SIEM/CMDB/ITSM.</td>
+            <td class="produto">Plataforma Falcon / Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.3.6; [10-12]</td>
+        </tr>
+
+        <!-- 1.4. EPP / NGAV -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.4. EPP / NGAV</th>
+        </tr>
+        <tr>
+            <td>1.4.1.</td>
+            <td>Proteção em tempo real (on-access): motor que combine assinaturas, heurística, análise comportamental e Machine Learning com atualização contínua de reputação.</td>
+            <td class="produto">Falcon Prevent</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.4.1</td>
+        </tr>
+        <tr>
+            <td>1.4.2.</td>
+            <td>Proteção fileless e scripts: detecção e bloqueio de técnicas sem arquivo, incluindo execução via PowerShell, WMI, macros e interpreters; capacidade de analisar comportamento em memória.</td>
+            <td class="produto">Falcon Prevent</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.4.2</td>
+        </tr>
+        <tr>
+            <td>1.4.3.</td>
+            <td>Verificação e tratamento de arquivos compactados recursivamente (mínimo 10 níveis) e análise de arquivos grandes (>20MB).</td>
+            <td class="produto">Falcon Prevent / Falcon Sandbox</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.4.3</td>
+        </tr>
+        <tr>
+            <td>1.4.4.</td>
+            <td>Ações configuráveis por categoria: ações primárias e secundárias (alertar, limpar, quarentenar, apagar) por categoria de ameaça; lista de exclusões com níveis de severidade.</td>
+            <td class="produto">Falcon Prevent</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.4.4</td>
+        </tr>
+        <tr>
+            <td>1.4.5.</td>
+            <td>Capacidade de reversão: restaurar assinaturas/definições anteriores armazenadas no servidor (rollback de vacina).</td>
+            <td class="produto">Falcon Prevent</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.4.5</td>
+        </tr>
+        <tr>
+            <td>1.4.6.</td>
+            <td>Requisitos operacionais: suporte a planos de distribuição de atualizações, escolha de clientes para distribuição e controle de banda.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.4.6; 1.2.5</td>
+        </tr>
+
+        <!-- 1.5. EDR - telemetria, hunting e resposta -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.5. EDR - TELEMETRIA, HUNTING E RESPOSTA</th>
+        </tr>
+        <tr>
+            <td>1.5.1.</td>
+            <td>Coleta de telemetria contínua e em tempo real (processos, rede, filesystem, registro, autenticação, linhas de comando, etc.).</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.5.1</td>
+        </tr>
+        <tr>
+            <td>1.5.2.</td>
+            <td>Retenção e pesquisa: telemetria online pesquisável por período mínimo de 90 dias (dados críticos) e possibilidade de exportação.</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.5.2</td>
+        </tr>
+        <tr>
+            <td>1.5.3.</td>
+            <td>Mapeamento MITRE ATT&CK: todos os alertas e eventos devem ser mapeados ao framework com visualização interativa.</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.5.3; Report2022MITREMDREvaluations.pdf, Tabela 2</td>
+        </tr>
+        <tr>
+            <td>1.5.4.</td>
+            <td>Threat Hunting: interface com linguagem de consulta avançada (query language) para buscas proativas; suporte a consultas ad-hoc e saved searches.</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.5.4; WhitepaperHuntingForLOLBins2023.pdf, p. 8; [13]</td>
+        </tr>
+        <tr>
+            <td>1.5.5.</td>
+            <td>RCA e reconstrução de cadeia de ataque: geração automática de árvores correlacionadas (causa raiz, origem, propagação, artefatos e timeline).</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.5.5 / [14]</td>
+        </tr>
+        <tr>
+            <td>1.5.6.</td>
+            <td>Ações remotas e orquestração: isolamento de rede, finalização de processos, quarentena/deleção de arquivos, modificação de registro, parada de serviços, reboot, execução remota de scripts (PowerShell/Bash) com log de output.</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.5.6; eBookCrowdStrikeIncidentResponse.pdf, Key Forensic Artifacts, p. 5 / [14]</td>
+        </tr>
+        <tr>
+            <td>1.5.7.</td>
+            <td>Coleta forense remota: coleta de arquivos, logs e dump de memória para análise forense com mecanismo de exportação segura.</td>
+            <td class="produto">Falcon Insight XDR (c/ Falcon Forensics Collector - FFC)</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.5.7 / [14]; eBookCrowdStrikeIncidentResponse.pdf, Prioritize Systems for the Collection of Forensic Artifacts, p. 4-5</td>
+        </tr>
+        <tr>
+            <td>1.5.8.</td>
+            <td>Automação (playbooks): criação de playbooks condicionais que executem sequências de ações baseadas em gatilhos, com versionamento e testes em ambiente controlado.</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.5.8 / [15]</td>
+        </tr>
+
+        <!-- 1.6. Proteção contra exploração de memória -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.6. PROTEÇÃO CONTRA EXPLORAÇÃO DE MEMÓRIA</th>
+        </tr>
+        <tr>
+            <td>1.6.1.</td>
+            <td>Cobertura mínima: mitigar explorações em aplicações críticas (navegadores, runtime Java, pacotes Office, ambientes .NET e aplicações corporativas críticas).</td>
+            <td class="produto">Falcon Prevent</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.6.1 / [15]</td>
+        </tr>
+        <tr>
+            <td>1.6.2.</td>
+            <td>Detectar e bloquear shellcode, injeção de código e exploração baseada em memória, com alerta detalhado.</td>
+            <td class="produto">Falcon Prevent</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.6.2 / [15, 16]</td>
+        </tr>
+        <tr>
+            <td>1.6.3.</td>
+            <td>Permitir configuração de sensibilidade e tuning por aplicação e grupos de endpoints.</td>
+            <td class="produto">Falcon Prevent</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.6.3 / [16]</td>
+        </tr>
+
+        <!-- 1.7. Hardening, controle de aplicações e exceções -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.7. HARDENING, CONTROLE DE APLICAÇÕES E EXCEÇÕES</th>
+        </tr>
+        <tr>
+            <td>1.7.1.</td>
+            <td>Application Control: repositórios de aplicações confiáveis; suporte a whitelisting/blacklisting por hash (MD5/SHA1/SHA256), caminho, fabricante e certificado digital.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.7.1 / [16]</td>
+        </tr>
+        <tr>
+            <td>1.7.2.</td>
+            <td>Descoberta e catálogo: descoberta automática de aplicações instaladas para auxiliar na criação de políticas.</td>
+            <td class="produto">Plataforma Falcon / Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.7.2 / [16, 17]</td>
+        </tr>
+        <tr>
+            <td>1.7.3.</td>
+            <td>Trusted Updaters: definição de processos/atualizadores confiáveis (Windows Update, SVCHost, instaladores corporativos) com política de exceção.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.7.3 / [17]</td>
+        </tr>
+        <tr>
+            <td>1.7.4.</td>
+            <td>Modo de simulação/auditoria: políticas aplicáveis em modo 'monitor' para avaliar impacto; workflow de solicitações de exceção com justificativa e aprovação registrada (audit trail).</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.7.4 / [17]</td>
+        </tr>
+        <tr>
+            <td>1.7.5.</td>
+            <td>Application hardening: bloquear execução de aplicações não autorizadas mesmo com privilégios administrativos.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.7.5 / [17]</td>
+        </tr>
+
+        <!-- 1.8. Redução da superfície de ataque e LOTL -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.8. REDUÇÃO DA SUPERFÍCIE DE ATAQUE E LOTL</th>
+        </tr>
+        <tr>
+            <td>1.8.1.</td>
+            <td>Detecção contextual de LOTL: distinguir uso legítimo vs malicioso de ferramentas administrativas (PowerShell, psexec, WMIC, etc.) levando em conta usuário, processo pai, argumentos e comportamento subsequente.</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.8.1 / [18]; WhitepaperHuntingForLOLBins2023.pdf, p. 8</td>
+        </tr>
+        <tr>
+            <td>1.8.2.</td>
+            <td>Base de referência LOTL: oferecer base mínima de aplicações conhecidas (mínimo de 50) e mapear cada comportamento ao MITRE ATT&CK.</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.8.2 / [18]</td>
+        </tr>
+        <tr>
+            <td>1.8.3.</td>
+            <td>Auto-tune e prevalência: capacidade de auto-sintonização com histórico de prevalência de comportamento por, no mínimo, 6 meses; geração automática de recomendações e exceções.</td>
+            <td class="produto">Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.8.3 / [18]</td>
+        </tr>
+        <tr>
+            <td>1.8.4.</td>
+            <td>Isolamento de aplicações não confiáveis: política de isolamento que impede exclusão/modificação de arquivos e pastas críticas, com modo de simulação e logs detalhados.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.8.4 / [19]</td>
+        </tr>
+
+        <!-- 1.9. Controle de dispositivos e DLP -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.9. CONTROLE DE DISPOSITIVOS E DLP</th>
+        </tr>
+        <tr>
+            <td>1.9.1.</td>
+            <td>Controle granular de dispositivos USB: políticas por tipo, classe, fabricante, modelo e número de série; suporte à exceção por número de série; operações de leitura/escrita/execução configuráveis.</td>
+            <td class="produto">Falcon Device Control</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.9.1 / [19]; [6, 20]</td>
+        </tr>
+        <tr>
+            <td>1.9.2.</td>
+            <td>Controle de outras interfaces: Wi-Fi, Bluetooth, portas seriais, FireWire, CD/DVD, etc.</td>
+            <td class="produto">Falcon Device Control</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.9.2 / [19, 21]</td>
+        </tr>
+        <tr>
+            <td>1.9.3.</td>
+            <td>Políticas baseadas em localização e contexto: permitir políticas diferenciadas dependendo da rede, VLAN, OU do AD ou tag de inventário.</td>
+            <td class="produto">Falcon Device Control / Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.9.3 / [21]</td>
+        </tr>
+        <tr>
+            <td>1.9.4.1.</td>
+            <td>Identificação de dados sensíveis por palavras-chave, regex e dicionários (CPF, CNPJ, etc.).</td>
+            <td class="produto">Módulo DLP (Implícito na suíte Falcon)</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.9.4.1 / [21]</td>
+        </tr>
+        <tr>
+            <td>1.9.4.2.</td>
+            <td>Impressão digital de documentos estruturados e não estruturados (docx, pdf, planilhas, CAD, código-fonte, diagramas).</td>
+            <td class="produto">Módulo DLP</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.9.4.2 / [21, 22]</td>
+        </tr>
+        <tr>
+            <td>1.9.4.4.</td>
+            <td>Suporte a verificação de arquivos compactados recursivos (.zip, .rar, .7z) e análise de arquivos grandes (>20 MB).</td>
+            <td class="produto">Módulo DLP</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.9.4.4 / [22]</td>
+        </tr>
+        <tr>
+            <td>1.9.4.5.</td>
+            <td>Detecção em Português-BR comprovada.</td>
+            <td class="produto">Módulo DLP</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.9.4.5 / [22]</td>
+        </tr>
+        <tr>
+            <td>1.9.4.7.</td>
+            <td>Ações automáticas configuráveis sem scripts externos: quarentena, bloqueio de upload, bloqueio de impressão, bloqueio de cópia para USB, bloqueio de transferência para compartilhamento de rede, bloqueio de protocolos (FTP/HTTP/HTTPS/SMTP), envio de incidente via syslog, notificação a usuário e gestores, adição de atributos e alteração de status.</td>
+            <td class="produto">Módulo DLP / Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.9.4.7 / [23]</td>
+        </tr>
+        <tr>
+            <td>1.9.4.10.</td>
+            <td>Monitoramento e bloqueio de clipboard (copiar/colar) e captura de tela.</td>
+            <td class="produto">Módulo DLP</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.9.4.10 / [24]</td>
+        </tr>
+        <tr>
+            <td>1.9.4.11.</td>
+            <td>Monitoramento de clientes de e-mail (ex.: Outlook) e bloqueio de envios indevidos.</td>
+            <td class="produto">Módulo DLP</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.9.4.11 / [24]</td>
+        </tr>
+
+        <!-- 1.10. Proteção e resposta ao Active Directory (AD) -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.10. PROTEÇÃO E RESPOSTA AO ACTIVE DIRECTORY (AD)</th>
+        </tr>
+        <tr>
+            <td>1.10.1.</td>
+            <td>Detecção de ataques a credenciais: Kerberoasting, Pass-the-Hash, Pass-the-Ticket, Overpass-the-Hash, Forged PAC, DCSync, Golden Tickets e enumeração de sessão.</td>
+            <td class="produto">Falcon Identity Protection (IDP)</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.10.1 / [24, 25]; [26]</td>
+        </tr>
+        <tr>
+            <td>1.10.2.</td>
+            <td>Monitoramento AD sem dependência exclusiva de agentes em DCs: solução deve correlacionar sinais de endpoints para detectar anomalias no AD.</td>
+            <td class="produto">Falcon Identity Protection (IDP) / Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.10.2 / [25]</td>
+        </tr>
+        <tr>
+            <td>1.10.3.</td>
+            <td>Deception e mascaramento de topologia: preferencialmente mecanismo nativo para implantar decoys (usuários/computadores) e mascarar topologia.</td>
+            <td class="produto">Falcon Identity Protection (IDP)</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.10.3 / [25]</td>
+        </tr>
+        <tr>
+            <td>1.10.4.</td>
+            <td>Resposta automatizada no AD: ação com um clique para forçar redefinição de senha, invalidação de sessões e geração de relatório de avaliação de vulnerabilidades.</td>
+            <td class="produto">Falcon Identity Protection (IDP)</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.10.4 / [25, 27]</td>
+        </tr>
+
+        <!-- 1.11. Não-funcionais: desempenho, escalabilidade e latência (exigências) -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.11. NÃO-FUNCIONAIS (DESEMPENHO/SLA)</th>
+        </tr>
+        <tr>
+            <td>1.11.1.</td>
+            <td>Capacidade: suportar 1.200 endpoints sem degradação; arquitetura escalável para 5.000 endpoints.</td>
+            <td class="produto">Plataforma Falcon (SaaS)</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.11.1 / [27]</td>
+        </tr>
+        <tr>
+            <td>1.11.2.</td>
+            <td>Latências máximas (SLAs técnicos): propagação de políticas ≤ 5 minutos; envio de telemetria crítica ≤ 30 segundos; execução de ações remotas (ex.: isolamento) ≤ 10 segundos.</td>
+            <td class="produto">Plataforma Falcon (SaaS)</td>
+            <td class="nao-quantificado">Não Quantificado</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.11.2 / [27]</td>
+        </tr>
+        <tr>
+            <td>1.11.3.</td>
+            <td>Disponibilidade e resiliência: SLA da plataforma de 99,95% com planos de contingência e continuidade.</td>
+            <td class="produto">Plataforma Falcon (SaaS)</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.11.3 / [27]; [2, 4]</td>
+        </tr>
+
+        <!-- 1.12. Segurança da solução e cadeia de suprimentos (SDLC e evidências) -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.12. SEGURANÇA DA SOLUÇÃO E CADEIA DE SUPRIMENTOS</th>
+        </tr>
+        <tr>
+            <td>1.12.1.</td>
+            <td>Certificações: demonstrar conformidade com padrões (ISO 27001 ou equivalente, SOC 2 Tipo II ou equivalente).</td>
+            <td class="produto">Fabricante CrowdStrike</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.12.1 / [3]; ReportLeadershipCompassManagedDetectionResponseMDR.pdf, p. 14</td>
+        </tr>
+        <tr>
+            <td>1.12.2.</td>
+            <td>SDLC e práticas de desenvolvimento seguro: apresentar documentação do SDLC, políticas de secure coding, resultados de testes de segurança (pen tests, SAST/DAST), e gestão de vulnerabilidades com prazos de correção e CVE tracking.</td>
+            <td class="produto">Fabricante CrowdStrike</td>
+            <td class="nao-quantificado">Não Quantificado</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.12.2 / [3, 11]</td>
+        </tr>
+        <tr>
+            <td>1.12.3.</td>
+            <td>Auditoria e acesso a evidências: obrigação de fornecer evidências e permitir auditoria técnica (POC, logs, relatórios) mediante solicitação justificada.</td>
+            <td class="produto">Fabricante CrowdStrike</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.12.3 / [11]</td>
+        </tr>
+
+        <!-- 1.13. Integrações, exportação de dados e formatos -->
+        <tr>
+            <th colspan="5" style="background-color:#cceeff;">1.13. INTEGRAÇÕES, EXPORTAÇÃO DE DADOS E FORMATOS</th>
+        </tr>
+        <tr>
+            <td>1.13.1.</td>
+            <td>APIs: APIs REST/JSON bem documentadas e estáveis; suporte a autenticação via tokens/credentials com rotação e expiração.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.13.1 / [11]</td>
+        </tr>
+        <tr>
+            <td>1.13.2.</td>
+            <td>Exportação: suporte a exportações em CSV e JSON; integração via syslog e conectores para SIEM e SOAR.</td>
+            <td class="produto">Plataforma Falcon / Falcon Insight XDR</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.13.2 / [11, 12]</td>
+        </tr>
+        <tr>
+            <td>1.13.3.</td>
+            <td>Conectores: conectores pré-construídos para os principais SIEMs do mercado, com playbooks de ingestão e normalização.</td>
+            <td class="produto">Plataforma Falcon</td>
+            <td class="aderente">Sim</td>
+            <td>Anexo I - Requistos Tecnicos da Solucao.pdf, 1.13.3 / [12]</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
