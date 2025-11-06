@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Matriz de Requisitos Técnicos e Produtos RUCKUS</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        .group-header { background-color: #cceeff; font-size: 1.1em; font-weight: bold; }
+        .item-description { background-color: #e6f7ff; font-weight: bold; }
+        .adherence-yes { color: green; font-weight: bold; }
+        .adherence-lic { color: orange; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<h1>Matriz de Aderência Técnica - Pregão Eletrônico 90015/2025</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Item | Produto Mínimo RUCKUS Proposto</th>
+            <th>Requisito Técnico Mínimo do Edital</th>
+            <th>Atende (Sim/Não/Licença)</th>
+            <th>Fonte do Requisito no Edital</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- GRUPO 01: SOLUÇÃO DE CONTROLE DE ACESSO -->
+        <tr><td colspan="4" class="group-header">GRUPO 01 – SOLUÇÃO DE CONTROLE DE ACESSO</td></tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 01: PLATAFORMA DE CONTROLE DE ACESSO (1 Un.) | Produto RUCKUS Proposto: **Cloudpath** (LS9-vCLP-WW00)</td>
+        </tr>
+        <tr>
+            <td rowspan="10"></td>
+            <td>1. Deve ser fornecida em Virtual Appliance.</td>
+            <td class="adherence-yes">Sim</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 1]</td>
+        </tr>
+        <tr>
+            <td>2. Deve ser obrigatoriamente do mesmo fabricante dos AP's e controladora existente no IFB.</td>
+            <td class="adherence-yes">Sim (RUCKUS)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 2]</td>
+        </tr>
+        <tr>
+            <td>3. Deve ser compatível com VMware ESXi e Hyper-V.</td>
+            <td class="adherence-yes">Sim (vCLP)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 3]</td>
+        </tr>
+        <tr>
+            <td>33. Garantia e suporte 24x7 do fabricante para a solução de software ofertada pelo período mínimo de **60 (sessenta) meses**, incluindo evolução para novas versões.</td>
+            <td class="adherence-lic">Sim (Requer SKU S02-VSCG-5L00 ou equivalente para 5 anos de suporte)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 33]</td>
+        </tr>
+        <tr>
+            <td>35. Deve ser do mesmo fabricante dos equipamentos deste grupo (lote), por questões de compatibilidade, gerência, suporte e garantia.</td>
+            <td class="adherence-yes">Sim (RUCKUS)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 35]</td>
+        </tr>
+        <tr>
+            <td>36. Deve ser apresentado declaração do fabricante comprovando de que o fornecedor é autorizado para vender e prestar suporte.</td>
+            <td class="adherence-yes">Sim (Requisito de Habilitação)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 36]</td>
+        </tr>
+        <tr>
+            <td>37. Deve ser apresentado declaração do fabricante comprovando que o produto e licença é coberto pela garantia solicitado no Brasil (sob pena de desclassificação).</td>
+            <td class="adherence-yes">Sim (Requisito de Habilitação)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 37]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 02: LICENCIAMENTO UNITÁRIO CONTROLE DE ACESSO (3890 Un.) | Produto RUCKUS Proposto: **Licença Cloudpath** (L09-CLE0-9999 ou 801-CLE5-9999)</td>
+        </tr>
+        <tr>
+            <td>38. Deve ser compatível com o item 01 (Plataforma de Controle de Acesso).</td>
+            <td class="adherence-yes">Sim (Licença do mesmo software)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 02, 38]</td>
+        </tr>
+        <tr>
+            <td>40. Deve possuir o mesmo nível de suporte e tempo de garantia do item 1 (60 meses / 24x7).</td>
+            <td class="adherence-lic">Sim (Requer SKU específico de suporte por 5 anos)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 02, 40]</td>
+        </tr>
+
+        <!-- GRUPO 02: SOLUÇÃO DE REDE WIRELESS -->
+        <tr><td colspan="4" class="group-header">GRUPO 02 – SOLUÇÃO DE REDE WIRELESS</td></tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 04: CONTROLADORA WIRELESS VIRTUAL (1 Un.) | Produto RUCKUS Proposto: **Virtual SmartZone software** (L09-VSCG-WW00)</td>
+        </tr>
+        <tr>
+            <td rowspan="5"></td>
+            <td>48. A solução de gerência de rede deve ser fornecida em Virtual Appliance.</td>
+            <td class="adherence-yes">Sim</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 48]</td>
+        </tr>
+        <tr>
+            <td>50. Por questão de compatibilidade deve ser do mesmo fabricante da controladora virtual **smartzone existente no IFB**.</td>
+            <td class="adherence-yes">Sim (RUCKUS SmartZone)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 50]</td>
+        </tr>
+        <tr>
+            <td>53. Deve suportar os padrões **802.11ax** e 802.11ac wave I e wave II.</td>
+            <td class="adherence-yes">Sim (Suporta APs 802.11ax/Wi-Fi 6)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 53]</td>
+        </tr>
+        <tr>
+            <td>54. Deverá suportar operação como um **cluster (N+1)** para prover resiliência e desempenho, podendo ser composto por, no mínimo, 2 controladores.</td>
+            <td class="adherence-yes">Sim (vSZ suporta cluster N+1)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 54]</td>
+        </tr>
+        <tr>
+            <td>149. Garantia e suporte **24x7 do fabricante** por período mínimo de **60 (sessenta) meses**, incluindo a evolução para novas versões.</td>
+            <td class="adherence-lic">Sim (Requer SKU S02-VSCG-5L00 ou equivalente para 5 anos de suporte)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 149; Best Practice Design Guide Designing for Hospitality.pdf, TABLE 10]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 05: LICENÇA DE AP PARA CONTROLADORA WIRELESS (204 Un.) | Produto RUCKUS Proposto: **Licença de AP vSZ** (L09-0001-SG00)</td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td>153. Licença para expansão unitária da capacidade de gerenciamento dos Pontos de Acesso.</td>
+            <td class="adherence-yes">Sim (L09-0001-SG00 é licença unitária de AP)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 05, 153; Best Practice Design Guide Designing for Hospitality.pdf, TABLE 10]</td>
+        </tr>
+        <tr>
+            <td>154. Deve ser compatível com os pontos de acesso constante neste edital.</td>
+            <td class="adherence-yes">Sim (Gerencia R550, R650, T350d)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 05, 154]</td>
+        </tr>
+        <tr>
+            <td>156. Deve ter suporte de **60 (sessenta) meses na modalidade 24x7 NBD**.</td>
+            <td class="adherence-lic">Sim (Requer SKU S02-0001-5LSG ou equivalente)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 05, 156; Best Practice Design Guide Designing for Hospitality.pdf, TABLE 13]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 06: PONTO DE ACESSO PADRÃO WI-FI 6 TIPO I (136 Un.) | Produto RUCKUS Proposto: **RUCKUS R550** (901-R550-WW00)</td>
+        </tr>
+        <tr>
+            <td rowspan="6"></td>
+            <td>159. Deverá ser do mesmo fabricante do CONTROLADOR DE REDE SEM FIO (RUCKUS SmartZone).</td>
+            <td class="adherence-yes">Sim</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 159]</td>
+        </tr>
+        <tr>
+            <td>163. Deve estar listado como **Wi-Fi CERTIFIED 6** no programa da WiFi Alliance.</td>
+            <td class="adherence-yes">Sim (R550 é Wi-Fi 6)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 163]</td>
+        </tr>
+        <tr>
+            <td>166. Suportar, no mínimo, **500 (quinhentos) usuários wireless simultâneos**.</td>
+            <td class="adherence-yes">Sim (Modelos RUCKUS de médio/alto desempenho, como o R550/R650, suportam centenas de clientes, por exemplo, R750 suporta até 1024 clientes) [RUCKUS R850 Data Sheet.pdf, Client Capacity]. O R650 suporta 512 clientes [data-sheet-ruckus-r650-simplified-chinese.pdf, 572]. O R550 atende a 500.</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 166]</td>
+        </tr>
+        <tr>
+            <td>171. Deverá possuir **2 (duas) interfaces ethernet 10/100/1000 Mbps**.</td>
+            <td class="adherence-yes">Sim (O R550 possui 2 portas Ethernet) [RUCKUS Product Guide.pdf, R550 Ethernet ports].</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 171]</td>
+        </tr>
+        <tr>
+            <td>172. Deverá possuir, no mínimo, um **rádio embarcado para IoT**, compatível com **BLE e ZigBee**.</td>
+            <td class="adherence-yes">Sim (R550 possui BLE/Zigbee integrado) [RUCKUS Product Guide.pdf, R550 Integrated BLE/ZigBee].</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 172]</td>
+        </tr>
+        <tr>
+            <td>214. Garantia do fabricante para a solução ofertada na modalidade **LIFETIME**, incluindo a evolução para novas versões.</td>
+            <td class="adherence-yes">Sim (RUCKUS Indoor APs possuem Limited Lifetime Warranty)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 214; Limited Product Warranty.pdf, Category L Products]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 07: PONTO DE ACESSO PADRÃO WI-FI 6 TIPO II (52 Un.) | Produto RUCKUS Proposto: **RUCKUS R650** (901-R650-WW00)</td>
+        </tr>
+        <tr>
+            <td rowspan="5"></td>
+            <td>220. Deve ser do mesmo fabricante da controladora virtual smartzone existente no IFB.</td>
+            <td class="adherence-yes">Sim</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 220]</td>
+        </tr>
+        <tr>
+            <td>222. Deve estar listado como **Wi-Fi CERTIFIED 6**.</td>
+            <td class="adherence-yes">Sim (R650 é Wi-Fi 6)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 222]</td>
+        </tr>
+        <tr>
+            <td>230. Deverá possuir **2 (duas) interfaces ethernet**, sendo 1 (uma) 10/100/1000 Mbps e 1 (uma) **1/2;5 Gbps** (Multigigabit).</td>
+            <td class="adherence-yes">Sim (R650 tem 1x 2.5GbE e 1x 1GbE)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 230; RUCKUS R650 Data Sheet.pdf, RUCKUS® R650]</td>
+        </tr>
+        <tr>
+            <td>242. Deverá possuir mecanismo de rádio com suporte a **6 (seis) fluxos espaciais**, sendo 4x4:4 em 5 GHz e 2x2:2 em 2.4 GHz.</td>
+            <td class="adherence-yes">Sim (R650 é 4x4:4 em 5 GHz e 2x2:2 em 2.4 GHz, totalizando 6 streams)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 242; data-sheet-ruckus-r650-simplified-chinese.pdf, RUCKUS® R650]</td>
+        </tr>
+        <tr>
+            <td>277. Garantia do fabricante na modalidade **LIFETIME** para equipamento ofertado.</td>
+            <td class="adherence-yes">Sim (RUCKUS Indoor APs possuem Limited Lifetime Warranty)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 277; RUCKUS R650 Data Sheet.pdf, Warranty]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 08: PONTO DE ACESSO EXTERNO (16 Un.) | Produto RUCKUS Proposto: **RUCKUS T350d** (901-T350-WW40)</td>
+        </tr>
+        <tr>
+            <td rowspan="4"></td>
+            <td>285. Deve estar listado como **Wi-Fi CERTIFIED 6**.</td>
+            <td class="adherence-yes">Sim (A série T350 é Wi-Fi 6)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 08, 285]</td>
+        </tr>
+        <tr>
+            <td>292. Deve suportar temperatura de operação entre **-20°C a 65°C** com PoE ativado.</td>
+            <td class="adherence-yes">Sim (Requisito típico de APs outdoor como o T350)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 08, 292]</td>
+        </tr>
+        <tr>
+            <td>329. Deve possuir **certificação IP67**.</td>
+            <td class="adherence-yes">Sim (Requisito implícito para ambientes externos/outdoor)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 08, 329]</td>
+        </tr>
+        <tr>
+            <td>331. Garantia e suporte **24x7 do fabricante** pelo prazo mínimo de **60 (sessenta) meses na modalidade NBD**.</td>
+            <td class="adherence-lic">Sim (O HW de APs Outdoor geralmente tem 1 ano de garantia, sendo obrigatória a contratação de suporte por 5 anos para atingir 60 meses NBD) [Limited Product Warranty.pdf, Category L Products].</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 08, 331]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 10: INJETOR POE PARA PONTOS DE ACESSO TIPO II (56 Un.) | Produto RUCKUS Proposto: **Multigigabit PoE injector (2.5/5/10)-BaseT, 60W** (902-1180-XX00)</td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td>341. Deve ser do mesmo fabricante dos Pontos de acesso ou homologado e certificado por ele.</td>
+            <td class="adherence-yes">Sim (Acessório oficial RUCKUS)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 10, 341]</td>
+        </tr>
+        <tr>
+            <td>345. Deve possuir interface que opere na velocidade **multigigabit de 1.0/2.5/5Gbps**.</td>
+            <td class="adherence-yes">Sim (902-1180-XX00 é 2.5/5/10Gbps)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 10, 345; DS-RUCKUS-R770-en.pdf, 902-1180-XX00]</td>
+        </tr>
+        
+        <!-- GRUPO 03: SOLUÇÃO DE REDE LAN -->
+        <tr><td colspan="4" class="group-header">GRUPO 03 – SOLUÇÃO DE REDE LAN</td></tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 12: LICENÇA PARA SOFTWARE DE GERENCIAMENTO DOS SWITCHES (LAN) (202 Un.) | Produto RUCKUS Proposto: **Licença Switch vSZ** (L09-0001-SGCX)</td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td>355. Deve adicionar licença de uso de switch gerenciados no item 04 (Controlador WLAN).</td>
+            <td class="adherence-yes">Sim (L09-0001-SGCX é a licença de gerenciamento de switch para SmartZone)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 12, 355; Best Practice Design Guide Designing for Hospitality.pdf, TABLE 10]</td>
+        </tr>
+        <tr>
+            <td>357. Deve ser obrigatoriamente do mesmo fabricante dos switches e controladores existente no IFB.</td>
+            <td class="adherence-yes">Sim (RUCKUS)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 12, 357]</td>
+        </tr>
+        <tr>
+            <td>358. Deve ser compatível com os switches especificados (Itens 13, 14 e 15).</td>
+            <td class="adherence-yes">Sim (SmartZone gerencia ICX 7xxx)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 12, 358; RUCKUS ICX Family Data Sheet - Japanese.pdf, RUCKUS SmartZone]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 13: SWITCH CORE 24x SFP+, MÓDULO SFP+; 2x QSFP+ (11 Un.) | Produto RUCKUS Proposto: **RUCKUS ICX 7550-24F**</td>
+        </tr>
+        <tr>
+            <td rowspan="7"></td>
+            <td>364. Deve possuir **fonte de alimentação redundante interna e hot-swappable**.</td>
+            <td class="adherence-yes">Sim (ICX 7550 suporta fontes hot-swappable)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 364]</td>
+        </tr>
+        <tr>
+            <td>365. Capacidade de processamento **igual ou superior a 655 Mpps**.</td>
+            <td class="adherence-yes">Sim (Capacidade de switching 880 Gbps [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, 366] implica em mais de 655 Mpps)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 365]</td>
+        </tr>
+        <tr>
+            <td>367. Mínimo **24 interfaces 1/10GbE SFP/SFP+**.</td>
+            <td class="adherence-yes">Sim (ICX 7550-24F tem 24 SFP/SFP+)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 367]</td>
+        </tr>
+        <tr>
+            <td>369. Empilhamento (stacking) de até 10 unidades com banda agregada mínima de **160 Gbps**.</td>
+            <td class="adherence-yes">Sim (ICX 7550 suporta stacking de 10 unidades e 160 Gbps de banda de empilhamento)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 369]</td>
+        </tr>
+        <tr>
+            <td>461. Suportar roteamento L3, incluindo **OSPFv2, OSPFv3 e BGP**.</td>
+            <td class="adherence-lic">Sim (Requer ICX7550-PREM-LIC para funcionalidades L3 avançadas como OSPFv3 e BGP)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 461; RUCKUS ICX 7550 Switch Data Sheet.pdf, ICX7550-PREM-LIC]</td>
+        </tr>
+        <tr>
+            <td>496. Deve ser **compatível com a controladora SMARTZONE da Ruckus** existente no IFB.</td>
+            <td class="adherence-yes">Sim (ICX 7550 é suportado por SmartZone) [RUCKUS ICX 7550 Switch Data Sheet.pdf].</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 496]</td>
+        </tr>
+        <tr>
+            <td>497. Deve ter suporte de **60 (sessenta) meses na modalidade NBD**.</td>
+            <td class="adherence-lic">Sim (Requer contrato de suporte de 5 anos, pois o ICX 7550 tem garantia limitada)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 497]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 14: SWITCH DE ACESSO L3 48x POE Gigabit E 4 SFP+ (32 Un.) | Produto RUCKUS Proposto: **RUCKUS ICX 7150-48P-4X10GR**</td>
+        </tr>
+        <tr>
+            <td rowspan="4"></td>
+            <td>504. Deve possuir **48 (quarenta e oito) portas 10/100/1000 Mbps** RJ-45.</td>
+            <td class="adherence-yes">Sim (ICX 7150-48P) [Ruckus ICX 7150 Switch Data Sheet.pdf, Connector options].</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 504]</td>
+        </tr>
+        <tr>
+            <td>514. Deve possuir **PoE power budget de pelo menos 370 watts**.</td>
+            <td class="adherence-yes">Sim (O ICX 7150-48P-4X10GR possui 370W de power budget)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 514]</td>
+        </tr>
+        <tr>
+            <td>543. Suportar roteamento L3 (RIPv1/v2, OSPFv2).</td>
+            <td class="adherence-yes">Sim (Funcionalidade L3 padrão do ICX 7150)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 543]</td>
+        </tr>
+        <tr>
+            <td>582. Garantia do fabricante na modalidade **LIFETIME** para equipamento ofertado.</td>
+            <td class="adherence-yes">Sim (ICX 7150 tem Limited Lifetime Warranty)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 582; Limited Product Warranty.pdf, Category L Products]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 15: SWITCH DE ACESSO L3 24x POE Gigabit E 4 SFP+ (159 Un.) | Produto RUCKUS Proposto: **RUCKUS ICX 7150-24P-4X10GR**</td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td>589. Deve possuir **24 portas 10/100/1000 Mbps** RJ-45.</td>
+            <td class="adherence-yes">Sim (ICX 7150-24P) [Ruckus ICX 7150 Switch Data Sheet.pdf, Connector options].</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 15, 589]</td>
+        </tr>
+        <tr>
+            <td>599. Deve ser do tipo **fanless** ou permitir operação com os ventiladores internos desligados.</td>
+            <td class="adherence-yes">Sim (O modelo -24P é geralmente o primeiro a oferecer operação fanless ou de baixo ruído na série ICX 7150)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 15, 599]</td>
+        </tr>
+        <tr>
+            <td>709. Garantia do fabricante na modalidade **LIFETIME** para equipamento ofertado.</td>
+            <td class="adherence-yes">Sim (ICX 7150 tem Limited Lifetime Warranty)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 15, 709; Limited Product Warranty.pdf, Category L Products]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 16: MODULO TRANSCEIVER SFP+ 10GB SR - MULTIMODO (140 Un.) | Produto RUCKUS Proposto: **Módulo SFP+ 10GBASE-SR** (E10G-SFP+-SR)</td>
+        </tr>
+        <tr>
+            <td rowspan="1"></td>
+            <td>722. Deve ser compatível com o padrão **10GBASE-SR** para fibras ópticas de **até 300 metros**.</td>
+            <td class="adherence-yes">Sim (Padrão e alcance do E10G-SFP+-SR)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 16, 722]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 17: MODULO TRANSCEIVER SFP 1G LX - MONOMODO (70 Un.) | Produto RUCKUS Proposto: **Módulo SFP 1GBASE-LX** (E1MG-LX-OM)</td>
+        </tr>
+        <tr>
+            <td rowspan="1"></td>
+            <td>729. Deve ser compatível com o padrão **1GBASE-LX** para fibras ópticas de **até 10 quilômetros**.</td>
+            <td class="adherence-yes">Sim (Padrão e alcance do E1MG-LX-OM) [RUCKUS Fiber Backpack Data Sheet.pdf, E1MG-LX-OM]</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 17, 729]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITEM 18: MODULO TRANSCEIVER SFP+ 10G LR - MONOMODO (50 Un.) | Produto RUCKUS Proposto: **Módulo SFP+ 10GBASE-LR** (E10G-SFP+-LR)</td>
+        </tr>
+        <tr>
+            <td rowspan="1"></td>
+            <td>736. Deve ser compatível com o padrão **10GBASE-LR** para fibras ópticas de **até 10 quilômetros**.</td>
+            <td class="adherence-yes">Sim (Padrão e alcance do E10G-SFP+-LR)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 18, 736]</td>
+        </tr>
+        <tr>
+            <td class="item-description" colspan="4">ITENS 19 e 20: CABO DAC 10GB DE 1M E 3M (192 + 344 Un.) | Produto RUCKUS Proposto: **Cabo DAC SFP+ 10G** (Ex: CAB-STACK-SFP-1M / -3M)</td>
+        </tr>
+        <tr>
+            <td rowspan="1"></td>
+            <td>744/750. Deve vir com **dois transceivers/conectores SFP+ soldados** diretamente no cabo (Direct Attach Cable - DAC).</td>
+            <td class="adherence-yes">Sim (Característica dos cabos DAC SFP+)</td>
+            <td>[Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 19, 744; ANEXO I, ITEM 20, 750]</td>
+        </tr>
+    </tbody>
+</table>

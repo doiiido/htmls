@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Matriz de Requisitos Técnicos Mínimos</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        .group-header { background-color: #cceeff; font-size: 1.1em; }
+        .item-description { font-weight: bold; }
+        .citation { font-size: 0.8em; color: #555; display: block; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+<h1>Matriz de Requisitos Técnicos Mínimos (Pregão Eletrônico 90015/2025)</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Grupo</th>
+            <th>Item/Descrição (Qtd. Solicitada)</th>
+            <th>Resumo dos Requisitos Técnicos Mínimos</th>
+            <th>Fonte</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- GRUPO 01: SOLUÇÃO DE CONTROLE DE ACESSO -->
+        <tr>
+            <td rowspan="3" class="group-header">GRUPO 01 – SOLUÇÃO DE CONTROLE DE ACESSO</td>
+            <td class="item-description">ITEM 01: PLATAFORMA DE CONTROLE DE ACESSO (1 Un.)</td>
+            <td>
+                <ul>
+                    <li>Deve ser fornecida em <b>Virtual Appliance</b> e ser compatível com VMware e Hyper-V [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 1, 3].</li>
+                    <li>Obrigatoriamente do <b>mesmo fabricante dos AP's e controladora existente no IFB</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 2].</li>
+                    <li>Capacidade de expansão futura para, no mínimo, 10.000 usuários simultâneos e suportar clusterização ativo/ativo ou ativo/passivo [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 4, 5].</li>
+                    <li>Suportar portal web seguro (HTTPS) personalizável e compatibilidade com a rede <b>Eduroam</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 10, 11].</li>
+                    <li>Suportar autenticação via <b>redes sociais</b> (mínimo Facebook, LinkedIn e Google) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 7].</li>
+                    <li>Realizar <b>provisionamento automático de certificado digital</b> (802.1X) em dispositivos móveis (iOS, Windows, Mac OSx, Android) e fazer verificação de postura (antivírus, firewall) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 16, 26].</li>
+                    <li>Licenciamento deve ser baseado em usuário, e não em dispositivos [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 19].</li>
+                    <li><b>Garantia e suporte 24x7 do fabricante</b> por período mínimo de <b>60 (sessenta) meses</b>, incluindo evolução para novas versões [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 33].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 01, 1-37</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 02: LICENCIAMENTO UNITÁRIO CONTROLE DE ACESSO (3890 Un.)</td>
+            <td>
+                <ul>
+                    <li>Deve ser compatível com o Item 01 e licenciado de forma unitária, respeitando o limite da solução [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 02, 38, 39].</li>
+                    <li>Deve possuir o <b>mesmo nível de suporte e tempo de garantia do Item 1</b> (60 meses/24x7) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 02, 40].</li>
+                    <li>Deve habilitar todas as funcionalidades e requisitos solicitados no Item 01 [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 02, 41].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 02, 38-42</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 03: SERVIÇOS DE IMPLANTAÇÃO E TRANSFERÊNCIA DE TECNOLOGIA (1 Un.)</td>
+            <td>
+                <ul>
+                    <li>Serviços em horário de expediente (presencial ou remoto) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 03, 43].</li>
+                    <li>Previamente, deve ser realizada análise da topologia e arquitetura da rede [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 03, 45].</li>
+                    <li>O pacote deve ter carga horária mínima de <b>30 horas</b> para implantação [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 03, 47.b].</li>
+                    <li>Configurar autenticação em Active Directory/LDAP e portal de autosserviço para visitantes [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 03, 47.d, 47.e].</li>
+                    <li>Ministrar treinamento (repasse de conhecimentos) para operação da solução com duração de 4 horas [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 03, 47.q].</li>
+                    <li>Deve ser comprovado que a Contratada possui <b>profissional com certificado oficial do fabricante</b> para a solução proposta [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 03, 47.p].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 03, 43-47</span>
+            </td>
+        </tr>
+        
+        <!-- GRUPO 02: SOLUÇÃO DE REDE WIRELESS -->
+        <tr>
+            <td rowspan="7" class="group-header">GRUPO 02 – SOLUÇÃO DE REDE WIRELESS</td>
+            <td class="item-description">ITEM 04: CONTROLADORA WIRELESS VIRTUAL (1 Un.)</td>
+            <td>
+                <ul>
+                    <li>Deve ser fornecida em <b>Virtual Appliance</b> e ser do **mesmo fabricante da controladora virtual SmartZone existente no IFB** [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 48, 50].</li>
+                    <li>Suportar padrões 802.11ax (Wi-Fi 6) e operar como um <b>cluster (N+1)</b> para resiliência [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 53, 54].</li>
+                    <li>Capacidade para gerenciar, no mínimo, <b>1024 Pontos de Acesso</b>, expansível a até 10.000 (com atualização de licença) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 59].</li>
+                    <li>Suportar identificação e controle de aplicações na Camada 7, permitindo QoS (Quality of Service) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 89].</li>
+                    <li>Suporte 24x7 do fabricante por período mínimo de <b>60 (sessenta) meses</b>, incluindo evolução para novas versões [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 149].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 04, 48-152</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 05: LICENÇA DE AP PARA CONTROLADORA WIRELESS (204 Un.)</td>
+            <td>
+                <ul>
+                    <li>Licença para expansão unitária de gerenciamento de APs [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 05, 153].</li>
+                    <li>Deve ser compatível com os pontos de acesso (APs) deste edital [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 05, 154].</li>
+                    <li>Deve ter <b>suporte de 60 meses na modalidade 24x7 NBD</b> (Next Business Day) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 05, 156].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 05, 153-158</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 06: PONTO DE ACESSO PADRÃO WI-FI 6 TIPO I (136 Un.)</td>
+            <td>
+                <ul>
+                    <li>Deve ser do <b>mesmo fabricante da controladora virtual SmartZone</b> existente no IFB [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 161].</li>
+                    <li>Deve possuir <b>Homologação ANATEL</b> e estar listado como **Wi-Fi CERTIFIED 6** [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 162, 163].</li>
+                    <li>Suportar no mínimo <b>500 usuários wireless simultâneos</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 166].</li>
+                    <li>Alimentação via PoE (802.3at/af) através de única interface de rede [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 168].</li>
+                    <li>Possuir 2 interfaces ethernet 10/100/1000 Mbps; Rádio embarcado para IoT (BLE e ZigBee) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 171, 172].</li>
+                    <li>Deverá suportar <b>4 fluxos espaciais</b> (MIMO) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 182].</li>
+                    <li>Garantia do fabricante na modalidade <b>LIFETIME</b>, incluindo evolução para novas versões [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 214, 216].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 06, 159-217</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 07: PONTO DE ACESSO PADRÃO WI-FI 6 TIPO II (52 Un.)</td>
+            <td>
+                <ul>
+                    <li>Deve ser do **mesmo fabricante da controladora virtual SmartZone** existente no IFB [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 220].</li>
+                    <li>Deve possuir Homologação ANATEL e estar listado como **Wi-Fi CERTIFIED 6** [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 221, 222].</li>
+                    <li>Possuir 2 interfaces ethernet: 1 x 10/100/1000 Mbps e 1 x <b>1/2.5 Gbps (Multigigabit)</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 230].</li>
+                    <li>Mecanismo de rádio com suporte a <b>6 fluxos espaciais</b> (4x4:4 em 5 GHz e 2x2:2 em 2.4 GHz) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 242].</li>
+                    <li>Garantia do fabricante na modalidade <b>LIFETIME</b>, incluindo evolução para novas versões [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 277, 279].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 07, 218-280</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 08: PONTO DE ACESSO EXTERNO (16 Un.)</td>
+            <td>
+                <ul>
+                    <li>Deve ser do **mesmo fabricante da controladora virtual SmartZone** existente no IFB [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 08, 282].</li>
+                    <li>Deve ser **Wi-Fi CERTIFIED 6** e possuir Homologação ANATEL [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 08, 285, 284].</li>
+                    <li>Suportar temperatura de operação entre -20°C a 65°C e possuir <b>certificação IP67</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 08, 292, 329].</li>
+                    <li>Suportar Multi User MIMO (MU-MIMO) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 08, 314].</li>
+                    <li>Garantia do fabricante na modalidade **NBD** (Next Business Day) pelo prazo mínimo de <b>60 (sessenta) meses</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 08, 331].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 08, 281-333</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITENS 09/10: INJETOR POE (TIPO I/EXT. e TIPO II) (173 + 56 Un.)</td>
+            <td>
+                <ul>
+                    <li>Deve ser do **mesmo fabricante dos Pontos de Acesso ou homologado e certificado por ele** [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 09, 334; ITEM 10, 341].</li>
+                    <li>Fornecer energia suficiente para habilitar todas as funcionalidades dos APs [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 09, 335; ITEM 10, 342].</li>
+                    <li>Ambos devem ter portas Gigabit [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 09, 336; ITEM 10, 343].</li>
+                    <li>O Item 10 (Tipo II) deve possuir interface que opere na velocidade <b>multigigabit de 1.0/2.5/5Gbps</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 10, 345].</li>
+                    <li>Garantia de 1 (um) ano [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 09, 340; ITEM 10, 348].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 09, 334-340; ITEM 10, 341-348</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 11: SERVIÇO DE CONFIGURAÇÃO E REPASSE DE CONHECIMENTO PARA WLAN (1 Un.)</td>
+            <td>
+                <ul>
+                    <li>Carga horária mínima de <b>36 horas para implantação</b> na modalidade <i>hands’on</i> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 11, 353].</li>
+                    <li>Inclui análise prévia da topologia e arquitetura da rede existente [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 11, 351].</li>
+                    <li>Configuração básica do controlador e alta disponibilidade, criação de Template de configuração e provisionamento [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 11, 354.a, 354.e, 354.g].</li>
+                    <li>Ministrar treinamento (repasse de conhecimentos) para operação da controladora com duração mínima de 4 horas [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 11, 354.h].</li>
+                    <li>Deve ser executado por profissional com <b>certificação oficial do fabricante</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 11, 354.l].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 11, 349-354</span>
+            </td>
+        </tr>
+        
+        <!-- GRUPO 03: SOLUÇÃO DE REDE LAN -->
+        <tr>
+            <td rowspan="9" class="group-header">GRUPO 03 – SOLUÇÃO DE REDE LAN</td>
+            <td class="item-description">ITEM 12: LICENÇA PARA SOFTWARE DE GERENCIAMENTO DOS SWITCHES (LAN) (202 Un.)</td>
+            <td>
+                <ul>
+                    <li>Deve adicionar licença de uso de switch gerenciados na Controladora WLAN (Item 04) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 12, 355].</li>
+                    <li>Deve ser obrigatoriamente do <b>mesmo fabricante dos switches e controladores existente no IFB</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 12, 357].</li>
+                    <li>Deve ser compatível com os Switches especificados (Itens 13, 14 e 15) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 12, 358].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 12, 355-360</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 13: SWITCH CORE COM 24 PORTAS SFP+, MÓDULO SFP+; 2 PORTAS QSFP+ (11 Un.)</td>
+            <td>
+                <ul>
+                    <li>Capacidade de switching ≥ **880 Gbps** e processamento ≥ 655 Mpps [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 366, 365].</li>
+                    <li>Mínimo <b>24 interfaces 1/10GbE SFP/SFP+</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 367].</li>
+                    <li>Fontes de alimentação redundantes internas e <i>hot-swappable</i> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 364].</li>
+                    <li>Empilhamento (stacking) de até 10 unidades com banda agregada mínima de <b>160 Gbps</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 368, 369].</li>
+                    <li>Suportar expansão futura de pelo menos 1 porta <b>100Gbps QSFP28</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 371].</li>
+                    <li>Suportar roteamento L3, incluindo OSPFv2/v3 e BGP [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 461, 463].</li>
+                    <li>Deve ser compatível com a controladora <b>SMARTZONE da Ruckus existente no IFB</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 496].</li>
+                    <li>Suporte de <b>60 meses na modalidade NBD</b> (Next Business Day) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 497].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 13, 361-500</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 14: SWITCH DE ACESSO L3 COM 48 PORTAS POE GIGABIT E 4 SFP+ (32 Un.)</td>
+            <td>
+                <ul>
+                    <li>48 portas 10/100/1000 Mbps RJ-45 (MDI/MDIX automático) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 504, 505].</li>
+                    <li>Mínimo <b>4 portas 1/10 Gbps SFP/SFP+</b> (não combo) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 506].</li>
+                    <li>Suporte a PoE (802.3af) e PoE+ (802.3at) com <b>Power budget PoE de ≥ 370W</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 513, 514].</li>
+                    <li>Capacidade de switching ≥ 174 Gbps; Empilhamento de até 8 unidades [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 508, 512].</li>
+                    <li>Suportar roteamento L3 (RIPv1/v2, OSPFv2) e Web Authentication para usuários sem 802.1x [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 543, 544, 560].</li>
+                    <li>Garantia do fabricante na modalidade <b>LIFETIME</b>, incluindo evolução para novas versões [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 582, 584].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 14, 501-585</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 15: SWITCH DE ACESSO L3 COM 24 PORTAS POE GIGABIT E 4 SFP+ (159 Un.)</td>
+            <td>
+                <ul>
+                    <li>24 portas 10/100/1000 Mbps RJ-45; Mínimo <b>4 portas 1/10 Gbps SFP/SFP+</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 15, 589, 591].</li>
+                    <li>Suporte a PoE (802.3af) e PoE+ (802.3at) com Power budget PoE de ≥ 370W [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 15, 597, 598].</li>
+                    <li>Deve ser do tipo **fanless** (sem ventoinhas) ou permitir operação com ventiladores internos desligados [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 15, 599].</li>
+                    <li>Suportar roteamento L3 (RIPv1/v2, OSPFv2/v3, PIM-DM/S/SSM) e Web Authentication [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 15, 637, 638, 641, 668].</li>
+                    <li>Garantia do fabricante na modalidade <b>LIFETIME</b>, incluindo evolução para novas versões [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 15, 709, 711].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 15, 586-712</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 16: MODULO TRANSCEIVER ATÉ 300M SFP+ DE 10GB SR - MULTIMODO (140 Un.)</td>
+            <td>
+                <ul>
+                    <li>Transceiver SFP+ para fibra óptica multimodo, compatível com padrão <b>10GBASE-SR</b> (até 300 metros) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 16, 721, 722].</li>
+                    <li>Conector LC duplex, velocidade 10GbE [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 16, 723, 724].</li>
+                    <li>Garantia de no mínimo 12 (doze) meses, com reposição em até 5 dias úteis [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 16, 726].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 16, 721-727</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 17: MODULO TRANSCEIVER SFP 1G LX - MONOMODO (70 Un.)</td>
+            <td>
+                <ul>
+                    <li>Transceiver SFP para fibra óptica monomodo, compatível com padrão **1GBASE-LX** (até 10 quilômetros) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 17, 728, 729].</li>
+                    <li>Conector LC duplex, velocidade 1GbE [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 17, 730, 731].</li>
+                    <li>Garantia de no mínimo 12 (doze) meses [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 17, 733].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 17, 728-734</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 18: MODULO TRANSCEIVER SFP+ 10G LR - MONOMODO (50 Un.)</td>
+            <td>
+                <ul>
+                    <li>Transceiver SFP+ 10G para fibra óptica monomodo, compatível com padrão **10GBASE-LR** (até 10 quilômetros) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 18, 735, 736].</li>
+                    <li>Conector LC duplex, velocidade 10GbE [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 18, 737, 738].</li>
+                    <li>Garantia de no mínimo 12 (doze) meses [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 18, 740].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 18, 735-741</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITENS 19/20: CABO DAC DE 10G (1 M e 3 M) (192 + 344 Un.)</td>
+            <td>
+                <ul>
+                    <li>Cabo para interligação de dispositivos via <b>10 Gigabit Ethernet, padrão SFP+</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 19, 742; ITEM 20, 748].</li>
+                    <li>Deve vir com <b>dois transceivers/conectores SFP+ soldados</b> diretamente no cabo (Direct Attach Cable - DAC) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 19, 744; ITEM 20, 750].</li>
+                    <li>Garantia de no mínimo 12 (doze) meses [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 19, 747; ITEM 20, 753].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 19, 742-747; ITEM 20, 748-753</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="item-description">ITEM 21: SERVIÇOS DE IMPLANTAÇÃO E TRANSFERÊNCIA DE TECNOLOGIA PARA SWITCHES DE REDE (1 Un.)</td>
+            <td>
+                <ul>
+                    <li>Instalação e configuração de no mínimo <b>10 switches de rede</b> [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 21, 755].</li>
+                    <li>Inclui planejamento e análise de requisitos (topologia, alocação de IPs, políticas de segurança, stacking, LACP) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 21, 765].</li>
+                    <li>Configuração de Gerência e Monitoramento no <b>MÓDULO DE GERÊNCIA DE REDE</b> (SmartZone) e configuração de autenticação no MÓDULO DE CONTROLE DE ACESSO [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 21, 767, 768].</li>
+                    <li>Configuração de <i>stacking</i> (2 pilhas, máximo 4 switches) e agregação de links (LACP) em até 10 switches [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 21, 760, 761].</li>
+                    <li>Ministrar treinamento de 4 horas para capacitar a equipe (VLANs, ACLs, LACP, SmartZone, troubleshooting, etc.) [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 21, 762, 787].</li>
+                    <li>Realizar documentação completa das configurações [Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 21, 786].</li>
+                </ul>
+            </td>
+            <td>
+                <span class="citation">Edital atualizado - Aquisicao de Switches e pontos de acesso.pdf, ANEXO I, ITEM 21, 754-792</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
