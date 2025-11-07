@@ -1,0 +1,154 @@
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    h3 {
+        color: #333333;
+    }
+</style>
+
+<h3>MATRIZ DE REQUISITOS TÉCNICOS DA SOLUÇÃO (STORAGE E SWITCH SAN)</h3>
+<table>
+    <thead>
+        <tr>
+            <th>ITEM LICITADO</th>
+            <th>REQUISITO PRINCIPAL</th>
+            <th>RESUMO DO REQUISITO</th>
+            <th>FONTE/DETALHE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="7">
+                <b>Solução de Armazenamento All-Flash</b>
+                <br>(Item principal)
+            </td>
+            <td>Capacidade Líquida Mínima</td>
+            <td>Mínimo de <b>1.300 TiB</b> (mil e trezentos tebibytes) líquidos de armazenamento.</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.3.1; [1]-3904277_Termo.pdf, Seção 2.5.1</td>
+        </tr>
+        <tr>
+            <td>Configuração de Discos</td>
+            <td>Configurados em <b>RAID de dupla-paridade</b>. O subsistema deve ser baseado em discos All-Flash (SSD/NVME).</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.3.1; [2]-3830990_Estudo.pdf, Item 5</td>
+        </tr>
+        <tr>
+            <td>Acesso a Dados (Block)</td>
+            <td>Suporte obrigatório aos protocolos <b>iSCSI</b> e <b>Fibre Channel (FCP)</b>.</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.7.1.4 e 2.7.1.5</td>
+        </tr>
+        <tr>
+            <td>Acesso a Dados (File)</td>
+            <td>Suporte obrigatório a <b>CIFS/SMB</b> (2.0, 3.0 e 3.1.1), <b>NFS</b> (v3, v4, v4.1, v4.2 e pNFS) e <b>NDMP</b> (v4).</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.7.1.1 a 2.7.1.3</td>
+        </tr>
+        <tr>
+            <td>Arquitetura e Redundância</td>
+            <td>Acesso a qualquer volume deve ser possível por todas as controladoras do equipamento, garantindo redundância em caso de falha de uma controladora.</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.4.11</td>
+        </tr>
+        <tr>
+            <td>Segurança e Funcionalidades</td>
+            <td>Suporte à proteção <b>anti-ransomware</b> e funcionalidade de <b>Deduplicação Inline</b> (se a capacidade líquida for atendida). Deve suportar provisionamento dinâmico (Thin Provisioning) para SAN e NAS.</td>
+            <td>[2]-3830990_Estudo.pdf, Item 5; TR_253002-000015-2025.pdf, Seção 2.8.1</td>
+        </tr>
+        <tr>
+            <td>Software de Gerenciamento</td>
+            <td>Software para análises de desempenho online e por histórico (mínimo de 1 ano), com capacidade de gerar estatísticas e relatórios.</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.14.10 e 2.14.11</td>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                <b>Solução de Conectividade Switch SAN</b>
+                <br>(Item principal)
+            </td>
+            <td>Portas e Velocidade</td>
+            <td><b>48 portas ativas e licenciadas</b>, padrão <b>Fiber Channel</b> de, no mínimo, <b>32 Gbps full duplex</b>.</td>
+            <td>TR_253002-000015-2025.pdf, Seção 1.1; [1]-3904277_Termo.pdf, Seção 1.1</td>
+        </tr>
+        <tr>
+            <td>Banda Agregada e Protocolos</td>
+            <td>Banda agregada de no mínimo <b>1536 Gbps</b>. Deve suportar as classes de serviço Class 2, Class 3 e Class F.</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.16.35 e 2.16.36</td>
+        </tr>
+        <tr>
+            <td>Qualidade de Serviço (QoS)</td>
+            <td>Funcionalidade de <b>Quality of Service (QoS)</b>, com pelo menos dois níveis de prioridade (low and high), e suporte à análise de tráfego (origem e destino).</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.16.14 e 2.16.15</td>
+        </tr>
+        <tr>
+            <td>Segurança e Gerenciamento</td>
+            <td>Suporte a <b>Enhanced Zoning</b> para políticas de segurança granulares e porta de gerenciamento padrão Ethernet.</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.16.17 e 2.16.38</td>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                <b>Serviços de Instalação, Configuração e Migração</b>
+            </td>
+            <td>Equipe Técnica</td>
+            <td>Profissionais devidamente qualificados e <b>certificados pelo fabricante em nível especialista/Engenheiro ou superior</b>, com experiência comprovada em ambiente de missão crítica.</td>
+            <td>Especificacao Solucao de armazenamento.pdf, Seção 1.4, 1.10.2.1, 1.10.1.1</td>
+        </tr>
+        <tr>
+            <td>Plano de Implantação</td>
+            <td>Elaborar e entregar Projeto/Plano de Implantação (EAP, cronograma, Matriz de Riscos, etc.) em até 20 dias da assinatura do contrato.</td>
+            <td>[1]-3904277_Termo.pdf, Seção 4.10; [1]-3904277_Termo.pdf, Seção 4.15.2</td>
+        </tr>
+        <tr>
+            <td>Migração de Dados</td>
+            <td>Migração de <b>719 TB</b> (dados atuais do DELL EMC2 UNITY 500) de forma <b>on-line</b>, via virtualização de storage externo, com no máximo duas paradas por grupo de LUNs.</td>
+            <td>Especificacao Solucao de armazenamento.pdf, Seção 1.14, 1.14.6, 1.15</td>
+        </tr>
+        <tr>
+            <td>Documentação Final</td>
+            <td>Entregar documentação técnica completa em meio magnético, incluindo topologias física/lógica, mapeamento de portas, roteiros de configuração e Plano de Validação/Contingência/Retorno.</td>
+            <td>Especificacao Solucao de armazenamento.pdf, Seção 1.18.1, 1.18.2.3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <b>Serviço de Transferência de Conhecimento/Capacitação</b>
+            </td>
+            <td>Escopo e Duração</td>
+            <td>Para <b>6 (seis) participantes</b>, abrangendo planejamento, instalação, configuração e manutenção de toda a solução. Deve ser baseada em <b>conteúdo programático oficial do fabricante</b>.</td>
+            <td>Especificacao Solucao de armazenamento.pdf, Seção 2.1, 2.2, 2.4, 2.5</td>
+        </tr>
+        <tr>
+            <td>Prazo</td>
+            <td>Realizada em até <b>60 (sessenta) dias corridos</b> após a emissão da ordem de serviços.</td>
+            <td>Especificacao Solucao de armazenamento.pdf, Seção 2.5</td>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                <b>Requisitos Contratuais/Gerais</b>
+            </td>
+            <td>Garantia e Suporte</td>
+            <td>Mínimo de <b>60 (sessenta) meses</b> de garantia e suporte técnico do fabricante, na modalidade de atendimento <b>24x7</b>.</td>
+            <td>TR_253002-000015-2025.pdf, Seção 1.1; [1]-3904277_Termo.pdf, Seção 4.17, 4.18</td>
+        </tr>
+        <tr>
+            <td>Integridade da Solução</td>
+            <td>A solução deve ser integralmente proveniente de <b>um único fabricante</b>. Não são aceitos produtos OEM, licenças ou componentes de outros fabricantes.</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.14.19; [1]-3904277_Termo.pdf, Seção 2.14.19</td>
+        </tr>
+        <tr>
+            <td>Certificações do Equipamento</td>
+            <td>Materiais certificados pelo INMETRO e em conformidade com normas técnicas (ABNT, IEC61000, IEC 62368, CISPR32, CISPR35 e <b>80plus Platinum</b>).</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.2.5; [1]-3904277_Termo.pdf, Seção 2.2.5</td>
+        </tr>
+        <tr>
+            <td>Status de Produção</td>
+            <td>Todos os equipamentos devem ser novos, de primeiro uso, em <b>fase de comercialização normal</b> e pertencer à geração atual do fabricante (não EOL ou remanufaturados).</td>
+            <td>TR_253002-000015-2025.pdf, Seção 2.3.2; [1]-3904277_Termo.pdf, Seção 2.3.2; [3]-3919585_Edital_30_2025.pdf, Seção 7.16.1</td>
+        </tr>
+    </tbody>
+</table>
