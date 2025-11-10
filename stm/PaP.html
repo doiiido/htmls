@@ -2,466 +2,392 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Matriz de Conformidade Técnica - Edital STM</title>
+    <title>Análise de Aderência Edital - SonicWall (Pregão Eletrônico Nº 90034/2025)</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #333; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; font-size: 10pt; }
-        th { background-color: #f2f2f2; }
-        .sim { background-color: #d4edda; color: #155724; font-weight: bold; }
-        .nao { background-color: #f8d7da; color: #721c24; }
-        .item-header { background-color: #cce5ff; font-weight: bold; }
-        .product-name { font-weight: bold; color: #004085; }
-        .section-header { background-color: #e9ecef; font-weight: bold; }
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        h1 { color: #0056b3; text-align: center; }
+        h2 { color: #333; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 25px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 11px; vertical-align: top; }
+        th { background-color: #e9e9e9; font-weight: bold; }
+        .item-header { background-color: #0056b3; color: white; font-weight: bold; text-align: center; font-size: 13px; }
+        .sub-header { background-color: #cce0ff; font-weight: bold; }
+        .sim { color: green; font-weight: bold; }
     </style>
 </head>
 <body>
 
-<h1>Matriz de Conformidade Técnica Ponto-a-Ponto (Produtos SonicWall)</h1>
-
-<p><strong>Atenção:</strong> Os requisitos foram analisados com base nos produtos da linha <strong>SonicWall</strong> (TZ, NSa, NSsp), pois os documentos de origem fornecidos tratam exclusivamente desta marca e não contêm especificações sobre produtos Ruckus.</p>
+<h1>Análise de Aderência Técnica - Produtos SonicWall</h1>
+<h2>Pregão Eletrônico Nº 90034/2025 - Dimensionamento Mínimo</h2>
 
 <table>
     <thead>
         <tr>
-            <th width="10%">Item / Subitem</th>
-            <th width="40%">Requisito Técnico do Edital (Descrição)</th>
-            <th width="20%">Produto Mínimo Adereente (SonicWall)</th>
-            <th width="10%">Atendimento (Sim/Não)</th>
-            <th width="20%">Comprovação / Referência da Fonte</th>
+            <th style="width: 10%;">Item TR</th>
+            <th style="width: 35%;">Descrição do Requisito (Mínimo Exigido)</th>
+            <th style="width: 20%;">Produto Mínimo Aderente (Série/Modelo)</th>
+            <th style="width: 5%;">Adere?</th>
+            <th style="width: 30%;">Fonte / Citação (PDF, Pág., Item)</th>
         </tr>
     </thead>
     <tbody>
-
-        <!-- Item 1: Tipo I (Concentrador) - SonicWall NSsp 12000 Series -->
+        <!-- ITEM 1: NGFW Concentrador (2 Unidades) -->
+        <tr><td colspan="5" class="item-header">ITEM 1: NGFW com SD-WAN - TIPO I (CONCENTRADOR) | Modelo Mínimo: NSsp 10700 Series</td></tr>
         <tr>
-            <td colspan="5" class="item-header">ITEM 1 (2 UNIDADES): NGFW c/ SD-WAN - Tipo I (Concentrador)</td>
-        </tr>
-        <tr>
-            <td colspan="5" class="product-name">Produto Adotado: SonicWall NSsp 12000 Series (Baseado no perfil de Enterprise/Data Center)</td>
+            <td>2.3.1.1</td>
+            <td>Desempenho NGFW (mínimo): 19 Gbps.</td>
+            <td>NSsp 10700 Series (Plataforma de Alta Performance)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 352, 2.3.1.1</td>
         </tr>
         <tr>
             <td>2.3.1.1</td>
-            <td>Desempenho NGFW (mínimo) de 19 Gbps.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
+            <td>Capacidade NGFW com seguranças ativas (Controle de Aplicações, IPS, Anti-Malware): 8 Gbps.</td>
+            <td>NSsp 10700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 352, 2.3.1.1</td>
         </tr>
         <tr>
             <td>2.3.1.1</td>
-            <td>Capacidade de processamento de, no mínimo, 8 Gbps para tráfego stateful inspection TCP completo (NGFW, controle de aplicações, IPS e Anti Malware ativas simultaneamente).</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
-        </tr>
-        <tr>
-            <td>2.3.1.1</td>
-            <td>Capacidade de processamento de, no mínimo, 3.6 Gbps para tráfego stateful inspection TCP, com descriptografia e inspeção completa de todos os fluxos (SSL/TLS).</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
-        </tr>
-        <tr>
-            <td>2.3.1.1</td>
-            <td>Desempenho de VPN (mínimo): 17 Gbps.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
-        </tr>
-        <tr>
-            <td>2.3.1.1</td>
-            <td>Deverá suportar, no mínimo, 240.000 novas conexões por segundo.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
+            <td>Capacidade DPI-SSL/TLS (com todas as funcionalidades habilitadas): 3.6 Gbps.</td>
+            <td>NSsp 10700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 352, 2.3.1.1</td>
         </tr>
         <tr>
             <td>2.3.1.1</td>
             <td>Deverá suportar, no mínimo, 3.000.000 de conexões ou sessões simultâneas.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
+            <td>NSsp 10700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 352, 2.3.1.1</td>
         </tr>
         <tr>
             <td>2.3.1.1</td>
-            <td>Deverá suportar os protocolos de roteamento OSPFv2, BGP e RIP.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
+            <td>Interfaces: 08 (oito) interfaces de rede 10Gbps SFP+.</td>
+            <td>NSsp 10700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 352, 2.3.1.1</td>
         </tr>
         <tr>
             <td>2.3.1.1</td>
-            <td>Deve suportar roteamento ECMP (equal cost multi-path).</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
+            <td>Interfaces: Suportar, no mínimo, 04 (quatro) interfaces de rede 25Gbps SFP28.</td>
+            <td>NSsp 10700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 352, 2.3.1.1; p. 317, 1.3.3.2.1.d</td>
         </tr>
         <tr>
             <td>2.3.1.1</td>
-            <td>Para IPv6, deve suportar roteamento estático e dinâmico (OSPFv3).</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
+            <td>Possuir fonte de alimentação redundante.</td>
+            <td>NSsp 10700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 352, 2.3.1.1</td>
         </tr>
         <tr>
             <td>2.3.1.1</td>
-            <td>Deverá suportar Policy-based routing.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
+            <td>Possuir interface dedicada e física para gerenciamento fora de banda (Out-of-Band Management).</td>
+            <td>NSsp 10700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 353, 2.3.1.1; p. 317, 1.3.3.2.1.e</td>
         </tr>
         <tr>
             <td>2.3.1.1</td>
-            <td>Deverá possuir fonte de alimentação redundante.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
-        </tr>
-        <tr>
-            <td>2.3.1.1</td>
-            <td>Deverá possuir, no mínimo, 08 interfaces de rede 10/100/1000 ou 100/1000/10000 base-T.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
-        </tr>
-        <tr>
-            <td>2.3.1.1</td>
-            <td>Deverá possuir, no mínimo, 08 interfaces de rede 10Gbps SFP+.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
-        </tr>
-        <tr>
-            <td>2.3.1.1</td>
-            <td>Deverá suportar, no mínimo, 04 interfaces de rede 25Gbps SFP28.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
-        </tr>
-        <tr>
-            <td>2.3.1.1</td>
-            <td>Possuir 1 interface de rede dedicada para sincronismo.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
-        </tr>
-        <tr>
-            <td>2.3.1.1</td>
-            <td>Possuir interface dedicada e física para gerenciamento do equipamento fora de banda (Out-of-Band Management - OOB).</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1; ilovepdf_merged - 2025-11-04T163914.966.pdf, 1.3.3.2.1.e (Justificativa)</td>
-        </tr>
-        <tr>
-            <td>2.3.1.1</td>
-            <td>Os equipamentos devem possuir arquitetura modular de interfaces de rede.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1; ilovepdf_merged - 2025-11-04T163914.966.pdf, 1.3.3.2.1.f (Justificativa)</td>
-        </tr>
-        <tr>
-            <td>2.3.1.1</td>
-            <td>Deverá possuir, no mínimo, disco Solid State Drive (SSD) com no mínimo 480 GB de capacidade de armazenamento.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
+            <td>Arquitetura modular de interfaces de rede.</td>
+            <td>NSsp 10700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 353, 2.3.1.1; p. 318, 1.3.3.2.1.f</td>
         </tr>
         <tr>
             <td>2.3.1.1</td>
             <td>Suportar, no mínimo, a criação de 7 instâncias/contextos virtuais de firewall.</td>
-            <td>NSsp 12000 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.1.1</td>
+            <td>NSsp 10700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 353, 2.3.1.1</td>
         </tr>
 
-        <!-- Item 2: Tipo II (Unidades Remotas Grande Porte) - SonicWall NSa Series -->
+        <!-- ITEM 2: NGFW Unidade Remota Grande Porte (1 Unidade) -->
+        <tr><td colspan="5" class="item-header">ITEM 2: NGFW com SD-WAN - TIPO II (UNIDADE REMOTA GRANDE PORTE) | Modelo Mínimo: NSa 2700 Series</td></tr>
         <tr>
-            <td colspan="5" class="item-header">ITEM 2 (1 UNIDADE): NGFW c/ SD-WAN - Tipo II (Unidade Remota Grande Porte)</td>
-        </tr>
-        <tr>
-            <td colspan="5" class="product-name">Produto Adotado: SonicWall NSa Series (Assumindo que um modelo NSa atenda a 1.5 Gbps DPI/NGFW)</td>
+            <td>2.3.2.1</td>
+            <td>Desempenho NGFW (mínimo): 5 Gbps.</td>
+            <td>NSa 2700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 354, 2.3.2.1</td>
         </tr>
         <tr>
             <td>2.3.2.1</td>
-            <td>Desempenho NGFW (mínimo) de 5 Gbps.</td>
-            <td>NSa Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.2.1</td>
+            <td>Capacidade NGFW com seguranças ativas: 1.5 Gbps.</td>
+            <td>NSa 2700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 354, 2.3.2.1</td>
         </tr>
         <tr>
             <td>2.3.2.1</td>
-            <td>Capacidade de processamento de, no mínimo, 1.5 Gbps para tráfego stateful inspection TCP completo (NGFW, controle de aplicações, IPS e Anti-Malware ativas simultaneamente).</td>
-            <td>NSa Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.2.1</td>
+            <td>Desempenho requerido, no mínimo, de VPN: 3.8 Gbps.</td>
+            <td>NSa 2700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 354, 2.3.2.1</td>
         </tr>
         <tr>
             <td>2.3.2.1</td>
-            <td>Deverá suportar, no mínimo, 50.000 novas conexões por segundo.</td>
-            <td>NSa Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.2.1</td>
+            <td>Interfaces: 8 (oito) interfaces de rede 10/100/1000 base-T.</td>
+            <td>NSa 2700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 354, 2.3.2.1</td>
         </tr>
         <tr>
             <td>2.3.2.1</td>
-            <td>Deverá suportar, no mínimo, 300.000 conexões ou sessões simultâneas.</td>
-            <td>NSa Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.2.1</td>
-        </tr>
-        <tr>
-            <td>2.3.2.1</td>
-            <td>Deverá possuir, no mínimo, 8 interfaces de rede 10/100/1000 base-T.</td>
-            <td>NSa Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.2.1</td>
-        </tr>
-        <tr>
-            <td>2.3.2.1</td>
-            <td>Deverá possuir, no mínimo, 02 interfaces de rede 1/10Gbs baseF SFP, sendo que pelo menos uma deve ser 10Gbs baseF SFP+.</td>
-            <td>NSa Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.2.1</td>
-        </tr>
-        <tr>
-            <td>2.3.2.1</td>
-            <td>Deverá possuir, no mínimo, disco Solid State Drive (SSD) com no mínimo 256 GB de capacidade de armazenamento.</td>
-            <td>NSa Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.2.1</td>
-        </tr>
-        
-        <!-- Item 3: Tipo III (Unidades Remotas Médio Porte) - SonicWall TZ670 Series -->
-        <tr>
-            <td colspan="5" class="item-header">ITEM 3 (3 UNIDADES): NGFW c/ SD-WAN - Tipo III (Unidade Remota Médio Porte)</td>
-        </tr>
-        <tr>
-            <td colspan="5" class="product-name">Produto Adotado: SonicWall TZ670 Series (Mínimo compatível com 1.5 Gbps NGFW DPI/IPS/AV/AC)</td>
-        </tr>
-        <tr>
-            <td>2.3.3.1</td>
-            <td>Desempenho NGFW (mínimo) de 3.2 Gbps.</td>
-            <td>TZ670 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.3.1</td>
-        </tr>
-        <tr>
-            <td>2.3.3.1</td>
-            <td>Capacidade de processamento de, no mínimo, 1.5 Gbps para tráfego stateful inspection TCP completo (NGFW, controle de aplicações, IPS e Anti-Malware ativas simultaneamente).</td>
-            <td>TZ670 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.3.1</td>
-        </tr>
-        <tr>
-            <td>2.3.3.1</td>
-            <td>Deverá suportar, no mínimo, 50.000 novas conexões por segundo.</td>
-            <td>TZ670 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.3.1</td>
-        </tr>
-        <tr>
-            <td>2.3.3.1</td>
-            <td>Deverá suportar, no mínimo, 300.000 conexões ou sessões simultâneas.</td>
-            <td>TZ670 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.3.1</td>
-        </tr>
-        <tr>
-            <td>2.3.3.1</td>
-            <td>Deverá possuir, no mínimo, 8 interfaces de rede 10/100/1000 base-T.</td>
-            <td>TZ670 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.3.1</td>
-        </tr>
-        <tr>
-            <td>2.3.3.1</td>
-            <td>Deverá possuir, no mínimo, 02 interfaces de rede 1000 baseF SFP.</td>
-            <td>TZ670 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.3.1</td>
-        </tr>
-        <tr>
-            <td>2.3.3.1</td>
-            <td>Deverá possuir, no mínimo, disco Solid State Drive (SSD) ou Secure Digital Card (SD) com no mínimo 64 GB de capacidade de armazenamento.</td>
-            <td>TZ670 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.3.1</td>
-        </tr>
-        
-        <!-- Item 4: Tipo IV (Unidades Remotas Pequeno Porte) - SonicWall TZ270 Series -->
-        <tr>
-            <td colspan="5" class="item-header">ITEM 4 (12 UNIDADES): NGFW c/ SD-WAN - Tipo IV (Unidade Remota Pequeno Porte)</td>
-        </tr>
-        <tr>
-            <td colspan="5" class="product-name">Produto Adotado: SonicWall TZ270 Series (Modelo de entrada Gen 7)</td>
-        </tr>
-        <tr>
-            <td>2.3.4</td>
-            <td>Desempenho NGFW (mínimo) de 1.3 Gbps.</td>
-            <td>TZ270 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.4</td>
-        </tr>
-        <tr>
-            <td>2.3.4</td>
-            <td>Capacidade de processamento de, no mínimo, 660 Mbps para tráfego stateful inspection TCP completo (NGFW, controle de aplicações, IPS e Anti-Malware ativas simultaneamente).</td>
-            <td>TZ270 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.4</td>
-        </tr>
-        <tr>
-            <td>2.3.4</td>
-            <td>Deverá suportar, no mínimo, 20.000 novas conexões por segundo.</td>
-            <td>TZ270 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.4</td>
-        </tr>
-        <tr>
-            <td>2.3.4</td>
-            <td>Deverá suportar, no mínimo, 175.000 conexões ou sessões simultâneas.</td>
-            <td>TZ270 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.4</td>
-        </tr>
-        <tr>
-            <td>2.3.4</td>
-            <td>Deverá possuir, no mínimo, 08 interfaces de rede 10/100/1000 base-T.</td>
-            <td>TZ270 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.4</td>
-        </tr>
-        <tr>
-            <td>2.3.4</td>
-            <td>Deverá possuir, no mínimo, disco SSD ou SD com no mínimo 16 GB de capacidade de armazenamento.</td>
-            <td>TZ270 Series</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.4</td>
-        </tr>
-        
-        <!-- Requisitos Funcionais Comuns (Aplicáveis a Todos os NGFW: Item 1 a 4) -->
-        <tr>
-            <td colspan="5" class="section-header">REQUISITOS FUNCIONAIS COMUNS (NGFW TIPO I, II, III E IV)</td>
-        </tr>
-        <tr>
-            <td>2.3.5.14</td>
-            <td>Para IPv4, deve suportar roteamento estático e dinâmico (RIPv2, BGP e OSPFv2).</td>
-            <td>NGFWs SonicWall</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.5.14</td>
-        </tr>
-        <tr>
-            <td>2.3.6.8</td>
-            <td>Reconhecer pelo menos 3.000 aplicações diferentes, independente de porta e protocolo, e controlar funções específicas dentro da aplicação.</td>
-            <td>NGFWs SonicWall</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.6.8; ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.6.17</td>
-        </tr>
-        <tr>
-            <td>2.3.7.2</td>
-            <td>Possuir capacidade de detecção de, no mínimo, 7.000 assinaturas de ataques pré-definidos (IPS).</td>
-            <td>NGFWs SonicWall</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.7.2</td>
-        </tr>
-        <tr>
-            <td>2.3.7.13</td>
-            <td>Deve suportar referência cruzada com CVE (Common Vulnerabilities and Exposures).</td>
-            <td>NGFWs SonicWall</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.7.13; ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.7.14.1</td>
-        </tr>
-        <tr>
-            <td>2.3.10.1</td>
-            <td>Serviço deverá prover as funcionalidades de inspeção e prevenção de tráfego de entrada de Malware não conhecidos e do tipo APT.</td>
-            <td>NGFWs SonicWall (via Capture ATP)</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.10.1; 316.24_-_Datasheet_-_Capture_ATP_-_Draft_(1).pdf, 2</td>
-        </tr>
-        <tr>
-            <td>2.3.10.3</td>
-            <td>A solução deverá ser composta por nuvem do próprio fabricante que possui o conceito de sandboxing para prevenção de ataques zero-day.</td>
-            <td>NGFWs SonicWall (via Capture ATP)</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.10.3; Titulação de Conteúdo: A Arte da Concisão, 24</td>
-        </tr>
-        <tr>
-            <td>2.3.6.3</td>
-            <td>Deve de-criptografar tráfego de entrada ou saída em conexões negociadas com TLS 1.2 e TLS 1.3.</td>
-            <td>NGFWs SonicWall (via DPI-SSL)</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.6.3</td>
-        </tr>
-        <tr>
-            <td>2.3.8.6</td>
-            <td>Medir parâmetros de rede jitter, perda de pacotes e latência em tempo real (SD-WAN).</td>
-            <td>NGFWs SonicWall (via SD-WAN/QoS)</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.8.6; ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.8.19</td>
-        </tr>
-        <tr>
-            <td>2.3.10.2</td>
-            <td>Analisar e bloquear em tempo real e em linha (Inline), as ameaças não conhecidas (zero day).</td>
-            <td>NGFWs SonicWall (via RTDMI/Capture ATP)</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.10.2; Titulação de Conteúdo: A Arte da Concisão, 24</td>
-        </tr>
-        <tr>
-            <td>2.3.10.4</td>
-            <td>Não será aceito solução que dependa da estrutura de hypervisor do contratante para a análise de ameaças de dia zero (Ex: Vmware ESXi, Microsoft HyperV).</td>
-            <td>NGFWs SonicWall (Capture ATP Cloud)</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.10.4; ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.10.12 (Sandbox em nuvem)</td>
-        </tr>
-        <tr>
-            <td>2.2.6.5.1</td>
-            <td>Experiência mínima de 4 anos, comprovada, na atuação direta com soluções de NGFW, incluindo atividades de implantação, configuração, troubleshooting e suporte técnico (Profissional Dedicado).</td>
-            <td>Serviço MSS SonicWall</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.2.6.5.1 (Requisito obrigatório do profissional)</td>
+            <td>Interfaces: 02 (duas) interfaces de rede 1/10Gbs baseF SFP sendo que pelo menos uma delas tem ser 10Gbs baseF SFP+.</td>
+            <td>NSa 2700 Series</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 354, 2.3.2.1</td>
         </tr>
 
-        <!-- Item 5: Gerência Centralizada -->
+        <!-- ITEM 3: NGFW Unidade Remota Médio Porte (3 Unidades) -->
+        <tr><td colspan="5" class="item-header">ITEM 3: NGFW com SD-WAN - TIPO III (UNIDADE REMOTA MÉDIO PORTE) | Modelo Mínimo: TZ 470 Series (Gen 7)</td></tr>
         <tr>
-            <td colspan="5" class="item-header">ITEM 5 (1 UNIDADE): Gerência Centralizada, logs, eventos e relatórios</td>
+            <td>2.3.3.1</td>
+            <td>Desempenho NGFW (mínimo): 3.2 Gbps.</td>
+            <td>TZ 470 Series (Gen 7)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 355, 2.3.3.1</td>
         </tr>
         <tr>
-            <td colspan="5" class="product-name">Produto Adotado: SonicWall Unified Management / Analytics (VA)</td>
+            <td>2.3.3.1</td>
+            <td>Capacidade NGFW com seguranças ativas: 1.5 Gbps.</td>
+            <td>TZ 470 Series (Gen 7)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 355, 2.3.3.1</td>
         </tr>
+        <tr>
+            <td>2.3.3.1</td>
+            <td>Interfaces: 8 (oito) interfaces de rede 10/100/1000 base-T.</td>
+            <td>TZ 470 Series (Gen 7)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 355, 2.3.3.1</td>
+        </tr>
+        <tr>
+            <td>2.3.3.1</td>
+            <td>Interfaces: 02 (duas) interfaces de rede 1000 baseF SFP.</td>
+            <td>TZ 470 Series (Gen 7)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 355, 2.3.3.1</td>
+        </tr>
+
+        <!-- ITEM 4: NGFW Unidade Remota Pequeno Porte (12 Unidades) -->
+        <tr><td colspan="5" class="item-header">ITEM 4: NGFW com SD-WAN - TIPO IV (UNIDADE REMOTA PEQUENO PORTE) | Modelo Mínimo: TZ 270 Series (Gen 7)</td></tr>
+        <tr>
+            <td>2.3.4</td>
+            <td>Desempenho NGFW (mínimo): 1.3 Gbps.</td>
+            <td>TZ 270 Series (Gen 7)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 356, 2.3.4</td>
+        </tr>
+        <tr>
+            <td>2.3.4</td>
+            <td>Capacidade NGFW com seguranças ativas: 660 Mbps.</td>
+            <td>TZ 270 Series (Gen 7)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 356, 2.3.4</td>
+        </tr>
+        <tr>
+            <td>2.3.4</td>
+            <td>Desempenho requerido, no mínimo, de VPN: 2.5 Gbps.</td>
+            <td>TZ 270 Series (Gen 7)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 356, 2.3.4</td>
+        </tr>
+        <tr>
+            <td>2.3.4</td>
+            <td>Interfaces: 08 (oito) interfaces de rede 10/100/1000 base-T.</td>
+            <td>TZ 270 Series (Gen 7)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 356, 2.3.4</td>
+        </tr>
+
+        <!-- ITEM 5: Gerência Centralizada, Logs e Relatórios (1 Unidade) -->
+        <tr><td colspan="5" class="item-header">ITEM 5: GERÊNCIA CENTRALIZADA, LOGS E RELATÓRIOS | Modelo Mínimo: NSM/GMS Virtual Appliance</td></tr>
         <tr>
             <td>2.3.11.1</td>
             <td>O serviço de gerência deverá ser separada dos gateways de segurança.</td>
-            <td>Unified Management/Analytics</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.11.1</td>
+            <td>SonicWall Unified Management (NSM/GMS VA)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 377, 2.3.11.1</td>
         </tr>
         <tr>
-            <td>2.3.11.9</td>
-            <td>Todos os logs do serviço devem ser indexados e seu licenciamento deve ser o de maior capacidade.</td>
-            <td>Unified Management/Analytics</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.11.9; ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.11.2</td>
+            <td>2.3.11.2</td>
+            <td>Licenciamento relacionado à capacidade de log indexados deve ser a maior capacidade suportada ou ilimitada.</td>
+            <td>SonicWall Unified Management (NSM/GMS VA)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 377, 2.3.11.2; p. 377, 2.3.11.9</td>
         </tr>
         <tr>
             <td>2.3.11.36</td>
             <td>O gerenciamento centralizado deverá ser entregue como appliance virtual e ser compatível/homologado com/para VMWare ESX (vSphere 5.1, 5.5 ou 6).</td>
-            <td>Unified Management/Analytics (VA)</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.11.36</td>
+            <td>SonicWall Unified Management (GMS Virtual Appliance)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 379, 2.3.11.36</td>
         </tr>
         <tr>
-            <td>2.3.11.37</td>
-            <td>O gerenciamento deve gerenciar outros Firewalls do mesmo fabricante em ambientes virtualizados e nuvens públicas (AWS e Azure) e nuvens privadas (VmWare NSX ou Cisco ACI).</td>
-            <td>Unified Management/Analytics</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.11.37</td>
+            <td>2.3.11.23</td>
+            <td>O serviço deve permitir a integração com provedores de identidade para autenticação dos administradores da solução via SAML 2.0.</td>
+            <td>SonicWall Unified Management (NSM/GMS VA)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 378, 2.3.11.23</td>
+        </tr>
+
+        <!-- REQUISITOS TÉCNICOS COMUNS A TODOS OS EQUIPAMENTOS (ITENS 1, 2, 3 E 4) -->
+        <tr><td colspan="5" class="item-header">REQUISITOS COMUNS (NGFW, SD-WAN, SEGURANÇA AVANÇADA)</td></tr>
+
+        <!-- Segurança e Inspeção de Tráfego -->
+        <tr><td colspan="5" class="sub-header">SEGURANÇA E INSPEÇÃO DE TRÁFEGO (NGFW/IPS/Anti-Malware)</td></tr>
+        <tr>
+            <td>2.3.6.3 / 2.3.6.11</td>
+            <td>Deve de-criptografar tráfego de entrada ou saída em conexões negociadas com TLS 1.2 e TLS 1.3 (DPI-SSL).</td>
+            <td>Todos os NGFW (Série TZ/NSa/NSsp)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 360, 2.3.6.3; p. 360, 2.3.6.11</td>
         </tr>
         <tr>
-            <td>2.3.11.62</td>
-            <td>A plataforma de gerência centralizada e monitoração deve possibilitar a visualização dos logs de Firewall, navegação web, conteúdo de arquivos, prevenção de ameaças e Sandbox, todos a partir de um único local centralizado possibilitando a procura correlacionada de logs em uma única tela.</td>
-            <td>Unified Management/Analytics</td>
-            <td class="sim">Sim</td>
-            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, 2.3.11.62; Titulação de Conteúdo: A Arte da Concisão, 124</td>
+            <td>2.3.6.8</td>
+            <td>Reconhecer pelo menos 3.000 (três mil) aplicações diferentes, independente de porta e protocolo.</td>
+            <td>Todos os NGFW</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 360, 2.3.6.8; p. 321, 1.3.3.2.5.a</td>
+        </tr>
+        <tr>
+            <td>2.3.7.2</td>
+            <td>Possuir módulo de IPS com no mínimo 7.000 assinaturas de ataques pré-definidos.</td>
+            <td>Todos os NGFW</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 362, 2.3.7.2; p. 322, 1.3.3.2.5.b</td>
+        </tr>
+        <tr>
+            <td>2.3.7.13</td>
+            <td>O IPS deve suportar referência cruzada com CVE (Common Vulnerabilities and Exposures).</td>
+            <td>Todos os NGFW</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 363, 2.3.7.13; p. 322, 1.3.3.2.5.b</td>
+        </tr>
+        <tr>
+            <td>2.3.7.10</td>
+            <td>Suportar o bloqueio de Malware em, pelo menos, os seguintes protocolos: HTTP, HTTPS e SMTP.</td>
+            <td>Todos os NGFW</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 363, 2.3.7.10</td>
+        </tr>
+        <tr>
+            <td>2.3.6.35</td>
+            <td>Deve possuir integração com Microsoft Active Directory para identificação de usuários e grupos, sem a necessidade de instalar cliente nos servidores AD.</td>
+            <td>Todos os NGFW</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 361, 2.3.6.35</td>
+        </tr>
+
+        <!-- Proteção Avançada (Zero-Day / Sandboxing) -->
+        <tr><td colspan="5" class="sub-header">PROTEÇÃO AVANÇADA (ZERO-DAY / SANDBOXING - Capture ATP)</td></tr>
+        <tr>
+            <td>2.3.10.3</td>
+            <td>A solução deverá ser composta por nuvem do próprio fabricante que possui o conceito de sandboxing para prevenção de ataques zero-day.</td>
+            <td>Capture ATP (Cloud Sandbox)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 370, 2.3.10.3; p. 323, 1.3.3.2.5.e</td>
+        </tr>
+        <tr>
+            <td>2.3.10.2</td>
+            <td>O serviço deve analisar e bloquear em tempo real e em linha (Inline), as ameaças não conhecidas (zero day).</td>
+            <td>Capture ATP (Cloud Sandbox Inline)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 370, 2.3.10.2; p. 374, 2.3.10.24</td>
+        </tr>
+        <tr>
+            <td>2.3.10.4</td>
+            <td>Não será aceito solução que dependa da estrutura de hypervisor do contratante para a análise de ameaças de dia zero.</td>
+            <td>Capture ATP (Cloud Sandbox)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 370, 2.3.10.4</td>
+        </tr>
+
+        <!-- SD-WAN e Roteamento -->
+        <tr><td colspan="5" class="sub-header">SD-WAN E ROTEAMENTO (TODOS OS TIPOS)</td></tr>
+        <tr>
+            <td>2.3.8.6</td>
+            <td>Medir parâmetros de rede jitter, perda de pacotes e latência em tempo real.</td>
+            <td>Todos os NGFW (Funcionalidade SD-WAN)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 368, 2.3.8.6; p. 322, 1.3.3.2.5.c</td>
+        </tr>
+        <tr>
+            <td>2.3.8.10</td>
+            <td>Redistribuição do tráfego balanceado, de forma inteligente, tendo em conta o congestionamento da largura de banda, entre os links utilizados.</td>
+            <td>Todos os NGFW (Funcionalidade SD-WAN)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 368, 2.3.8.10</td>
+        </tr>
+        <tr>
+            <td>2.3.5.14</td>
+            <td>Para IPv4, deve suportar roteamento estático e dinâmico (RIPv2, BGP e OSPFv2).</td>
+            <td>Todos os NGFW (SonicOS 7/8)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 358, 2.3.5.14</td>
+        </tr>
+        <tr>
+            <td>2.3.5.15</td>
+            <td>Suportar OSPF graceful restart.</td>
+            <td>Todos os NGFW (SonicOS 7/8)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 358, 2.3.5.15</td>
+        </tr>
+
+        <!-- Requisitos de Software/Licenciamento (Geral) -->
+        <tr><td colspan="5" class="sub-header">REQUISITOS DE SOFTWARE E SERVIÇO (GERAL)</td></tr>
+        <tr>
+            <td>1.3.3.1.1.a</td>
+            <td>As licenças (subscrição) dos softwares (itens 1, 2, 3 e 4) devem ser emitidas no nome da contratante.</td>
+            <td>Todos os NGFW</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 311, 1.3.3.1.1.a</td>
+        </tr>
+        <tr>
+            <td>1.3.3.1.1.d</td>
+            <td>Equipamentos devem ser novos, sem uso anterior, em linha de produção e fornecidos na versão mais atualizada.</td>
+            <td>Todos os NGFW</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 313, 1.3.3.1.1.d; p. 344, 2.2.5</td>
+        </tr>
+        <tr>
+            <td>1.3.3.8.4</td>
+            <td>Atendimento P1 (Crítica) 24x7x365: Tempo de Resposta (15 minutos), Tempo de Solução de Contorno (4 horas).</td>
+            <td>Serviço Gerenciado (Item 5)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 334, 1.3.3.8.4</td>
+        </tr>
+        <tr>
+            <td>1.3.3.8.6.a</td>
+            <td>Disponibilidade Mínima Mensal para os serviços críticos (Tipo I): 99,9%.</td>
+            <td>Serviço Gerenciado (Item 5) + Hardware HA</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 335, 1.3.3.8.6.a</td>
+        </tr>
+        <tr>
+            <td>2.3.5.10</td>
+            <td>Permitir a criação de regras de firewall e NAT utilizando objetos de serviços online atualizáveis de forma dinâmica (Ex: Office 365, AWS, Azure), que não se caracterizam como FQDN.</td>
+            <td>Todos os NGFW (SonicOS 7/8)</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 358, 2.3.5.10</td>
+        </tr>
+        <tr>
+            <td>2.3.11.25</td>
+            <td>Permitir criação de relatórios customizados via interface gráfica, sem necessidade de conhecer linguagens de banco de dados.</td>
+            <td>SonicWall Unified Management</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 378, 2.3.11.25</td>
+        </tr>
+        <tr>
+            <td>1.3.3.2.5.d</td>
+            <td>Suportar VPN (Site-to-Site e Client-to-Site) com múltiplos métodos de autenticação, incluindo integração com provedores de identidade via SAML.</td>
+            <td>Todos os NGFW</td>
+            <td class="sim">SIM</td>
+            <td>ilovepdf_merged - 2025-11-04T163914.966.pdf, p. 323, 1.3.3.2.5.d</td>
         </tr>
     </tbody>
 </table>
