@@ -1,101 +1,276 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Matriz de Requisitos - Pregão Eletrônico nº 90025/2025</title>
-<style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1 { text-align: center; color: #2c3e50; }
-    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    th { background-color: #f4f4f4; }
-    tr:nth-child(even) { background-color: #fafafa; }
-    .fonte { font-size: 0.9em; color: #555; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de Requisitos Técnicos - Pregão Eletrônico Nº 90.025/2025 (PRODABEL)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 25px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .item-header {
+            background-color: #3f6e9b;
+            color: white;
+            font-size: 1.1em;
+        }
+        .citation {
+            font-size: 0.8em;
+            color: #555;
+            display: block;
+            margin-top: 5px;
+        }
+        .requisito {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-<h1>Matriz de Requisitos - Pregão Eletrônico nº 90025/2025</h1>
-<table>
-<thead>
-<tr>
-    <th>Item</th>
-    <th>Descrição Resumida</th>
-    <th>Part Numbers</th>
-    <th>Quantidade</th>
-    <th>Principais Requisitos Técnicos</th>
-    <th>Fonte</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>1</td>
-    <td>Solução de Controle para gerenciamento centralizado dos Pontos de Acesso sem fio instalada e configurada</td>
-    <td>L09-VSCG-WW00; S62-VSCG-5L00</td>
-    <td>1</td>
-    <td>
-        - Sistema de controle centralizado<br>
-        - Instalação e configuração inclusas<br>
-        - Compatibilidade com APs Ruckus<br>
-        - SLA com tempos de resposta (4h crítico, 8h urgente)<br>
-        - Garantia mínima de 60 meses
-    </td>
-    <td class="fonte">Edital 90025.pdf, pág. 2, item 2.1; Anexo I - Termo de Referência e anexos.pdf, pág. 7, item 5.5.4</td>
-</tr>
-<tr>
-    <td>2</td>
-    <td>Ponto de Acesso gerenciado INDOOR, com licença perpétua, PoE, cabo de força e acessórios</td>
-    <td>901-R650-NC00; L09-0001-SG00; S62-0001-5LSG</td>
-    <td>4000</td>
-    <td>
-        - Licença perpétua<br>
-        - Power Injector (PoE)<br>
-        - 3 cabos UTP Cat6 (2x1,5m + 1x2,5m)<br>
-        - Certificação dos cabos<br>
-        - Garantia mínima de 60 meses
-    </td>
-    <td class="fonte">Edital 90025.pdf, pág. 2-3, item 2.1; Anexo I - Termo de Referência e anexos.pdf, pág. 2</td>
-</tr>
-<tr>
-    <td>3</td>
-    <td>Ponto de Acesso gerenciado OUTDOOR, OMNIDIRECIONAL, com licença perpétua, PoE e acessórios</td>
-    <td>901-T350-NC20; 804-T350-5R00; L09-0001-SG00; S62-0001-5LSG</td>
-    <td>1400</td>
-    <td>
-        - Licença perpétua<br>
-        - Power Injector (PoE)<br>
-        - Cabo de força<br>
-        - 3 cabos UTP Cat6 (2x1,5m + 1x2,5m)<br>
-        - Certificação dos cabos
-    </td>
-    <td class="fonte">Edital 90025.pdf, pág. 3, item 2.1; Anexo I - Termo de Referência e anexos.pdf, pág. 2</td>
-</tr>
-<tr>
-    <td>4</td>
-    <td>Ponto de Acesso gerenciado OUTDOOR, DIRECIONAL, com licença perpétua, PoE e acessórios</td>
-    <td>901-T350-NC51; 804-T350-5R00; L09-0001-SG00; S62-0001-5LSG</td>
-    <td>600</td>
-    <td>
-        - Licença perpétua<br>
-        - Power Injector (PoE)<br>
-        - Cabo de força<br>
-        - 3 cabos UTP Cat6 (2x1,5m + 1x2,5m)<br>
-        - Certificação dos cabos
-    </td>
-    <td class="fonte">Edital 90025.pdf, pág. 3, item 2.1; Anexo I - Termo de Referência e anexos.pdf, pág. 2</td>
-</tr>
-<tr>
-    <td>5</td>
-    <td>Power Injector 24W (PoE) com cabo de força</td>
-    <td>902-0162-BR00</td>
-    <td>1800</td>
-    <td>
-        - Compatível com APs especificados<br>
-        - Cabo de força incluso<br>
-        - Garantia mínima de 60 meses
-    </td>
-    <td class="fonte">Edital 90025.pdf, pág. 4, item 2.1; Anexo I - Termo de Referência e anexos.pdf, pág. 2</td>
-</tr>
-</tbody>
-</table>
+
+<div class="container">
+    <h1>Matriz de Requisitos Técnicos da Solução de Rede Sem Fio</h1>
+    <h2>Pregão Eletrônico Nº 90.025/2025 - Registro de Preços (PRODABEL)</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">ITEM</th>
+                <th style="width: 20%;">DESCRIÇÃO / PART NUMBER</th>
+                <th style="width: 10%;">QUANTIDADE (QTDE)</th>
+                <th style="width: 45%;">REQUISITOS TÉCNICOS ESPECÍFICOS E GERAIS</th>
+                <th style="width: 20%;">INFORMAÇÕES DE VALOR ESTIMADO</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <!-- ITEM 1 -->
+            <tr>
+                <td class="item-header">1</td>
+                <td class="item-header">
+                    Solução de Controle para gerenciamento centralizado dos Pontos de Acesso sem fio, instalada e configurada (Unid)
+                </td>
+                <td class="item-header">1</td>
+                <td>
+                    <div class="requisito">
+                        **Part Numbers Exigidos:** L09-VSCG-WW00 e S62-VSCG-5L00
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 1], [Edital 90025.pdf, 2.1, ITEM 148]</span>
+                    </div>
+                    <div class="requisito">
+                        **Escopo:** Deve ser instalada e configurada
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 1], [Edital 90025.pdf, 2.1, ITEM 148]</span>
+                    </div>
+                    <div class="requisito">
+                        **Cronograma:** O cronograma de instalação das controladoras (sistema de gerenciamento) será elaborado em comum acordo entre as partes, em até **10 (dez) dias corridos** após o recebimento da Nota de Empenho
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 5.1.1, ITEM 13]</span>
+                    </div>
+                    <div class="requisito">
+                        **Local de Configuração:** A configuração da solução de controle será feita na Prodabel
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 5.3.2, ITEM 15]</span>
+                    </div>
+                    <div class="requisito">
+                        **SLA de Garantia (Específico para Item 1):** Prazos de resposta para atendimento e resolução de suporte: Informacional: 08 horas; Normal: 24 horas; Alerta (degradação): 12 horas; Urgente (precário): 08 horas; Severo (parcial): 06 horas; Crítico (paralisação total): 04 horas
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 5.5.4.2.1, ITEM 22 e 23]</span>
+                    </div>
+                </td>
+                <td class="item-header">Valor Sigiloso</td>
+            </tr>
+
+            <!-- ITEM 2 -->
+            <tr>
+                <td>2</td>
+                <td>
+                    Equipamento de Ponto de Acesso gerenciado, **INDOOR** (Unid)
+                </td>
+                <td>4000</td>
+                <td>
+                    <div class="requisito">
+                        **Part Numbers Exigidos:** 901-R650-NC00, L09-0001-SG00, S62-0001-5LSG
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 2], [Edital 90025.pdf, 2.1, ITEM 149]</span>
+                    </div>
+                    <div class="requisito">
+                        **Requisitos de Acessórios:** Deve incluir licença perpétua, Power Injector (PoE) com cabo de força, além de qualquer dispositivo/acessório necessário à instalação e ao perfeito funcionamento
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 2], [Edital 90025.pdf, 2.1, ITEM 148-149]</span>
+                    </div>
+                    <div class="requisito">
+                        **Requisitos de Cabeamento:** Deve incluir **3 (três) cabos UTP Cat6**, sendo dois cabos com 1,5m e um cabo com 2,5m, com certificação
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 2], [Edital 90025.pdf, 2.1, ITEM 149]</span>
+                    </div>
+                </td>
+                <td>Valor Sigiloso</td>
+            </tr>
+
+            <!-- ITEM 3 -->
+            <tr>
+                <td>3</td>
+                <td>
+                    Equipamento de Ponto de Acesso gerenciado, **OUTDOOR, OMNIDIRECIONAL** (Unid)
+                </td>
+                <td>1400</td>
+                <td>
+                    <div class="requisito">
+                        **Part Numbers Exigidos:** 901-T350-NC20, 804-T350-5R00, L09-0001-SG00, S62-0001-5LSG
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 3], [Edital 90025.pdf, 2.1, ITEM 150]</span>
+                    </div>
+                    <div class="requisito">
+                        **Requisitos de Acessórios:** Deve incluir licença perpétua, Power Injector (PoE) com cabo de força, além de qualquer dispositivo/acessório necessário à instalação e ao perfeito funcionamento
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 3], [Edital 90025.pdf, 2.1, ITEM 150]</span>
+                    </div>
+                    <div class="requisito">
+                        **Requisitos de Cabeamento:** Deve incluir **3 (três) cabos UTP Cat6**, sendo dois cabos com 1,5m e um cabo com 2,5m, com certificação
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 3], [Edital 90025.pdf, 2.1, ITEM 150]</span>
+                    </div>
+                </td>
+                <td>Valor Sigiloso</td>
+            </tr>
+
+            <!-- ITEM 4 -->
+            <tr>
+                <td>4</td>
+                <td>
+                    Equipamento de Ponto de Acesso gerenciado, **OUTDOOR, DIRECIONAL** (Unid)
+                </td>
+                <td>600</td>
+                <td>
+                    <div class="requisito">
+                        **Part Numbers Exigidos:** 901-T350-NC51, 804-T350-5R00, L09-0001-SG00, S62-0001-5LSG
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 4], [Edital 90025.pdf, 2.1, ITEM 151]</span>
+                    </div>
+                    <div class="requisito">
+                        **Requisitos de Acessórios:** Deve incluir licença perpétua, Power Injector (PoE) com cabo de força, além de qualquer dispositivo/acessório necessário à instalação e ao perfeito funcionamento
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 4], [Edital 90025.pdf, 2.1, ITEM 150-151]</span>
+                    </div>
+                    <div class="requisito">
+                        **Requisitos de Cabeamento:** Deve incluir **3 (três) cabos UTP Cat6**, sendo dois cabos com 1,5m e um cabo com 2,5m, com certificação
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 4], [Edital 90025.pdf, 2.1, ITEM 151]</span>
+                    </div>
+                </td>
+                <td>Valor Sigiloso</td>
+            </tr>
+
+            <!-- ITEM 5 -->
+            <tr>
+                <td>5</td>
+                <td>
+                    Power Injector **24W (PoE)** com cabo de força (Unid)
+                </td>
+                <td>1800</td>
+                <td>
+                    <div class="requisito">
+                        **Part Number Exigido:** 902-0162-BR00
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 5], [Edital 90025.pdf, 2.1, ITEM 151]</span>
+                    </div>
+                    <div class="requisito">
+                        O fornecedor deve especificar a **região de destino** ao solicitar PoE Injectors ou fontes de alimentação, utilizando o código **-BR** no lugar de -XX (ex: 902-0162-BR00)
+                        <span class="citation">[RUCKUS R350 Data Sheet.pdf, 309], [RUCKUS Accessory Guide.pdf, 266]</span>
+                    </div>
+                </td>
+                <td>Valor Sigiloso</td>
+            </tr>
+
+            <!-- REQUISITOS GERAIS DA SOLUÇÃO -->
+            <tr>
+                <td colspan="4" class="item-header" style="text-align: center; background-color: #0099cc;">REQUISITOS GERAIS DA SOLUÇÃO E CONDIÇÕES DE FORNECIMENTO</td>
+                <td class="item-header" style="background-color: #0099cc;">INFORMAÇÕES ADICIONAIS</td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td>
+                    <div class="requisito">
+                        **Padronização e Marca:** A solução deve ser da **marca RUCKUS**
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 2.2.1, ITEM 2], [Edital 90025.pdf, 2.1, ITEM 148]</span>.
+                        A padronização com a marca Ruckus é indispensável para **compatibilidade com os sistemas de gerenciamento centralizado** e para evitar a fragmentação da rede
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 3.6.3-3.6.4, ITEM 9]</span>.
+                    </div>
+                    <div class="requisito">
+                        **Especificação (Part Numbers):** O fornecimento está condicionado à **estrita observância** dos Part Numbers especificados, sendo o código do fabricante suficiente para a definição precisa do objeto (dispensando a repetição das especificações técnicas completas)
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 4.1, ITEM 12], [Anexo I - Termo de Referência e anexos.pdf, Anexo 01, ITEM 89-91]</span>.
+                    </div>
+                    <div class="requisito">
+                        **Meios de Comunicação:** A rede deve utilizar as frequências de **2,4 GHz e 5,0 GHz**
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 3.1, ITEM 6]</span>.
+                    </div>
+                    <div class="requisito">
+                        **Garantia Mínima:** Garantia integral de **60 (sessenta) meses (5 anos)** para **todos os itens**
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 5.5.1, ITEM 19], [Edital 90025.pdf, 22.1.8.3, ITEM 74]</span>. A garantia deve ser prestada no local de instalação sem ônus, e deve incluir suporte para **atualizações de Firmware e Softwares**
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 5.5.1-5.5.2, ITEM 19-20]</span>.
+                    </div>
+                    <div class="requisito">
+                        **Substituição em Garantia (Itens 2, 3, 4 e 5):** Substituição em até **05 (cinco) dias** do equipamento que apresentou vício por um equipamento de backup. O equipamento substituído deverá ser consertado no prazo máximo de **30 (trinta) dias**
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 5.5.3.1-5.5.3.2, ITEM 21]</span>. Se não for corrigido em 30 dias, deve ser substituído por outro igual ou superior
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 5.5.3.3, ITEM 21]</span>.
+                    </div>
+                    <div class="requisito">
+                        **Prazo de Entrega:** Prazo máximo de entrega dos equipamentos de **60 (sessenta) dias corridos**
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 5.2.2, ITEM 14]</span>.
+                    </div>
+                    <div class="requisito">
+                        **Fornecimento de Documentos:** Declaração de Garantia assinada por representante legal, com CNPJ do fabricante, atestando a garantia de 5 anos e cobertura integral no território nacional
+                        <span class="citation">[Edital 90025.pdf, 11.5.12, ITEM 204]</span>.
+                    </div>
+                </td>
+                <td>
+                    <div class="requisito">
+                        **Menor Preço:** O critério de julgamento é o **MENOR PREÇO GLOBAL**
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 20.2, ITEM 67], [Edital 90025.pdf, 13.1, ITEM 225]</span>.
+                    </div>
+                    <div class="requisito">
+                        **Planilha de Custo:** O valor unitário de cada item deve, necessariamente, estar **dentro do valor estimado na planilha de custo médio**, sob pena de desclassificação
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 20.3, ITEM 67], [Edital 90025.pdf, 13.2, ITEM 226]</span>.
+                    </div>
+                    <div class="requisito">
+                        **Sigilo:** O orçamento de referência é **sigiloso**, sendo revelado apenas na fase de negociação após a disputa
+                        <span class="citation">[Anexo I - Termo de Referência e anexos.pdf, 18.3, ITEM 66], [Edital 90025.pdf, 25.3, ITEM 246]</span>.
+                    </div>
+                    <div class="requisito">
+                        **Garantia Contratual:** É exigida garantia contratual de **5% (cinco por cento) do valor do contrato**, podendo ser Caução em dinheiro, Seguro garantia ou Fiança bancária
+                        <span class="citation">[Edital 90025.pdf, 17.1, ITEM 232], [Anexo I - Termo de Referência e anexos.pdf, 10.1, ITEM 45]</span>.
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 </body>
 </html>
