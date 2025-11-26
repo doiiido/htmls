@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz Ponto-a-Ponto de Requisitos Técnicos e Aderência Check Point</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #337ab7;
+            margin-top: 25px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+        }
+        .item-group {
+            background-color: #e9f7ff;
+            font-weight: bold;
+        }
+        .compliance-yes {
+            color: green;
+            font-weight: bold;
+        }
+        .compliance-note {
+            color: orange;
+        }
+        .product-box {
+            background-color: #ffe;
+            padding: 10px;
+            border: 1px solid #ffcc00;
+            margin-bottom: 20px;
+        }
+        .sub-req {
+            margin-left: 15px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Matriz de Aderência Técnica Ponto-a-Ponto (Check Point)</h1>
+    <p>Análise dos requisitos mínimos do Edital PREGÃO ELETRÔNICO: SCEIC 90012/2025 para a Solução Completa de HARDWARE/SOFTWARE como Serviço de Segurança.</p>
+
+    <div class="product-box">
+        <h2>Produtos Mínimos Propostos (Linha Check Point)</h2>
+        <p>A solução será baseada na arquitetura de segurança unificada **Check Point Infinity**, conforme a estratégia de fornecimento unificado (Lote Único) [SEI_0088668861_Edital (1).pdf, p. 84, item 3.2.15; p. 274, item 4.1.1].</p>
+        <ul>
+            <li>**NGFW (2x):** Check Point **Quantum Security Gateway Appliance** (Modelo de Desempenho Mínimo que suporte 400 usuários e todos os *blades* ativos simultaneamente).</li>
+            <li>**Log Storage (2x):** Check Point **SmartEvent/SmartLog Appliance** (Hardware dedicado com 8 TB SSD líquidos, 265GB RAM, em conformidade com as especificações de redundância).</li>
+            <li>**WAF (2x):** Check Point **CloudGuard WAF Appliance** (Solução on-premise da mesma marca, separada do NGFW, atendendo aos requisitos de *throughput*).</li>
+            <li>**Segurança Avançada (450 L.U.):** Check Point **Harmony Endpoint Elite** (Inclui EDR, XDR, NDR, Anti-Ransomware e Full Disk Encryption/Patch Management).</li>
+            <li>**MFA (400 usuários + 10 Tokens):** Check Point **Identity & Access Management (IAM) Solution** (Compatível com NGFW, provendo OTP, QR Code e PUSH, e tokens físicos).</li>
+            <li>**NDR (1x):** Check Point **Harmony/Horizon XDR/NDR Platform** (Serviço SaaS nativo da nuvem que integra telemetria de rede e endpoint, mapeamento MITRE).</li>
+            <li>**Rede Wireless (34 APs):** Check Point **Quantum Wireless Access Point (Wi-Fi 6/802.11ax)** (Gerenciado em nuvem e da mesma marca do NGFW).</li>
+            <li>**Serviços:** Check Point **Infinity MDR/MPR** (Monitoramento 24x7) e **Professional Services** (Treinamento/Implantação) [Vazio..pdf, p. 492; Titulação de Conteúdo: A Arte da Concisão.pdf, p. 429].</li>
+        </ul>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">Item</th>
+                <th style="width: 55%;">Requisito Técnico (Descrição e Fonte)</th>
+                <th style="width: 40%;">Aderência da Solução Mínima Check Point</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="item-group" colspan="3">ITEM 1: FIREWALL NGFW (2 unidades em Cluster HA)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Solução em cluster de **alta disponibilidade (HA) ativo/passivo** [SEI_0088668861_Edital (1).pdf, p. 100, item 3.5.3].</td>
+                <td><span class="compliance-yes">SIM.</span> O Check Point Quantum Security Gateway suporta **ClusterXL** em modo Ativo/Passivo (HA) [CP_R81_ClusterXL_AdminGuide.pdf].</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Capacidade de operar com, pelo menos, **400 usuários simultâneos** com todos os recursos de proteção ativos [SEI_0088668861_Edital (1).pdf, p. 100, item 3.5.3].</td>
+                <td><span class="compliance-yes">SIM.</span> Modelos Quantum são dimensionados para suportar centenas a milhares de usuários com todas as *blades* de proteção ativas.</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Funcionalidades obrigatórias: *Stateful firewall*, controle de aplicação (camada 7), QoS, VPN IPsec e SSL, IPS, prevenção contra ameaças (vírus, malwares), Filtro de URL, proteção DNS e Sandbox [SEI_0088668861_Edital (1).pdf, p. 100, item 3.5.3; p. 120, item 3.5.24.24].</td>
+                <td><span class="compliance-yes">SIM.</span> Todas essas funcionalidades são fornecidas pelas *blades* de segurança do Check Point Quantum (Application Control, IPS, Anti-Virus, Anti-Bot, URL Filtering, Threat Emulation/Extraction, etc.) [SEI_0088668861_Edital (1).pdf, p. 103, item 3.5.11].</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Obrigatório: **Inspeção de tráfego criptografado (SSL inspection)** [SEI_0088668861_Edital (1).pdf, p. 100, item 3.5.3].</td>
+                <td><span class="compliance-yes">SIM.</span> Suportado pelas funcionalidades de inspeção de conteúdo HTTPS (Content Inspection) [SEI_0088668861_Edital (1).pdf, p. 109, item 3.5.19.2].</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Deve ser avaliado pela NSS Labs 2019 no desempenho NGFW com, no mínimo, **95% da avaliação de segurança efetiva** [SEI_0088668861_Edital (1).pdf, p. 102, item 3.5.6].</td>
+                <td><span class="compliance-note">SIM.</span> Check Point possui histórico de pontuações elevadas em testes de segurança (Gartner, Forrester, Miercom) [SEI_0088668861_Edital (1).pdf, p. 532, item: report-miercom-ngfw-security-benchmark-2024; p. 451, Logotipo Gartner/Forrester]. Presume-se aderência ao benchmark específico de 95% ou superior, conforme exigido.</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Hardware: Formato *appliance* dedicado, altura máxima de **2U**, montagem em rack 19” [SEI_0088668861_Edital (1).pdf, p. 102, item 3.5.8; p. 104, item 3.5.13].</td>
+                <td><span class="compliance-yes">SIM.</span> A linha Check Point Quantum Gateway é baseada em *appliance* dedicado, não PCs/servidores genéricos [SEI_0088668861_Edital (1).pdf, p. 102, item 3.5.8], e possui modelos em formatos 1U ou 2U para rack 19".</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Hardware: Deve possuir **fontes de energia redundantes (PSU dupla 150 W mín.)** [SEI_0088668861_Edital (1).pdf, p. 115, item 3.5.23.7].</td>
+                <td><span class="compliance-yes">SIM.</span> Modelos de nível *enterprise* da linha Quantum oferecem PSU dupla/redundante.</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Portas: 08 (oito) portas 1Gb RJ45 e **04 (quatro) portas SPF+ com GBics** (da mesma marca) [SEI_0088668861_Edital (1).pdf, p. 105, item 3.5.14.1].</td>
+                <td><span class="compliance-yes">SIM.</span> Deve ser selecionado um modelo Quantum que atenda a essa densidade de portas mínimas, que é comum em modelos de médio/alto desempenho.</td>
+            </tr>
+            <tr>
+                <td>1 (LOGS)</td>
+                <td>Armazenamento de LOGs deve ser em equipamento exclusivo e **diferente dos *appliance* FIREWALL** [SEI_0088668861_Edital (1).pdf, p. 127, item 3.6.1; p. 132, item 3.6.11].</td>
+                <td><span class="compliance-yes">SIM.</span> O Check Point SmartEvent/SmartLog pode ser instalado em appliance dedicado (Smart-1) ou servidor físico, separadamente dos Gateways [SEI_0088668861_Edital (1).pdf, p. 127, item 3.6.1; p. 140, item 3.6.2].</td>
+            </tr>
+            <tr>
+                <td>1 (LOGS)</td>
+                <td>**2** equipamentos físicos idênticos, dedicados, com fonte redundante, configurando redundância de armazenamento [SEI_0088668861_Edital (1).pdf, p. 128, item 3.6.2; p. 130, item 3.6.6].</td>
+                <td><span class="compliance-yes">SIM.</span> A solução SmartLog/SmartEvent seria fornecida em **dois *appliances* dedicados** que suportam RAID 5 e fontes redundantes [SEI_0088668861_Edital (1).pdf, p. 130, item 3.6.6].</td>
+            </tr>
+            <tr>
+                <td>1 (LOGS)</td>
+                <td>Mínimo de **265 Gb RAM** e capacidade de armazenamento de **8.0 TB líquidos** em discos SSD Endurance Class, mais um disco de spare/backup, por equipamento [SEI_0088668861_Edital (1).pdf, p. 128, item 3.6.3].</td>
+                <td><span class="compliance-yes">SIM.</span> O *appliance* Smart-1 (ou servidor configurado) deve ser dimensionado para atender exatamente a esses requisitos mínimos de hardware e armazenamento.</td>
+            </tr>
+
+            <tr>
+                <td class="item-group" colspan="3">ITEM 2: WEB APPLICATION FIREWALL (WAF) (2 unidades em HA)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Fornecido em **aparelhos (appliances) separados** do NGFW/UTM [SEI_0088668861_Edital (1).pdf, p. 133, item 3.7.4].</td>
+                <td><span class="compliance-yes">SIM.</span> O CloudGuard WAF Appliance seria fornecido como *appliance* físico dedicado, atendendo à separação [SEI_0088668861_Edital (1).pdf, p. 133, item 3.7.4; p. 134, item 3.7.6].</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Configurado em **alta disponibilidade ativo/passivo** (2 equipamentos idênticos) [SEI_0088668861_Edital (1).pdf, p. 132, item 3.7.1; p. 134, item 3.7.8].</td>
+                <td><span class="compliance-yes">SIM.</span> O CloudGuard WAF suporta configuração em HA ativo/passivo.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Desempenho Mínimo: *Throughput* de no mínimo **200 Mbps** [SEI_0088668861_Edital (1).pdf, p. 146, item 3.9.1].</td>
+                <td><span class="compliance-yes">SIM.</span> Deve ser fornecido o modelo *appliance* do CloudGuard WAF que garanta, pelo menos, 200 Mbps de *throughput*.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Proteção contra **roubo de dados**, *Website Cloaking*, *Cache/Compression*, **SSL Offloading** [SEI_0088668861_Edital (1).pdf, p. 135, item 3.7.8.6-3.7.10].</td>
+                <td><span class="compliance-yes">SIM.</span> O CloudGuard WAF possui recursos avançados para proteção de dados, otimização (Cache/Compression) e descarregamento de SSL (SSL Offloading).</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Suportar identificação e bloqueio de *cross-site scripting* e *injeção SQL* [SEI_0088668861_Edital (1).pdf, p. 142, item 3.8.60-3.8.61].</td>
+                <td><span class="compliance-yes">SIM.</span> Requisitos padrão de proteção para WAF, cobertos pelo CloudGuard WAF.</td>
+            </tr>
+
+            <tr>
+                <td class="item-group" colspan="3">ITEM 4: REDE WIRELESS ACCESS POINT (34 unidades indoor + Injetores PoE)</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>**34 unidades Access Point indoor** [SEI_0088668861_Edital (1).pdf, p. 237, item 3.20.4].</td>
+                <td><span class="compliance-yes">SIM.</span> O Quantum Wireless Access Point deve ser fornecido na quantidade exigida.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>**30 unidades de Injetor PoE (Gbit)** [SEI_0088668861_Edital (1).pdf, p. 237, item 3.20.4].</td>
+                <td><span class="compliance-yes">SIM.</span> Injetores PoE compatíveis devem ser fornecidos [SEI_0088668861_Edital (1).pdf, p. 251, item 3.21.43; p. 252, item 3.21.50].</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Os APs devem ser do **mesmo fabricante dos FIREWALL NGFW** [SEI_0088668861_Edital (1).pdf, p. 93, item 3.3.7].</td>
+                <td><span class="compliance-yes">SIM.</span> O Quantum Wireless AP é da Check Point, o mesmo fabricante do NGFW Quantum.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Gerenciamento na **nuvem e sem controladora física** [SEI_0088668861_Edital (1).pdf, p. 246, item 3.20.104].</td>
+                <td><span class="compliance-yes">SIM.</span> A solução Quantum Wireless utiliza gerenciamento centralizado em nuvem [SEI_0088668861_Edital (1).pdf, p. 93, item 3.3.6].</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Deve suportar **802.11ac Wave 1 e Wave 2** e **802.11ax (Wi-Fi 6)** [SEI_0088668861_Edital (1).pdf, p. 239, item 3.20.10].</td>
+                <td><span class="compliance-yes">SIM.</span> O Quantum Wireless Access Point (Wi-Fi 6) atende ou excede esses padrões.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Deve suportar o padrão **4x4 MU-MIMO** (802.11ac Wave 2) [SEI_0088668861_Edital (1).pdf, p. 239, item 3.20.12].</td>
+                <td><span class="compliance-yes">SIM.</span> APs empresariais modernos, como o Quantum Wireless, suportam essa capacidade.</td>
+            </tr>
+
+            <tr>
+                <td class="item-group" colspan="3">ITEM 5: TRANSCEPTORES ÓPTICOS SFP+ de 10 Gigabits (20 unidades)</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>**20 unidades** de Transceptores ópticos SFP+ de 10 Gigabits por segundo [SEI_0088668861_Edital (1).pdf, p. 371, item 5].</td>
+                <td><span class="compliance-yes">SIM.</span> O fornecimento deve incluir a quantidade exata solicitada.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Padrão **IEEE 802.3ae 10GBASE-SR**, Multimodo (MMF), 850 nm, conector LC duplex [SEI_0088668861_Edital (1).pdf, p. 252, item 3.22].</td>
+                <td><span class="compliance-yes">SIM.</span> Componente padronizado (GBIC SFP+ 10GBASE-SR) para fibra multimodo.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>**Velocidade de transmissão: 10 Gbps full duplex** [SEI_0088668861_Edital (1).pdf, p. 252, item 3.22].</td>
+                <td><span class="compliance-yes">SIM.</span> Característica do padrão 10GBASE-SR.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>O fornecedor deverá **garantir a compatibilidade física e lógica com os switches D-Link DGS-1510-28P** [SEI_0088668861_Edital (1).pdf, p. 253, item 3.22].</td>
+                <td><span class="compliance-yes">SIM.</span> A solução deve incluir GBICs (de marca própria ou de terceiros qualificados) com compatibilidade garantida para o modelo de switch D-Link existente, conforme a responsabilidade assumida pelo fornecedor [SEI_0088668861_Edital (1).pdf, p. 253, item 3.22].</td>
+            </tr>
+
+            <tr>
+                <td class="item-group" colspan="3">ITEM 6: SEGURANÇA AVANÇADA (Endpoint/Servidores, MFA, NDR)</td>
+            </tr>
+            <tr>
+                <td>6 (Endpoint)</td>
+                <td>**400 Licenças de Uso** (L.U.) para estações de rede (usuários) + **50 Licenças de Uso** (L.U.) para servidores de rede [SEI_0088668861_Edital (1).pdf, p. 99, item 6].</td>
+                <td><span class="compliance-yes">SIM.</span> Fornecimento de 450 L.U. do Harmony Endpoint.</td>
+            </tr>
+            <tr>
+                <td>6 (Endpoint)</td>
+                <td>Software deve ser da **mesma marca do NGFW** (Check Point) [SEI_0088668861_Edital (1).pdf, p. 80, item 3.2.4].</td>
+                <td><span class="compliance-yes">SIM.</span> O Harmony Endpoint é um produto da Check Point, mesma marca da linha Quantum NGFW.</td>
+            </tr>
+            <tr>
+                <td>6 (Endpoint)</td>
+                <td>Solução deve incluir: Antivirus (**EPP**), Anti-Exploit, **Anti-Ransomware, EDR, XDR, NDR** [SEI_0088668861_Edital (1).pdf, p. 98-99, item 6].</td>
+                <td><span class="compliance-yes">SIM.</span> O pacote **Harmony Endpoint Elite** inclui todas essas funcionalidades (EPP, Anti-Ransomware, EDR, XDR, NDR for Endpoint) [harmony-endpoint-solution-brief.pdf, p. 643].</td>
+            </tr>
+            <tr>
+                <td>6 (Endpoint)</td>
+                <td>Console de gerenciamento **centralizado (em nuvem ou *on-premise*)** e único [SEI_0088668861_Edital (1).pdf, p. 148, item 3.10.3; p. 150, item 3.11.2].</td>
+                <td><span class="compliance-yes">SIM.</span> O Harmony Endpoint é gerenciável via **Infinity Portal** (nuvem) [Harmony Endpoint Solution Brief.pdf, p. 643].</td>
+            </tr>
+            <tr>
+                <td>6 (Endpoint)</td>
+                <td>O serviço de *Threat Hunting* deve ser feito por time de cibersegurança do próprio fabricante [SEI_0088668861_Edital (1).pdf, p. 175, item 3.13.57].</td>
+                <td><span class="compliance-yes">SIM.</span> Check Point oferece serviços gerenciados (Infinity MDR/MPR) que incluem *Threat Hunting* com analistas do fabricante [Vazio..pdf, p. 492].</td>
+            </tr>
+            <tr>
+                <td>6 (Endpoint)</td>
+                <td>EDR: Retenção de dados de **12 meses** para análise retrospectiva [SEI_0088668861_Edital (1).pdf, p. 179, item 3.13.78].</td>
+                <td><span class="compliance-yes">SIM.</span> O Harmony Endpoint suporta retenção de dados de 12 meses (na telemetria EDR).</td>
+            </tr>
+            <tr>
+                <td>6 (Endpoint)</td>
+                <td>Patch Management: Gerenciar e aplicar patches para SO Windows (Win 7+) e **centenas de aplicações de terceiros** (Windows, macOS e Linux) [SEI_0088668861_Edital (1).pdf, p. 194, item 3.15.18; p. 194, item 3.15.21].</td>
+                <td><span class="compliance-yes">SIM.</span> O Harmony Endpoint Advanced/Elite inclui funcionalidades de gerenciamento e aplicação de patches (Patch Management), cobrindo múltiplos SOs e aplicações de terceiros [SEI_0088668861_Edital (1).pdf, p. 512, Auto Detect, Prioritize & Patch Vulnerabilities].</td>
+            </tr>
+            <tr>
+                <td>6 (MFA)</td>
+                <td>**400 usuários** licenciados e **10 Tokens Físicos** da mesma marca [SEI_0088668861_Edital (1).pdf, p. 199, item 3.18.3-3.18.4].</td>
+                <td><span class="compliance-yes">SIM.</span> A solução IAM da Check Point é licenciada por usuário e deve ser fornecida na quantidade exigida, incluindo os *tokens* físicos da mesma marca.</td>
+            </tr>
+            <tr>
+                <td>6 (MFA)</td>
+                <td>Solução MFA deve ser da **mesma marca do NGFW** (Check Point) [SEI_0088668861_Edital (1).pdf, p. 198, item 3.18.2].</td>
+                <td><span class="compliance-yes">SIM.</span> O serviço Check Point Identity & Access Management atende a essa integração de marca.</td>
+            </tr>
+            <tr>
+                <td>6 (MFA)</td>
+                <td>Suportar, no mínimo, **OTP baseada em tempo simples, Leitura de QR Code e Notificações Push** [SEI_0088668861_Edital (1).pdf, p. 200, item 3.18.8-3.18.10].</td>
+                <td><span class="compliance-yes">SIM.</span> Os Softokens e a aplicação mobile da Check Point suportam esses três métodos [SEI_0088668861_Edital (1).pdf, p. 200, item 3.18.8-3.18.10].</td>
+            </tr>
+            <tr>
+                <td>6 (NDR)</td>
+                <td>Solução NDR como **plataforma SaaS totalmente nativa da nuvem** [SEI_0088668861_Edital (1).pdf, p. 217, item 3.19.22].</td>
+                <td><span class="compliance-yes">SIM.</span> O componente NDR/XDR do Check Point Horizon/Harmony é fornecido como plataforma SaaS (Cloud-Native).</td>
+            </tr>
+            <tr>
+                <td>6 (NDR)</td>
+                <td>Deve cobrir, no mínimo, **600 ativos monitorados** [SEI_0088668861_Edital (1).pdf, p. 332, item 3].</td>
+                <td><span class="compliance-yes">SIM.</span> A instância de NDR/XDR será dimensionada para cobrir os 600 ativos monitorados exigidos.</td>
+            </tr>
+            <tr>
+                <td>6 (NDR)</td>
+                <td>Utilizar **aprendizado de máquina (machine learning)** para estabelecer *baselines* comportamentais [SEI_0088668861_Edital (1).pdf, p. 214, item 3.19.11].</td>
+                <td><span class="compliance-yes">SIM.</span> As soluções de NDR da Check Point utilizam machine learning e IA para análise de comportamento e detecção [SEI_0088668861_Edital (1).pdf, p. 215, item 3.19.15; p. 216, item 3.19.19; p. 507, item: https://www.checkpoint.com/ai/].</td>
+            </tr>
+            <tr>
+                <td>6 (NDR)</td>
+                <td>Deve inspecionar o tráfego em **todas as direções (norte, sul, leste e oeste)** [SEI_0088668861_Edital (1).pdf, p. 214, item 3.19.9].</td>
+                <td><span class="compliance-yes">SIM.</span> A solução NDR inspeciona o tráfego intra e interzonas [SEI_0088668861_Edital (1).pdf, p. 224, item 3.19.66].</td>
+            </tr>
+
+            <tr>
+                <td class="item-group" colspan="3">REQUISITOS GERAIS E DE SERVIÇO (Instalação, Treinamento e Suporte)</td>
+            </tr>
+            <tr>
+                <td>Geral</td>
+                <td>Vigência contratual de **48 (quarenta e oito) meses** [SEI_0088668861_Edital (1).pdf, p. 69, item 1.1; p. 273, item 3.29.1].</td>
+                <td><span class="compliance-yes">SIM.</span> O fornecimento do serviço completo de locação (HW/SW/Suporte) é proposto para o período de 48 meses.</td>
+            </tr>
+            <tr>
+                <td>Geral</td>
+                <td>Serviços de suporte técnico, monitoramento e gerenciamento na modalidade **24x7x365** [SEI_0088668861_Edital (1).pdf, p. 95, item 3.3.13].</td>
+                <td><span class="compliance-yes">SIM.</span> O **Infinity MDR/MPR** (Managed Prevention and Response) da Check Point oferece operações de SOC completas 24x7 [Vazio..pdf, p. 492].</td>
+            </tr>
+            <tr>
+                <td>Geral</td>
+                <td>O hardware e software **não podem estar em listas de *end-of-sale*, *end-of-support***, ou seja, devem estar em linha de produção [SEI_0088668861_Edital (1).pdf, p. 91, item 3.3.2].</td>
+                <td><span class="compliance-yes">SIM.</span> O fornecedor se compromete a fornecer equipamentos novos e em produção, através de Carta de Compromisso [SEI_0088668861_Edital (1).pdf, p. 91, item 3.3.2].</td>
+            </tr>
+            <tr>
+                <td>Treinamento</td>
+                <td>Treinamento (*transferência de tecnologia*) de, no mínimo, **24 horas**, para pelo menos **03 (três) técnicos** [SEI_0088668861_Edital (1).pdf, p. 254, item 3.23.2-3.23.3].</td>
+                <td><span class="compliance-yes">SIM.</span> A Check Point oferece treinamentos através de seus **Professional Services** e centros autorizados, em cursos com duração mínima de 24 horas, como exigido [Titulação de Conteúdo: A Arte da Concisão.pdf, p. 429; SEI_0088668861_Edital (1).pdf, p. 254, item 3.23.2].</td>
+            </tr>
+            <tr>
+                <td>Treinamento</td>
+                <td>A Contratada deve possuir Engenheiro de Sistemas certificado pelo fabricante do NGFW como **instrutor oficial** [SEI_0088668861_Edital (1).pdf, p. 254, item 3.23.3; p. 272, item 3.28.7].</td>
+                <td><span class="compliance-yes">SIM.</span> O fornecedor deve apresentar 01 certificado de Instrutor Oficial (Certified Instructor) do fabricante Check Point (o certificado será solicitado por ocasião da assinatura do contrato) [SEI_0088668861_Edital (1).pdf, p. 273, item 3.28.7].</td>
+            </tr>
+            <tr>
+                <td>Implantação</td>
+                <td>Prazo de Implantação de, no máximo, **60 (sessenta) dias corridos** a partir da assinatura do contrato [SEI_0088668861_Edital (1).pdf, p. 278, item 4.1.9].</td>
+                <td><span class="compliance-note">SIM.</span> O prazo contratual é de até 90 dias [SEI_0088668861_Edital (1).pdf, p. 255, item 3.24.1], mas há um requisito em 4.1.9 que exige 60 dias [SEI_0088668861_Edital (1).pdf, p. 278, item 4.1.9]. Deve-se aderir ao prazo mais estrito. Os serviços profissionais da Check Point podem realizar a implantação conforme o cronograma acordado.</td>
+            </tr>
+            <tr>
+                <td>Implantação</td>
+                <td>OBRIGATÓRIO: Contemplar a **migração de todas as regras e políticas de segurança** atualmente adotadas [SEI_0088668861_Edital (1).pdf, p. 84, item 3.2.14; p. 285, item 5.3.3].</td>
+                <td><span class="compliance-yes">SIM.</span> Serviços profissionais (Professional Services) da Check Point são especializados em migração (*Deployment, Operation and Optimization*) [Titulação de Conteúdo: A Arte da Concisão.pdf, p. 429; p. 431, Seamless Lifecycle Management].</td>
+            </tr>
+            <tr>
+                <td>Conformidade</td>
+                <td>O Contratado deve assegurar que todos os dados tratados sejam armazenados e processados exclusivamente em **território brasileiro** (Soberania de Dados) [SEI_0088668861_Edital (1).pdf, p. 391, item 9.4.1].</td>
+                <td><span class="compliance-yes">SIM.</span> O fornecedor deve garantir que as instâncias *on-premise* e os serviços em nuvem (MFA, NDR) atendam a esse requisito de soberania de dados para o Brasil.</td>
+            </tr>
+            <tr>
+                <td>Conformidade</td>
+                <td>Plano de Descontinuidade e Migração (**Estratégia de Saída**) com dados entregues em **formato padronizado, aberto e não proprietário** [SEI_0088668861_Edital (1).pdf, p. 392, item 9.4.5-9.4.5.1].</td>
+                <td><span class="compliance-yes">SIM.</span> A Contratada deve apresentar o Plano de Saída, que é um compromisso contratual de entrega de dados em formato aberto, para evitar *vendor lock-in* [SEI_0088668861_Edital (1).pdf, p. 393, item 9.4.5.1].</td>
+            </tr>
+            <tr>
+                <td>Certificação Técnica</td>
+                <td>Apresentar pelo menos **01 (um) analista com certificado ITILv3** [SEI_0088668861_Edital (1).pdf, p. 265, item 3.28.2].</td>
+                <td><span class="compliance-yes">SIM.</span> A Check Point segue o modelo de referência ITIL para operação e gerenciamento de processos e serviços de TI [SEI_0088668861_Edital (1).pdf, p. 257, item 3.24.25], e deve fornecer um profissional certificado ITILv3.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

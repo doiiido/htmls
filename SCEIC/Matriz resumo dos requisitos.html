@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de Requisitos Técnicos - Pregão Eletrônico SCEIC 90012/2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+        }
+        .item-name {
+            font-weight: bold;
+            color: #337ab7;
+        }
+        .value-box {
+            background-color: #e6f7ff;
+            padding: 5px;
+            border-radius: 3px;
+            margin-top: 5px;
+        }
+        .observacao {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Matriz de Requisitos Técnicos e Valores Estimados</h1>
+    <h2>Pregão Eletrônico SCEIC 90012/2025 (Solução de Segurança Cibernética como Serviço)</h2>
+
+    <p class="observacao">O objeto da licitação é a contratação de uma solução completa de HARDWARE/SOFTWARE como serviço de segurança, com duração de **48 (quarenta e oito) meses** [SEI_0088668861_Edital (1).pdf, p. 80, item 1.1; p. 296, item 3.29.1]. A contratação é em **lote único e indivisível** [SEI_0088668861_Edital (1).pdf, p. 94, item 3.2.15; p. 297, item 4.1.1].</p>
+
+    <div class="value-box">
+        <h3>Valor Estimado Global da Contratação (48 meses)</h3>
+        <p>Valor (R$): **3.513.024,00** [SEI_0088668861_Edital (1).pdf, p. 397, item 13]</p>
+        <p>Pagamento Mensal Estimado: **R$ 73.188,00** [SEI_0088668861_Edital (1).pdf, p. 398, item 13]</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 15%;">Item</th>
+                <th style="width: 15%;">Quantidade / Licenças</th>
+                <th style="width: 70%;">Resumo dos Requisitos Técnicos Principais</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="item-name">Firewall NGFW<br>(Next-Generation Firewall)</td>
+                <td>
+                    - **2** equipamentos (cluster HA ativo/passivo) [SEI_0088668861_Edital (1).pdf, p. 110, item 3.5.3]<br>
+                    - **48** UNID. (serviço/mês) [SEI_0088668861_Edital (1).pdf, p. 81, item 1]
+                </td>
+                <td>
+                    <p>Deve ser solução em cluster de **alta disponibilidade (HA) ativo/passivo** [SEI_0088668861_Edital (1).pdf, p. 110, item 3.5.3] e operar com todos os recursos de proteção ativos simultaneamente [SEI_0088668861_Edital (1).pdf, p. 110, item 3.5.3].</p>
+                    <ul>
+                        <li>**Capacidade Mínima:** Suportar, pelo menos, **400 usuários simultâneos** [SEI_0088668861_Edital (1).pdf, p. 110, item 3.5.3].</li>
+                        <li>**Funcionalidades Obrigatórias:** Stateful firewall, controle de aplicação (camada 7), QoS, VPN IPsec e SSL, IPS, prevenção contra ameaças (vírus, malwares), Filtro de URL, **inspeção de tráfego criptografado (SSL inspection)**, proteção DNS e Sandbox [SEI_0088668861_Edital (1).pdf, p. 110, item 3.5.3; p. 130, item 3.5.24.24].</li>
+                        <li>**Hardware:** Formato appliance dedicado (não PC/servidor genérico) [SEI_0088668861_Edital (1).pdf, p. 112, item 3.5.8], altura máxima de **2U**, montagem em rack 19” [SEI_0088668861_Edital (1).pdf, p. 114, item 3.5.13], com **fontes de energia redundantes** (PSU dupla 150 W mín.) [SEI_0088668861_Edital (1).pdf, p. 123, item 3.5.23.7].</li>
+                        <li>**Certificação:** Deve ser avaliado pela NSS Labs 2019 no desempenho NGFW com, no mínimo, **95% da avaliação de segurança efetiva** [SEI_0088668861_Edital (1).pdf, p. 112, item 3.5.6]. Deve ter **certificado de homologação da ANATEL** [SEI_0088668861_Edital (1).pdf, p. 121, item 3.5.22.12].</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Armazenamento de LOGs<br>(Dedicado ao NGFW)</td>
+                <td>
+                    - **2** equipamentos físicos [SEI_0088668861_Edital (1).pdf, p. 140, item 3.6.2]
+                </td>
+                <td>
+                    <p>O armazenamento dos logs **NÃO poderá ser efetuado dentro dos appliance FIREWALL** [SEI_0088668861_Edital (1).pdf, p. 102, item 3.3.3; p. 139, item 3.6.1]. Deve ser em equipamento exclusivo (servidor ou appliance) e da mesma marca [SEI_0088668861_Edital (1).pdf, p. 140, item 3.6.2].</p>
+                    <ul>
+                        <li>**Especificações Mínimas (por equipamento):** **265 Gb RAM** e capacidade de armazenamento de **8.0 TB líquidos** em discos SSD Endurance Class, mais um disco de spare/backup [SEI_0088668861_Edital (1).pdf, p. 140, item 3.6.3].</li>
+                        <li>**Conectividade:** 02 (duas) saídas de redes **10 SFP+** [SEI_0088668861_Edital (1).pdf, p. 141, item 3.6.3.1].</li>
+                        <li>**Redundância:** Deve possuir fonte de alimentação redundante e unidades de armazenamento que aceitem a configuração de, no mínimo, **RAID 5** [SEI_0088668861_Edital (1).pdf, p. 142, item 3.6.6].</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Web Application Firewall (WAF)</td>
+                <td>
+                    - **2** equipamentos (HA ativo/passivo) [SEI_0088668861_Edital (1).pdf, p. 144, item 3.7.1]<br>
+                    - **48** UNID. (serviço/mês) [SEI_0088668861_Edital (1).pdf, p. 414, item 2]
+                </td>
+                <td>
+                    <p>Deve ser fornecido em **aparelhos (appliances) separados** do NGFW/UTM [SEI_0088668861_Edital (1).pdf, p. 145, item 3.7.4] e configurados em **alta disponibilidade ativo/passivo** [SEI_0088668861_Edital (1).pdf, p. 144, item 3.7.1; p. 146, item 3.7.8].</p>
+                    <ul>
+                        <li>**Desempenho Mínimo:** Throughput de, no mínimo, **200 Mbps** [SEI_0088668861_Edital (1).pdf, p. 158, item 3.9.1]. De pelo menos, **10.000 transações HTTP por segundo** [SEI_0088668861_Edital (1).pdf, p. 158, item 3.9.2] e **80.000 conexões concorrentes por segundo** [SEI_0088668861_Edital (1).pdf, p. 158, item 3.9.3].</li>
+                        <li>**Recursos:** Inspeção de requisições, eliminação de tráfego de bots desnecessários [SEI_0088668861_Edital (1).pdf, p. 146, item 3.7.7]. Proteção contra roubo de dados, Website Cloaking, **SSL Offloading** [SEI_0088668861_Edital (1).pdf, p. 147, item 3.7.8.6-3.7.10]. Proteção contra **cross-site scripting** e **injeção SQL** [SEI_0088668861_Edital (1).pdf, p. 154, item 3.8.60-3.8.61].</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Segurança Avançada (Endpoint / Servidores)</td>
+                <td>
+                    - **400** Licenças de Uso (L.U.) para estações de rede (usuários) [SEI_0088668861_Edital (1).pdf, p. 109, item 6; p. 377, item 7]<br>
+                    - **50** Licenças de Uso (L.U.) para servidores de rede [SEI_0088668861_Edital (1).pdf, p. 109, item 6]
+                </td>
+                <td>
+                    <p>A solução deve ser fornecida por um **único fabricante** [SEI_0088668861_Edital (1).pdf, p. 160, item 3.10.2] e ser gerenciável através de um **mesmo console centralizado** (em nuvem ou *on-premise*) [SEI_0088668861_Edital (1).pdf, p. 160, item 3.10.3; p. 162, item 3.11.2].</p>
+                    <ul>
+                        <li>**Componentes:** Antivirus (**EPP**), Anti-Exploit, **Anti-Ransomware**, **EDR** (Detecção e Resposta de Endpoint), **XDR** e **NDR** (Detecção e Resposta de Rede) [SEI_0088668861_Edital (1).pdf, p. 108-109, item 6].</li>
+                        <li>**EDR/Threat Hunting:** Retenção de dados de **12 meses** para análise retrospectiva [SEI_0088668861_Edital (1).pdf, p. 191, item 3.13.78]. O serviço de Threat Hunting deve ser feito por time de cibersegurança do próprio fabricante [SEI_0088668861_Edital (1).pdf, p. 187, item 3.13.57] e mapear técnicas no framework **MITRE ATT&CK** [SEI_0088668861_Edital (1).pdf, p. 188, item 3.13.61].</li>
+                        <li>**Patch Management:** Deve ser capaz de gerenciar e aplicar patches para o Sistema Operacional Windows (Win 7 e superiores) e centenas de aplicações de terceiros (Windows, macOS e Linux) [SEI_0088668861_Edital (1).pdf, p. 205, item 3.15.18, 3.15.21].</li>
+                        <li>**Testes:** Deve ter participado da Avaliação do **MITRE** para a área corporativa em **2023 e 2024** [SEI_0088668861_Edital (1).pdf, p. 208, item 3.17.2].</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Autenticação Multifator (MFA)</td>
+                <td>
+                    - **400** usuários (licenciamento para 48 meses) [SEI_0088668861_Edital (1).pdf, p. 210, item 3.18.4]<br>
+                    - **10** Tokens Físicos (da mesma marca) [SEI_0088668861_Edital (1).pdf, p. 210, item 3.18.3]
+                </td>
+                <td>
+                    <p>Solução deve ser da **mesma marca do NGFW** [SEI_0088668861_Edital (1).pdf, p. 209, item 3.18.2]. O serviço deve ser disponibilizado em **nuvem**, conforme LGPD [SEI_0088668861_Edital (1).pdf, p. 210, item 3.18.5].</p>
+                    <ul>
+                        <li>**Métodos de Autenticação Mínimos (smartphone):** OTP baseada em tempo simples, Leitura de QR Code e Notificações Push [SEI_0088668861_Edital (1).pdf, p. 211, item 3.18.8-3.18.10].</li>
+                        <li>**Integração:** Deve oferecer interface de servidor **RADIUS** para integração com o Firewall NGFW [SEI_0088668861_Edital (1).pdf, p. 221, item 3.18.61]. Deve suportar protocolo **SAML 2.0** [SEI_0088668861_Edital (1).pdf, p. 224, item 3.18.77].</li>
+                        <li>**Gerenciamento:** Controle e monitoramento através de sistema web [SEI_0088668861_Edital (1).pdf, p. 212, item 3.18.12].</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Solução NDR (Network Detection and Response)</td>
+                <td>
+                    - **1** instância [SEI_0088668861_Edital (1).pdf, p. 377, item 7]
+                </td>
+                <td>
+                    <p>A solução visa o **monitoramento comportamental da rede** [SEI_0088668861_Edital (1).pdf, p. 374, item 3].</p>
+                    <ul>
+                        <li>**Cobertura Mínima:** Cobrir, no mínimo, **600 ativos monitorados** [SEI_0088668861_Edital (1).pdf, p. 374, item 3].</li>
+                        <li>**Tecnologia:** Deve ser entregue como plataforma **SaaS totalmente nativa da nuvem** [SEI_0088668861_Edital (1).pdf, p. 233, item 3.19.22]. Utiliza **aprendizado de máquina (machine learning)** para estabelecer *baselines* comportamentais [SEI_0088668861_Edital (1).pdf, p. 230, item 3.19.11].</li>
+                        <li>**Ingestão de Dados:** Deve descobrir e classificar dispositivos analisando metadados **NetFlow, sFlow e IPFIX** coletados do Firewall UTM e da infraestrutura de rede compatível [SEI_0088668861_Edital (1).pdf, p. 229, item 3.19.1].</li>
+                        <li>**Detecção:** Deve inspecionar o tráfego em todas as direções (**norte, sul, leste e oeste**) [SEI_0088668861_Edital (1).pdf, p. 230, item 3.19.9]. Mapeamento para táticas e técnicas da estrutura **MITRE ATT&CK** [SEI_0088668861_Edital (1).pdf, p. 240, item 3.19.61].</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Rede Wireless Access Point (indoor)</td>
+                <td>
+                    - **34** unidades Access Point (AP) [SEI_0088668861_Edital (1).pdf, p. 107, item 4; p. 252, item 3.20.4]<br>
+                    - **30** unidades de Injetor PoE (Gbit) [SEI_0088668861_Edital (1).pdf, p. 252, item 3.20.4]
+                </td>
+                <td>
+                    <p>Os equipamentos APs devem ser de nível **Enterprise** [SEI_0088668861_Edital (1).pdf, p. 253, item 3.20.7] e estar **homologados pela ANATEL** [SEI_0088668861_Edital (1).pdf, p. 253, item 3.20.5].</p>
+                    <ul>
+                        <li>**Tecnologia:** Suporte a 2.4 GHz e 5 GHz simultaneamente [SEI_0088668861_Edital (1).pdf, p. 253, item 3.20.9]. Deve possuir tecnologias **802.11ac Wave 1 e Wave 2** [SEI_0088668861_Edital (1).pdf, p. 254, item 3.20.10].</li>
+                        <li>**Especificações:** Suportar padrão **4x4 MU-MIMO** (802.11ac Wave 2) [SEI_0088668861_Edital (1).pdf, p. 254, item 3.20.12]. Mínimo de 2 portas Gigabit Ethernet e 6 antenas integradas [SEI_0088668861_Edital (1).pdf, p. 254, item 3.20.13]. Compatível com **PoE 802.3af ou PoE+ 802.3at** [SEI_0088668861_Edital (1).pdf, p. 254, item 3.20.16].</li>
+                        <li>**Gerenciamento:** Gerenciado na nuvem (**sem controladora física**) [SEI_0088668861_Edital (1).pdf, p. 259, item 3.20.104]. Deve ser do **mesmo fabricante dos FIREWALL NGFW** [SEI_0088668861_Edital (1).pdf, p. 103, item 3.3.7].</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Transceptores ópticos SFP+ de 10 Gigabits (GBICs)</td>
+                <td>
+                    - **20** unidades [SEI_0088668861_Edital (1).pdf, p. 108, item 5; p. 416, item 5]<br>
+                    <span class="observacao">Nota: O Estudo Técnico Preliminar (ETP) sugere a necessidade de 40 unidades [SEI_0088668861_Edital (1).pdf, p. 377, item 7].</span>
+                </td>
+                <td>
+                    <p>A solução deve ser **compatível com fibra óptica multimodo** e com conector LC duplex [SEI_0088668861_Edital (1).pdf, p. 266, item 3.22].</p>
+                    <ul>
+                        <li>**Padrão:** Compatível com IEEE 802.3ae **10GBASE-SR** [SEI_0088668861_Edital (1).pdf, p. 266, item 3.22].</li>
+                        <li>**Velocidade:** **10 Gbps full duplex** [SEI_0088668861_Edital (1).pdf, p. 266, item 3.22].</li>
+                        <li>**Compatibilidade Obrigatória:** Deve ser compatível física e logicamente com os switches **D-Link DGS-1510-28P** já instalados na infraestrutura da Secretaria [SEI_0088668861_Edital (1).pdf, p. 267, item 3.22]. O fornecedor deve garantir esta compatibilidade [SEI_0088668861_Edital (1).pdf, p. 267, item 3.22].</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Serviço de Monitoramento e Suporte 24x7 / Treinamento</td>
+                <td>
+                    - **1** pacote (Serviço) [SEI_0088668861_Edital (1).pdf, p. 377, item 7]
+                </td>
+                <td>
+                    <p>Todos os serviços (instalação, configuração, manutenção, suporte técnico e monitoramento) devem ser providos na modalidade **24x7x365** [SEI_0088668861_Edital (1).pdf, p. 105, item 3.3.13; p. 396, item 12]. O prazo de garantia, manutenção e suporte técnico deve vigorar pelo mesmo prazo da vigência contratual [SEI_0088668861_Edital (1).pdf, p. 272, item 3.24.10].</p>
+                    <ul>
+                        <li>**Implantação:** Prazo máximo de **60 (sessenta) dias corridos** a contar da assinatura [SEI_0088668861_Edital (1).pdf, p. 301, item 4.1.9]. Deve incluir a migração de todas as regras e políticas de segurança atuais [SEI_0088668861_Edital (1).pdf, p. 310, item 5.3.3].</li>
+                        <li>**Treinamento:** Deve ser curso ministrado por profissional certificado do fabricante, com no mínimo **24 horas** de duração, para pelo menos **03 (três) técnicos** da CONTRATANTE [SEI_0088668861_Edital (1).pdf, p. 268, item 3.23.2-3.23.3].</li>
+                        <li>**SOC/Operação:** Deve seguir as melhores práticas de mercado (modelo de referência **ITIL**) [SEI_0088668861_Edital (1).pdf, p. 276, item 3.24.25].</li>
+                        <li>**Requisitos Contratuais Específicos:** A Contratada deve assegurar que todos os dados tratados sejam armazenados e processados exclusivamente em **território brasileiro** [SEI_0088668861_Edital (1).pdf, p. 444, item 9.4.1]. Deve manter um **Plano de Descontinuidade e Migração** (Estratégia de Saída) com dados entregues em formato padronizado, aberto e não proprietário [SEI_0088668861_Edital (1).pdf, p. 445, item 9.4.5, 9.4.5.1].</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

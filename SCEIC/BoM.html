@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill of Materials (BOM) - Solução de Segurança Check Point (48 meses)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #337ab7;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+        }
+        .item-group {
+            background-color: #e9f7ff;
+            font-weight: bold;
+        }
+        .note {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bill of Materials (BOM) - Solução de Segurança Cibernética (Check Point)</h1>
+    <p>Documento detalhando os produtos mínimos aderentes para a locação da Solução Completa de HARDWARE/SOFTWARE como serviço de segurança, pelo período de 48 meses.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">Item Edital</th>
+                <th style="width: 35%;">Produto / Serviço (Mínimo Adotado)</th>
+                <th style="width: 10%;">Quantidade</th>
+                <th style="width: 50%;">Código de Produto (SKU / Part Number)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="item-group" colspan="4">ITEM 1: FIREWALL NGFW (2 unidades em HA)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Appliance Quantum Force NGFW (Hardware 2U, HA, Fontes Redundantes, 8x RJ45 + 4x SFP+ onboard)</td>
+                <td>2 Appliances</td>
+                <td>CPAP-SG9400-PLUS-SNBT (Configuração Plus)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Licenciamento SandBlast (SNBT) / Software de Segurança (Controle de Aplicações, IPS, Anti-Vírus, Sandbox, etc.) - 48 meses</td>
+                <td>48 UNID. (serviço/mês)</td>
+                <td>CPSB-NGFW-SNBT-48M*</td>
+            </tr>
+             <tr>
+                <td class="item-group" colspan="4">ITEM 2: SOLUÇÃO DE ARMAZENAMENTO DE LOGS DEDICADA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Appliance SmartLog / SmartEvent Dedicado (2U, 265GB+ RAM, 8TB+ SSD, RAID 5+)</td>
+                <td>2 Appliances</td>
+                <td>CPAP-SM6000-XL (Base)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Licenciamento SmartEvent / Log Management (48 meses)</td>
+                <td>2 Servidores</td>
+                <td>CPSM-NGSM-EVNT-48M*</td>
+            </tr>
+            <tr>
+                <td class="item-group" colspan="4">ITEM 3: WEB APPLICATION FIREWALL (WAF) (2 unidades em HA)</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Appliance CloudGuard WAF (Hardware dedicado, alta disponibilidade, 200 Mbps Throughput mínimo)</td>
+                <td>2 Appliances</td>
+                <td>CPAP-DP6-5-SME (Placeholder para Appliance Dedicado)</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Licenciamento CloudGuard WAF (48 meses)</td>
+                <td>2 Instâncias</td>
+                <td>CPSB-WAF-48M*</td>
+            </tr>
+             <tr>
+                <td class="item-group" colspan="4">ITEM 4: REDE WIRELESS ACCESS POINT (34 unidades)</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Access Point Wireless Indoor (Enterprise, Wi-Fi 6, 4x4 MU-MIMO)</td>
+                <td>34 APs</td>
+                <td>CPAP-AP-WIFI6-ENT*</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Licenciamento Controladora Cloud Wireless (48 meses)</td>
+                <td>34 APs</td>
+                <td>CPSB-WAP-34U-48M*</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Injetores PoE Gigabit (Compatíveis com o AP)</td>
+                <td>30 UNID.</td>
+                <td>CPAC-POE-INJ-GIG*</td>
+            </tr>
+            <tr>
+                <td class="item-group" colspan="4">ITEM 5: TRANSCEPTORES ÓPTICOS SFP+ DE 10 GIGABITS</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Transceptor Óptico SFP+ 10GBASE-SR (Multimodo, compatível com D-Link DGS-1510-28P)</td>
+                <td>20 UNID.</td>
+                <td>CPAC-TR-10SR-MMF*</td>
+            </tr>
+            <tr>
+                <td class="item-group" colspan="4">ITEM 6: SEGURANÇA AVANÇADA (ENDPOINT/SERVIDORES, MFA, NDR)</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Licenciamento Harmony Endpoint Elite (EPP, EDR, XDR, Anti-Ransomware, Patch Management) - 48 meses</td>
+                <td>450 L.U. (Licenças de Uso)</td>
+                <td>CPSB-HE-ELITE-450U-48M*</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Licenciamento Autenticação Multifator (MFA/IAM) - 48 meses</td>
+                <td>400 L.U.</td>
+                <td>CPSB-IAM-400U-48M*</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Tokens Físicos MFA (Da mesma marca do NGFW)</td>
+                <td>10 Tokens</td>
+                <td>CPAC-MFA-TOKEN-PHY*</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Licenciamento Network Detection and Response (NDR) Cloud/SaaS (1 Instância de serviço 24x7) - 48 meses</td>
+                <td>1 Pacote/Instância</td>
+                <td>CPSB-NDR-48M*</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="note">*Nota: SKUs/Part Numbers marcados com asterisco (*) são placeholders estruturados para atender aos requisitos de quantidade e duração (48 meses) da licitação, uma vez que as fontes fornecidas não listam SKUs exatos para subscrições de 48 meses ou para todos os acessórios e hardware específicos (WAF, AP, Transceptor Óptico 10GBASE-SR MMF).</p>
+
+</body>
+</html>
