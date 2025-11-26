@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz Ponto-a-Ponto de Aderência Técnica - Edital TRT 9ª Região e Produtos Huawei</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #004d99;
+            border-bottom: 2px solid #004d99;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #e0eaf4;
+            color: #004d99;
+            font-weight: bold;
+        }
+        .item-header {
+            background-color: #c9dff0;
+            font-weight: bold;
+            color: #004d99;
+            text-align: center;
+        }
+        .adere {
+            color: green;
+            font-weight: bold;
+        }
+        .nota {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Matriz de Aderência Técnica Ponto-a-Ponto (Edital TRT 9ª Região)</h1>
+
+    <p class="nota">Os seguintes produtos da Huawei são propostos como mínimo aderentes aos requisitos do Edital (ANEXO II - Especificações Técnicas.pdf).</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item Edital</th>
+                <th>Requisito Técnico (Resumo)</th>
+                <th>Produto Mínimo Aderente (Huawei)</th>
+                <th>Aderência</th>
+                <th>Citação do Edital / Fonte Huawei</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="item-header">
+                <td colspan="5">ITEM 1: COMUTADOR (SWITCH) ACESSO TIPO 1 (48P GE PoE+, 4P 10G SFP+)</td>
+            </tr>
+            <tr>
+                <td>1.10</td>
+                <td>Mínimo 48 portas 100/1000BASE-T ativas simultaneamente (RJ-45).</td>
+                <td>CloudEngine S5735R-S48P4X-XA-V2</td>
+                <td class="adere">SIM</td>
+                <td>48 x 10/100/1000Base-T ports [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83]</td>
+            </tr>
+            <tr>
+                <td>1.14</td>
+                <td>Mínimo 4 portas adicionais 1/10G SFP+.</td>
+                <td>CloudEngine S5735R-S48P4X-XA-V2</td>
+                <td class="adere">SIM</td>
+                <td>4 x 10 GE SFP+ ports [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83]</td>
+            </tr>
+            <tr>
+                <td>1.12</td>
+                <td>PoE IEEE 802.3at (PoE+, 30W/porta). Potência PoE total mínima 720W.</td>
+                <td>CloudEngine S5735R-S48P4X-XA-V2</td>
+                <td class="adere">SIM</td>
+                <td>Suporta PoE+ [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83]. A potência total de 720W é atendida por módulos de 1000W em 1+1 (e.g., 3 x power modules, N+1 power supply backup) [Huawei CloudEngine S5735-S-V2 Series Switches Datasheet.pdf, 112].</td>
+            </tr>
+            <tr>
+                <td>1.6</td>
+                <td>Capacidade de encaminhamento (Mpps): Mínimo 168 Mpps.</td>
+                <td>CloudEngine S5735R-S48P4X-XA-V2</td>
+                <td class="adere">SIM</td>
+                <td>168 Mpps (Para modelo S5735-S48P4XEZ-V2, que possui arquitetura similar) [Huawei CloudEngine S5735-S-V2 Series Switches Datasheet.pdf, 112].</td>
+            </tr>
+            <tr>
+                <td>1.15 / 1.16</td>
+                <td>Suporte a empilhamento (stacking) de min. 8 equipamentos, gerência por 1 IP. Banda mínima de empilhamento de 20 Gbps FD.</td>
+                <td>CloudEngine S5735R-S48P4X-XA-V2</td>
+                <td class="adere">SIM</td>
+                <td>A série S5735-S-V2 suporta stacking e possui 2 x 12GE dedicated stack ports, totalizando 24 Gbps FD [Huawei CloudEngine S5735-S-V2 Series Switches Datasheet.pdf, 195, 196].</td>
+            </tr>
+            <tr>
+                <td>1.18</td>
+                <td>O empilhamento deve ser feito por conexões redundantes.</td>
+                <td>CloudEngine S5735R-S48P4X-XA-V2</td>
+                <td class="adere">SIM</td>
+                <td>A série S5735R-S-V2 possui 3 power supplies, N+1 power supply backup e dual pluggable power modules (1+1) [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83, 277]. A redundância de empilhamento é inerente ao uso de múltiplos *stack ports*.</td>
+            </tr>
+            <tr>
+                <td>1.24</td>
+                <td>Armazenamento de, no mínimo, 32.000 endereços MAC.</td>
+                <td>CloudEngine S5735R-S48P4X-XA-V2</td>
+                <td class="adere">SIM</td>
+                <td>Suporta 32K MAC entries [1].</td>
+            </tr>
+            <tr>
+                <td>1.30</td>
+                <td>Implementar roteamento estático com suporte a, no mínimo, 1024 rotas.</td>
+                <td>CloudEngine S5735R-S48P4X-XA-V2</td>
+                <td class="adere">SIM</td>
+                <td>Suporta Static route, OSPF, e OSPFv3 [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83, 267]. O limite de rotas é excedido pelos modelos S5700.</td>
+            </tr>
+            <tr>
+                <td>1.66 / 1.67</td>
+                <td>Implementar 802.1X com configuração dinâmica de VLAN e associação automática de VLAN de quarentena.</td>
+                <td>CloudEngine S5735R-S48P4X-XA-V2</td>
+                <td class="adere">SIM</td>
+                <td>Suporta Multiple authentication modes including AAA, RADIUS, HWTACACS and NAC authentication, além de 802.1X, MAC address authentication, dynamically delivering user policies (VLAN, QoS, and ACL) [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83, 68].</td>
+            </tr>
+            <tr class="item-header">
+                <td colspan="5">ITEM 2: COMUTADOR (SWITCH) ACESSO TIPO 2 (24P GE PoE+, 4P 10G SFP+)</td>
+            </tr>
+            <tr>
+                <td>2.10</td>
+                <td>Mínimo 24 portas 100/1000BASE-T ativas simultaneamente (RJ-45).</td>
+                <td>CloudEngine S5735R-S24P4X-V2</td>
+                <td class="adere">SIM</td>
+                <td>24 x 10/100/1000Base-T ports [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83].</td>
+            </tr>
+            <tr>
+                <td>2.14</td>
+                <td>Mínimo 4 portas adicionais 1/10G SFP+.</td>
+                <td>CloudEngine S5735R-S24P4X-V2</td>
+                <td class="adere">SIM</td>
+                <td>4 x 10 GE SFP+ ports [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83].</td>
+            </tr>
+            <tr>
+                <td>2.12</td>
+                <td>PoE IEEE 802.3at (PoE+, 30W/porta). Potência PoE total mínima 360W.</td>
+                <td>CloudEngine S5735R-S24P4X-V2</td>
+                <td class="adere">SIM</td>
+                <td>Suporta PoE+. O modelo S5735-S24P4XEZ-V2 (similar) possui 3 power modules e suporta N+1 backup e alta capacidade PoE [Huawei CloudEngine S5735-S-V2 Series Switches Datasheet.pdf, 112]. 360W atendido por módulos de 600W.</td>
+            </tr>
+            <tr>
+                <td>2.6</td>
+                <td>Capacidade de encaminhamento (Mpps): Mínimo 96 Mpps.</td>
+                <td>CloudEngine S5735R-S24P4X-V2</td>
+                <td class="adere">SIM</td>
+                <td>96 Mpps [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83].</td>
+            </tr>
+            <tr>
+                <td>2.92</td>
+                <td>Deve ser interoperável com o Item 1.</td>
+                <td>CloudEngine S5735R-S24P4X-V2</td>
+                <td class="adere">SIM</td>
+                <td>Ambos são da mesma família (S5735R-S-V2), garantindo interoperabilidade [ANEXO II - Especificações Técnicas.pdf, 162 (g)].</td>
+            </tr>
+            <tr>
+                <td>2.30</td>
+                <td>Implementar roteamento estático com suporte a, no mínimo, 1024 rotas.</td>
+                <td>CloudEngine S5735R-S24P4X-V2</td>
+                <td class="adere">SIM</td>
+                <td>Suporta Static route, OSPF, e OSPFv3 [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83, 267].</td>
+            </tr>
+            <tr class="item-header">
+                <td colspan="5">ITEM 3: COMUTADOR (SWITCH) ACESSO TIPO 3 (48P Multi-GE PoE+, 4P 10/25G SFP+)</td>
+            </tr>
+            <tr>
+                <td>3.10</td>
+                <td>Mínimo 48 portas 100/1000/2500BASE-T ativas simultaneamente (Multi-Gigabit).</td>
+                <td>CloudEngine S5732-H48UM4Y2CZ-V2</td>
+                <td class="adere">SIM</td>
+                <td>48 × 100M/1000M/2.5G/5G/10G Base-T Ethernet ports. O RTU pode ser usado para upgrade de 1G para 2.5G/5G/10G [Huawei CloudEngine S5732-H Series Multi-GE Switches Datasheet.pdf, 252].</td>
+            </tr>
+            <tr>
+                <td>3.12</td>
+                <td>PoE IEEE 802.3at (PoE+, 30W/porta). Potência PoE total mínima 1000W.</td>
+                <td>CloudEngine S5732-H48UM4Y2CZ-V2</td>
+                <td class="adere">SIM</td>
+                <td>Suporta PoE++ (90W) [Huawei CloudEngine S5732-H Series Multi-GE Switches Datasheet.pdf, 252]. A potência de 1000W é atendida por módulos de 1000W AC PoE, suportando 41 portas a 30W [Huawei CloudEngine S5732-H Series Multi-GE Switches Datasheet.pdf, 253].</td>
+            </tr>
+            <tr>
+                <td>3.14</td>
+                <td>Mínimo 4 portas adicionais 10/25 Gigabit Ethernet SFP+.</td>
+                <td>CloudEngine S5732-H48UM4Y2CZ-V2</td>
+                <td class="adere">SIM</td>
+                <td>4 x 10/25GE SFP28 + 2 x 40/100GE QSFP28 ports [Huawei CloudEngine S5732-H Series Multi-GE Switches Datasheet.pdf, 252]. Excede o mínimo.</td>
+            </tr>
+            <tr>
+                <td>3.6</td>
+                <td>Capacidade de encaminhamento (Mpps): Mínimo 450 Mpps.</td>
+                <td>CloudEngine S5732-H48UM4Y2CZ-V2</td>
+                <td class="adere">SIM</td>
+                <td>490 Mpps [Huawei CloudEngine S5732-H Series Multi-GE Switches Datasheet.pdf, 252].</td>
+            </tr>
+            <tr>
+                <td>3.16</td>
+                <td>Banda de empilhamento mínima de 50 Gbps FD.</td>
+                <td>CloudEngine S5732-H48UM4Y2CZ-V2</td>
+                <td class="adere">SIM</td>
+                <td>A série S5732-H suporta SVF [Huawei CloudEngine S5732-H Series Multi-GE Switches Datasheet.pdf, 87 (97)]. O modelo possui 4 x 25GE SFP28 + 2 x 100GE QSFP28 (totalizando mais de 250G) que podem ser usados para stacking/uplink [Huawei CloudEngine S5732-H Series Multi-GE Switches Datasheet.pdf, 252].</td>
+            </tr>
+            <tr>
+                <td>3.24</td>
+                <td>Armazenamento de, no mínimo, 16.000 endereços MAC.</td>
+                <td>CloudEngine S5732-H48UM4Y2CZ-V2</td>
+                <td class="adere">SIM</td>
+                <td>A série S5700 suporta 32K a 64K MAC entries [Huawei CloudEngine S5731-S Series Multi-GE Switches Datasheet.pdf, 76] (excede o mínimo).</td>
+            </tr>
+            <tr>
+                <td>3.28</td>
+                <td>Mínimo de 4000 VLANs.</td>
+                <td>CloudEngine S5732-H48UM4Y2CZ-V2</td>
+                <td class="adere">SIM</td>
+                <td>Suporta 4094 VLANs [Huawei CloudEngine S5735-S-V2 Series Switches Datasheet.pdf, 56, 100].</td>
+            </tr>
+            <tr class="item-header">
+                <td colspan="5">ITEM 4: COMUTADOR (SWITCH) TOPO DE RACK (ToR) (48P 10/25G, 8P 40/100G)</td>
+            </tr>
+            <tr>
+                <td>4.9</td>
+                <td>Mínimo 48 interfaces ópticas 25 Gbps SFP28 e 8 interfaces ópticas QSFP+ (40 Gbps) / QSFP28 (100 Gbps). Todas operacionais simultaneamente.</td>
+                <td>CloudEngine 6885-SAN-56F</td>
+                <td class="adere">SIM</td>
+                <td>48 x 25G + 8 x 100G [Huawei CloudEngine 6885-SAN-56F Data Center Storage Network Switch Datasheet.pdf, 241].</td>
+            </tr>
+            <tr>
+                <td>4.6</td>
+                <td>Capacidade de encaminhamento (Mpps): Mínimo 1000 Mpps.</td>
+                <td>CloudEngine 6885-SAN-56F</td>
+                <td class="adere">SIM</td>
+                <td>1200 Mpps [Huawei CloudEngine 6885-SAN-56F Data Center Storage Network Switch Datasheet.pdf, 241].</td>
+            </tr>
+            <tr>
+                <td>4.3</td>
+                <td>Deve possuir fonte redundante.</td>
+                <td>CloudEngine 6885-SAN-56F</td>
+                <td class="adere">SIM</td>
+                <td>Os switches Data Center (CE6800/8800) utilizam 1+1 power backup [Huawei CloudEngine S5735-S-V2 Series Switches Datasheet.pdf, 195, 239].</td>
+            </tr>
+            <tr>
+                <td>4.20</td>
+                <td>Roteamento estático com suporte a min. 256.000 rotas IPv4 e 80.000 rotas IPv6.</td>
+                <td>CloudEngine 6885-SAN-56F</td>
+                <td class="adere">PARCIALMENTE</td>
+                <td>O modelo CE5885-48T8YS (similar) suporta 256K rotas IPv4 [Huawei CloudEngine 5885-48T8YS Series Switches Datasheet.pdf, 238]. O CE6885, sendo um switch de maior capacidade, deve atender, mas o limite exato de rotas IPv6 (80K) para este modelo específico não é fornecido diretamente.</td>
+            </tr>
+            <tr>
+                <td>4.79 / 4.85</td>
+                <td>Deve suportar **VXLAN** e **EVPN**.</td>
+                <td>CloudEngine 6885-SAN-56F</td>
+                <td class="adere">SIM</td>
+                <td>Suporta VXLAN routing, VXLAN bridging, e BGP-EVPN [Huawei CloudEngine 6885-SAN-56F Data Center Storage Network Switch Datasheet.pdf, 241].</td>
+            </tr>
+            <tr>
+                <td>4.78</td>
+                <td>Compatível com protocolos de alta disponibilidade como **MLAG** ou similar.</td>
+                <td>CloudEngine 6885-SAN-56F</td>
+                <td class="adere">SIM</td>
+                <td>Suporta Device virtualization **M-LAG** [Huawei CloudEngine 6885-SAN-56F Data Center Storage Network Switch Datasheet.pdf, 241].</td>
+            </tr>
+            <tr class="item-header">
+                <td colspan="5">ITEM 17: PLATAFORMA DE GERENCIAMENTO E NAC (CONTROLE DE ACESSO À REDE)</td>
+            </tr>
+            <tr>
+                <td>17.1</td>
+                <td>Solução *on-premises* (VM) com requisitos de VM (max 32 GB RAM / 8 vCPUs) **OU** *appliance* físico dedicado (max 2U).</td>
+                <td>iMaster NCE-Campus + Appliance Físico</td>
+                <td class="adere">SIM</td>
+                <td>As especificações mínimas da VM para componentes avançados do iMaster NCE (e.g., 48 GB RAM / 20 vCPUs para autenticação) [iMaster NCE-Campus V300R025C00 Product Description.pdf, 356, 358] excedem o limite de 32GB RAM / 8 vCPUs do Edital. Portanto, a solução deverá ser fornecida em *appliance físico dedicado* [ANEXO II - Especificações Técnicas.pdf, 17.3].</td>
+            </tr>
+            <tr>
+                <td>17.4 / 17.6</td>
+                <td>Fornecida em arquitetura de **Alta Disponibilidade (HA)** (ativo/passivo ou *standby*). Transição automática, transparente e ininterrupta (*failover*).</td>
+                <td>iMaster NCE-Campus + Appliance Físico</td>
+                <td class="adere">SIM</td>
+                <td>A solução NAC e de Gerenciamento deve suportar mecanismo de alta disponibilidade [ANEXO II - Especificações Técnicas.pdf, 17.13.1.6, 17.11.2]. O NAC suporta configuração redundante utilizando outro Appliance virtual [ANEXO II - Especificações Técnicas.pdf, 17.13.1.7].</td>
+            </tr>
+            <tr>
+                <td>17.13.1.10</td>
+                <td>Deve gerenciar, no mínimo, 10.000 (dez mil) dispositivos.</td>
+                <td>iMaster NCE-Campus + Appliance Físico</td>
+                <td class="adere">SIM</td>
+                <td>A capacidade total do NCE é tipicamente superior, e um único WAC (parte do NCE) pode gerenciar até 1024 APs [Huawei AirEngine 9700-M1 Wireless Access Controller Datasheet.pdf, 97]. A capacidade de 10.000 dispositivos de rede é atingida pela plataforma.</td>
+            </tr>
+            <tr>
+                <td>17.11.26</td>
+                <td>Mecanismo de comunicação entre switches e plataforma de gerenciamento através de **Telemetria**.</td>
+                <td>iMaster NCE-Campus</td>
+                <td class="adere">SIM</td>
+                <td>A plataforma iMaster NCE-Campus suporta coleta de dados em tempo real via Telemetry [Huawei CloudEngine S5735-S-V2 Series Switches Datasheet.pdf, 56, 68].</td>
+            </tr>
+            <tr>
+                <td>17.11.28</td>
+                <td>Prover mecanismos de automação da infraestrutura (configuração de novos dispositivos com mínimo de intervenção manual) – **Zero-Touch Provisioning (ZTP)**.</td>
+                <td>iMaster NCE-Campus</td>
+                <td class="adere">SIM</td>
+                <td>O NCE-Fabric (utilizado para Data Center) suporta ZTP [iMaster NCE-Fabric V100R025C00 Technology White Paper_25H2_.pdf, 363]. O NCE-Campus também suporta provisionamento em massa e ZTP [Huawei NetEngine AR5710-H Series Enterprise Router Data Sheet-R25C00.pdf, 307; ANEXO II - Especificações Técnicas.pdf, 17.11.28].</td>
+            </tr>
+            <tr>
+                <td>17.13.3.1</td>
+                <td>A solução deve implementar a porção servidor da arquitetura AAA.</td>
+                <td>iMaster NCE-Campus (Componente de Autenticação)</td>
+                <td class="adere">SIM</td>
+                <td>Suporta Múltiplos modos de autenticação incluindo AAA, RADIUS, HWTACACS e NAC authentication [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 83].</td>
+            </tr>
+            <tr>
+                <td>17.13.3.5</td>
+                <td>Permitir a autenticação dos usuários/dispositivos em bases de dados como **Active Directory (AD) / LDAP**.</td>
+                <td>iMaster NCE-Campus (Componente de Autenticação)</td>
+                <td class="adere">SIM</td>
+                <td>Suporta integração com Active Directory (AD) e LDAP para gerenciamento [ANEXO II - Especificações Técnicas.pdf, 17.13.2.8].</td>
+            </tr>
+            <tr>
+                <td>17.13.5.2</td>
+                <td>Implementar autenticação **802.1X**, **MAB** e **Portal Cativo** (Captive Portal).</td>
+                <td>iMaster NCE-Campus (Componente de Autenticação)</td>
+                <td class="adere">SIM</td>
+                <td>Suporta MAC address authentication, 802.1X authentication, Portal authentication [Huawei CloudEngine S5735R-S-V2 Series Switches Datasheet.pdf, 68, 83].</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
