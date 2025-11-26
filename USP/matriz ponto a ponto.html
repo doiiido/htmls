@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de Aderência Técnica Ponto a Ponto - Huawei</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #004085;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: left;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        th {
+            background-color: #004085;
+            color: white;
+            font-size: 14px;
+        }
+        .item-header {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .product-name {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .adherence-sim {
+            background-color: #d4edda;
+            color: #155724;
+            font-weight: bold;
+            text-align: center;
+        }
+        .adherence-na {
+            background-color: #f8d7da;
+            color: #721c24;
+            text-align: center;
+        }
+        .source-cite {
+            font-size: 11px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Matriz de Aderência Técnica: Produtos Huawei Mínimos vs. Requisitos do Edital</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Requisito (ID)</th>
+                <th>Descrição do Requisito do Edital</th>
+                <th>Produto Huawei Mínimo Adotado</th>
+                <th>Especificação Mínima Adotada (Aderência Estrita)</th>
+                <th>Aderência</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="item-header"><td colspan="5">ITEM 1: SOLUÇÃO DE ARMAZENAMENTO (STORAGE ALL-FLASH)</td></tr>
+            
+            <tr>
+                <td>1.1 (Geral)</td>
+                <td>Solução de armazenamento (storage) All-Flash.</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V7 ou Pacific 9928</td>
+                <td>É um sistema de armazenamento construído exclusivamente com SSDs (All-Flash), como o OceanStor Pacific 9928 [5].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>1.2 (Capacidade)</td>
+                <td>Capacidade líquida de armazenamento de no mínimo **1.300 TiB**.</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V7 (Configurado para 1.300 TiB líquidos)</td>
+                <td>Configuração de capacidade líquida para atingir exatamente 1.300 TiB, sendo que a plataforma Pacific 9928 (Ex: 1 chassis) alcança 1105.92 TB (Terabytes) de capacidade bruta máxima por chassis, sendo escalável para atender o requisito líquido após a configuração de RAID e Deduplicação [5].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>1.3 (Arquitetura)</td>
+                <td>Arquitetura ativo/ativo, com *failover* automático e sem ponto único de falha.</td>
+                <td class="product-name">OceanStor Dorado / Pacific</td>
+                <td>Arquitetura de alta disponibilidade com controladoras ativas e redundância de componentes, cumprindo o requisito de alta disponibilidade [6].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+             <tr>
+                <td>1.4 (Cache)</td>
+                <td>Mínimo de 512 GB de memória *cache*, tipo NVRAM e/ou DRAM DDR3 ou superior.</td>
+                <td class="product-name">OceanStor Dorado / Pacific</td>
+                <td>Requisito de componente de cache (atendido pelo projeto de controle da série Dorado).</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>1.5 (Interfaces 10G)</td>
+                <td>Mínimo de 2x Ethernet 10Gbps SFP+ por controladora (iSCSI, NFS, CIFS).</td>
+                <td class="product-name">OceanStor Dorado / Pacific</td>
+                <td>Suporte nativo a interfaces 10/25/100/200 Gb/s TCP/IP ou iSCSI [5].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>1.6 (Interfaces 25G)</td>
+                <td>Mínimo de 2x Ethernet 25Gbps por controladora (iSCSI, NFS, CIFS).</td>
+                <td class="product-name">OceanStor Dorado / Pacific</td>
+                <td>Suporte nativo a interfaces 10/25/100/200 Gb/s TCP/IP [5].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>1.7 (Interfaces FC Serv.)</td>
+                <td>Mínimo de 2x Fibre Channel 32Gbps por controladora (para servidores).</td>
+                <td class="product-name">OceanStor Dorado / Pacific</td>
+                <td>A série suporta FC 32Gbps (requisito de placa de expansão) para conectividade SAN.</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>1.8 (Interfaces FC Fitas)</td>
+                <td>Mínimo de 2x Fibre Channel 32Gbps por controladora (para biblioteca de fitas).</td>
+                <td class="product-name">OceanStor Dorado / Pacific</td>
+                <td>A série suporta FC 32Gbps (requisito de placa de expansão).</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+             <tr>
+                <td>1.9 (Func. Deduplicação)</td>
+                <td>Funcionalidade de **Deduplicação inline** e Compressão, ativadas por padrão e licenciadas para a capacidade total.</td>
+                <td class="product-name">OceanStor Dorado / Pacific</td>
+                <td>Os sistemas OceanStor Dorado e Pacific suportam Deduplicação (SourceDedupe) e Compressão (SourceCompression) [5, 7, 8].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>1.10 (Func. Snapshots)</td>
+                <td>Suporte nativo a **Snapshots** (mínimo 1.000 por LUN).</td>
+                <td class="product-name">OceanStor Dorado / Pacific</td>
+                <td>A funcionalidade SmartTakeover (Snapshot inteligente) é suportada pelos sistemas OceanStor Pacific [5].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+             <tr>
+                <td>1.11 (Desempenho)</td>
+                <td>Desempenho de **200.000 IOP’s** (blocos de 16KB, 70% leitura/30% escrita, 100% randômico, cache hit = 0%).</td>
+                <td class="product-name">OceanStor Dorado / Pacific</td>
+                <td>Os sistemas All-Flash (como o Dorado e Pacific) são projetados para oferecer alto IOPS e baixa latência (Latência média abaixo de 2 ms) [Requisito derivado do Estudo Técnico Preliminar].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>1.12 (HSSDs)</td>
+                <td>Utilização de **HSSDs** (Huawei-developed SSDs) (Implícito na arquitetura).</td>
+                <td class="product-name">OceanStor Dorado / Pacific</td>
+                <td>Os sistemas utilizam SSDs desenvolvidos pela Huawei (HSSDs ou equivalentes PCIe) [9].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            
+            <tr class="item-header"><td colspan="5">ITEM 2: SOLUÇÃO DE CONECTIVIDADE SWITCH SAN</td></tr>
+            
+            <tr>
+                <td>2.1 (Tipo)</td>
+                <td>Solução de Conectividade **Switch SAN** (Fiber Channel).</td>
+                <td class="product-name">HUAWEI OceanStor SNS3664 (2 Unidades)</td>
+                <td>Switch dedicado ao ambiente Fiber Channel (FC) SAN.</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>2.2 (Portas)</td>
+                <td>**48 portas ativas e licenciadas**, no mínimo.</td>
+                <td class="product-name">HUAWEI OceanStor SNS3664</td>
+                <td>O Switch SNS3664 (64 portas) pode ser configurado minimamente com 48 portas ativas e licenciadas.</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>2.3 (Velocidade)</td>
+                <td>Padrão **fiber channel de, no mínimo, 32 Gbps full duplex**.</td>
+                <td class="product-name">HUAWEI OceanStor SNS3664</td>
+                <td>O SNS3664 suporta a tecnologia Gen 6 Fibre Channel, com velocidade de 32 Gbps [10, 11].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>2.4 (Componentes)</td>
+                <td>Acompanhado de 48 cabos multimodo LC/LC (mínimo 5m) e 48 transceivers 32G SFP+ SWL.</td>
+                <td class="product-name">HUAWEI OceanStor SNS3664</td>
+                <td>O fornecimento inclui os componentes de conectividade FC necessários (transceivers e cabos).</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>2.5 (Arquitetura)</td>
+                <td>Arquitetura *non-blocking* e banda agregada de no mínimo 1536 Gbps.</td>
+                <td class="product-name">HUAWEI OceanStor SNS3664</td>
+                <td>Arquitetura de switch SAN de alto desempenho (requisito do hardware).</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>2.6 (Funcionalidades)</td>
+                <td>Suporte a VSANs, Enhanced Zoning, QoS (mín. 2 níveis), NPV/Access Gateway Mode e ISL Trunking.</td>
+                <td class="product-name">HUAWEI OceanStor SNS3664</td>
+                <td>Funcionalidades padrão de *switches* Fibre Channel empresariais.</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+
+            <tr class="item-header"><td colspan="5">REQUISITOS GERAIS E DE SUPORTE (APLICÁVEIS A AMBOS OS ITENS)</td></tr>
+            
+            <tr>
+                <td>G.1 (Garantia)</td>
+                <td>Garantia e suporte técnico por **60 (sessenta) meses**, na modalidade **24x7**.</td>
+                <td class="product-name">Ambos os produtos</td>
+                <td>A contratação exige garantia e suporte integral por 60 meses, 24x7 [10-12].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.2 (Abrangência)</td>
+                <td>Suporte integral abrangendo atualização de firmware, substituição de componentes defeituosos e assistência técnica especializada.</td>
+                <td class="product-name">Ambos os produtos</td>
+                <td>Requisito de serviço de suporte [10, 11].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+             <tr>
+                <td>G.3 (Condição)</td>
+                <td>Equipamentos novos, de primeiro uso, não recondicionados e em fase de comercialização normal (não *end-of-life* ou com previsão de EOL nos próximos 5 anos).</td>
+                <td class="product-name">Ambos os produtos</td>
+                <td>Obrigação de fornecer produtos novos, não remanufaturados e em linha de fabricação normal [6, 13-16].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.4 (Arquitetura)</td>
+                <td>Todos os componentes e funcionalidades devem ser compatíveis entre si, sem uso de adaptadores, usinagens, furações ou procedimentos não previstos nas especificações.</td>
+                <td class="product-name">Ambos os produtos</td>
+                <td>A solução deve ser coesa, sem adaptações forçadas [14].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.5 (Organização)</td>
+                <td>Componentes internos instalados de forma organizada e livres de pressões causadas por cabos ou outros componentes.</td>
+                <td class="product-name">Ambos os produtos</td>
+                <td>Requisito de qualidade de instalação e montagem [17].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+             <tr>
+                <td>G.6 (Identificação)</td>
+                <td>Número de série obrigatório, único, visível e válido para garantia e assistência técnica no Brasil.</td>
+                <td class="product-name">Ambos os produtos</td>
+                <td>Requisito padrão de rastreabilidade e garantia [17].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.7 (Sustentabilidade - RoHS)</td>
+                <td>Os bens não devem conter substâncias perigosas acima da concentração recomendada na diretiva RoHS.</td>
+                <td class="product-name">Ambos os produtos</td>
+                <td>Critério de sustentabilidade ambiental [18, 19].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+             <tr>
+                <td>G.8 (Sustentabilidade - INMETRO)</td>
+                <td>Os bens devem cumprir critérios de segurança, compatibilidade eletromagnética e eficiência energética conforme Portaria nº 170, de 2012 do INMETRO.</td>
+                <td class="product-name">Ambos os produtos</td>
+                <td>Critério de conformidade [18, 19].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.9 (Sustentabilidade - Descarte)</td>
+                <td>Adoção de um plano de descarte ou reuso dos ativos de TI a serem contratados (critério a ser priorizado).</td>
+                <td class="product-name">Ambos os produtos</td>
+                <td>Requisito de política administrativa/ambiental [20].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.10 (Licenças)</td>
+                <td>Todas as licenças (software e drivers) devem ser perpétuas e registradas para uso do Contratante.</td>
+                <td class="product-name">Ambos os produtos</td>
+                <td>Requisito legal de licenciamento [16].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            
+             <tr class="item-header"><td colspan="5">SERVIÇOS DE INSTALAÇÃO E DOCUMENTAÇÃO (GRUPO 1 e 2)</td></tr>
+            
+            <tr>
+                <td>S.1 (Instalação)</td>
+                <td>Instalação, configuração e migração de **719 TB** de dados (*Item 2 do Grupo 1*).</td>
+                <td class="product-name">Serviços profissionais do Fabricante.</td>
+                <td>A migração de dados é parte do escopo de serviços contratado.</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+             <tr>
+                <td>S.2 (Agendamento)</td>
+                <td>Execução de serviços em horários fora do expediente da ANVISA e agendamento prévio.</td>
+                <td class="product-name">Serviços profissionais do Fabricante.</td>
+                <td>As atividades devem ser agendadas previamente e realizadas fora do expediente, conforme acordado com o Contratante [21].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>S.3 (Profissionais)</td>
+                <td>Execução por **profissionais certificados** pelo Fabricante.</td>
+                <td class="product-name">Serviços profissionais do Fabricante.</td>
+                <td>Requisito de qualificação técnica para a execução dos serviços [22].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>S.4 (Documentação)</td>
+                <td>Entrega de documentação técnica em meio magnético, contendo Descrição da solução, Topologias física e lógica, Recursos de hardware/software e Mapeamento de portas.</td>
+                <td class="product-name">Documentação fornecida.</td>
+                <td>A documentação deve ser entregue contendo, no mínimo, a descrição, topologias (física e lógica), recursos utilizados, e mapeamento de portas [21, 23].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

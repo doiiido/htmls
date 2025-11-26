@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de Requisitos Técnicos e Valores Estimados - Edital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            color: #004085;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #004085;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007bff;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: left;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        th {
+            background-color: #004085;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9fc;
+        }
+        .group-header {
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        .value-cell {
+            font-weight: bold;
+            color: #dc3545;
+            text-align: right;
+        }
+        .source-cite {
+            font-size: 10px;
+            color: #6c757d;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Matriz de Requisitos Técnicos e Valores Estimados (Edital de Aquisição de Solução de Storage e Switch SAN)</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Grupo / Item</th>
+                <th>Descrição do Item</th>
+                <th>Resumo dos Requisitos Técnicos Mínimos (Bens e Serviços)</th>
+                <th>Qtde.</th>
+                <th>Valor Estimado (R$)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="group-header" id="grupo-1"><td colspan="5">GRUPO 1: SOLUÇÃO DE ARMAZENAMENTO ALL-FLASH E SERVIÇOS RELACIONADOS</td></tr>
+            
+            <tr>
+                <td>Item 1</td>
+                <td>Storage All Flash com capacidade líquida de armazenamento de no mínimo 1.300 TiB, assistência técnica e garantia de 60 meses.</td>
+                <td>
+                    <ul>
+                        <li>**Capacidade:** Mínimo de 1.300 TiB líquidos configurados em RAID de dupla-paridade [6-9].</li>
+                        <li>**Arquitetura:** All-Flash, ativo/ativo, com *failover* automático e sem ponto único de falha [7, 10, 11].</li>
+                        <li>**Cache:** Mínimo de 512 GB de memória *cache*, tipo NVRAM e/ou DRAM DDR3 ou superior [7, 11, 12].</li>
+                        <li>**Interfaces por Controladora (Mínimas):** 2x Ethernet 10Gbps SFP+ (iSCSI, NFS, CIFS); 2x Ethernet 25Gbps (iSCSI, NFS, CIFS); 2x Fibre Channel 32Gbps (para servidores) e 2x Fibre Channel 32Gbps (para biblioteca de fitas) [7, 13, 14].</li>
+                        <li>**Escalabilidade Futura:** Deve suportar no mínimo 2.200 TiB líquidos sem adição ou troca de controladoras, discos ou gavetas [15].</li>
+                        <li>**Funcionalidades:** Suporte nativo a Thin Provisioning, Snapshots (mín. 1.000 por LUN), Deduplicação e Compressão ativadas por padrão e licenciadas para a capacidade total [16-19].</li>
+                        <li>**Desempenho (Sizing):** Latência média abaixo de 2 milissegundos; 200.000 IOP’s (blocos de 16KB, 70% leitura/30% escrita, 100% randômico, cache hit = 0%) [20, 21].</li>
+                        <li>**Garantia:** Mínimo de 60 (sessenta) meses de garantia e suporte técnico **24x7** do fabricante [3, 7, 22, 23].</li>
+                    </ul>
+                    <span class="source-cite">Fontes: [24]-3904277_Termo.pdf (2.3.1, 2.4, 2.5.4, 2.6.1, 2.10, 2.11, 2.15); [25]-3830990_Estudo.pdf (7, 15); [26]-3919585_Edital_30_2025.pdf (1.1).</span>
+                </td>
+                <td style="text-align: center;">1 Unidade</td>
+                <td class="value-cell">R$ 8.857.160,64</td>
+            </tr>
+            
+            <tr>
+                <td>Item 2</td>
+                <td>Serviço de Instalação, Configuração e Migração para o Storage All-Flash.</td>
+                <td>
+                    <ul>
+                        <li>**Escopo:** Instalação física, configuração e migração de **719 TB** de dados [27, 28].</li>
+                        <li>**Metodologia de Migração:** Deve ser realizada via SAN, utilizando funcionalidade nativa de virtualização de *storage* externo ou equipamentos extras sem ônus [29]. A migração deve ser *on-line* (serviços em produção) [30].</li>
+                        <li>**Paradas:** Admitidas somente **duas paradas** para chaveamento por grupo de LUNs (início e final do processo) [28, 30].</li>
+                        <li>**Prazo de Execução:** Migração deve ser finalizada em até **180 (noventa) dias** [28, 29].</li>
+                        <li>**Profissionais:** Exigência de profissionais certificados pelo fabricante (nível especialista/Engenheiro ou superior) [28, 31, 32].</li>
+                    </ul>
+                    <span class="source-cite">Fontes: Especificacao Solucao de armazenamento.pdf (1.1, 1.14, 1.15, 1.10.2); [24]-3904277_Termo.pdf (2.17, 4.32); [25]-3830990_Estudo.pdf (15).</span>
+                </td>
+                <td style="text-align: center;">1 Serviço</td>
+                <td class="value-cell">R$ 137.705,73</td>
+            </tr>
+            
+            <tr>
+                <td>Item 3</td>
+                <td>Serviço de transferência de conhecimento para o Storage All-Flash.</td>
+                <td>
+                    <ul>
+                        <li>**Público:** Mínimo de **6 participantes** [33, 34].</li>
+                        <li>**Carga Horária:** Mínimo de **20 (vinte) horas** no total, em sessões de 4 horas diárias [33-35].</li>
+                        <li>**Conteúdo:** Baseado no conteúdo programático dos treinamentos oficiais do fabricante, abrangendo instalação, configuração, operação, SDN e segurança [33-35].</li>
+                        <li>**Entrega:** Deve ocorrer em até **60 dias** corridos após a Ordem de Serviço [33].</li>
+                        <li>**Certificação:** Fornecimento de certificado de conclusão emitido por empresa credenciada pelo fabricante [36, 37].</li>
+                    </ul>
+                    <span class="source-cite">Fontes: Especificacao Solucao de armazenamento.pdf (2.1, 2.5, 2.6, 2.7, 2.10); [24]-3904277_Termo.pdf (4.5, 4.32); [25]-3830990_Estudo.pdf (15).</span>
+                </td>
+                <td style="text-align: center;">1 Serviço</td>
+                <td class="value-cell">R$ 45.493,39</td>
+            </tr>
+
+            <tr class="group-header" id="grupo-2"><td colspan="5">GRUPO 2: SOLUÇÃO DE SWITCH SAN E SERVIÇOS RELACIONADOS</td></tr>
+            
+            <tr>
+                <td>Item 1</td>
+                <td>Solução de Switch SAN com assistência técnica e garantia de 60 meses.</td>
+                <td>
+                    <ul>
+                        <li>**Quantidade:** Dois (2) *switches* full-fabric [38].</li>
+                        <li>**Portas:** Mínimo de **48 portas ativas e licenciadas** [23, 38, 39].</li>
+                        <li>**Velocidade:** Padrão Fiber Channel de, no mínimo, **32 Gbps full duplex** [23, 38, 39].</li>
+                        <li>**Componentes:** Acompanhado de 48 cabos multimodo LC/LC (mínimo 5m) e 48 transceivers 32G SFP+ SWL [38, 40].</li>
+                        <li>**Desempenho:** Arquitetura *non-blocking* e banda agregada de no mínimo 1536 Gbps [38, 41, 42].</li>
+                        <li>**Funcionalidades:** Suporte a VSANs, Enhanced Zoning, QoS (mín. 2 níveis), NPV/Access Gateway Mode e ISL Trunking [38, 42-45].</li>
+                        <li>**Garantia:** Mínimo de 60 (sessenta) meses de garantia e suporte técnico **24x7** do fabricante [3, 22, 23, 34].</li>
+                    </ul>
+                    <span class="source-cite">Fontes: [24]-3904277_Termo.pdf (2.16, 4.18); [25]-3830990_Estudo.pdf (7, 15); [26]-3919585_Edital_30_2025.pdf (1.1).</span>
+                </td>
+                <td style="text-align: center;">2 Unidades</td>
+                <td class="value-cell">R$ 723.440,54</td>
+            </tr>
+            
+            <tr>
+                <td>Item 2</td>
+                <td>Serviço de Instalação, Configuração para o Switch SAN.</td>
+                <td>
+                    <ul>
+                        <li>**Escopo:** Instalação física em *racks* 19”, interligação e configuração lógica (zoning, VSANs, ISL Trunking, QoS) [46].</li>
+                        <li>**Condições:** Execução em horários fora do expediente da ANVISA e com agendamento prévio [46-48].</li>
+                        <li>**Prazo de Execução:** Configurações devem ser finalizadas em até **180 (noventa) dias** após o recebimento definitivo do projeto [46, 49].</li>
+                        <li>**Profissionais:** Exigência de profissionais certificados pelo fabricante (nível especialista ou superior) com experiência em redes SAN de missão crítica [46, 50].</li>
+                        <li>**Documentação:** Entrega de documentação técnica completa, incluindo topologia, mapeamento de portas, roteiro de configuração e Plano de Retorno (*Rollback*) [46, 48, 51].</li>
+                    </ul>
+                    <span class="source-cite">Fontes: Especificacao Solucao de armazenamento.pdf (3.7.2, 3.8.1, 3.9, 3.19.1); [24]-3904277_Termo.pdf (2.17); [25]-3830990_Estudo.pdf (15).</span>
+                </td>
+                <td style="text-align: center;">1 Serviço</td>
+                <td class="value-cell">R$ 79.867,59</td>
+            </tr>
+
+            <tr class="group-header"><td colspan="5">TOTAL GERAL ESTIMADO DA CONTRATAÇÃO</td></tr>
+            <tr>
+                <td colspan="4" style="text-align: right; font-weight: bold;">VALOR TOTAL (Soma dos Grupos 1 e 2):</td>
+                <td class="value-cell">R$ 9.843.667,90</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
