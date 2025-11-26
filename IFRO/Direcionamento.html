@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Direcionamento de Fabricante na Licitação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1400px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #cc0000;
+            text-align: center;
+            border-bottom: 2px solid #cc0000;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #e6e6fa;
+            color: #444;
+            font-weight: bold;
+        }
+        .explicit-requirement {
+            background-color: #ffe0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Matriz de Indícios de Direcionamento de Fabricante</h1>
+        <p>A tabela lista os itens onde há exigência explícita de marca, número de peça proprietário ou referência a um modelo específico que pode configurar direcionamento.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Licitado</th>
+                    <th>Fabricante / Marca Direcionada</th>
+                    <th>Indícios Encontrados</th>
+                    <th>Nome do Arquivo / Página / Linha (ou Item)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="explicit-requirement">
+                    <td>**01 (ACCESS POINT TIPO I - INDOOR)**</td>
+                    <td>**TP-Link**</td>
+                    <td>
+                        **Exigência de Marca Explícita:** A contratação exige que o produto seja da marca **TP-Link** para garantir a padronização e compatibilidade com sistemas e equipamentos já existentes.
+                        <br>
+                        **Modelo de Referência:** É citado o modelo TP-Link EAP610.
+                    </td>
+                    <td>
+                        SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 189 / item 4.27
+                        <br>
+                        SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 255 / item 6
+                        <br>
+                        SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 256 / item 6.2
+                    </td>
+                </tr>
+                <tr class="explicit-requirement">
+                    <td>**02 (ACCESS POINT TIPO II - ALTA DENSIDADE)**</td>
+                    <td>**TP-Link**</td>
+                    <td>
+                        **Exigência de Marca Explícita:** A marca **TP-Link** é exigida devido à necessidade de padronização e compatibilidade com a infraestrutura legada (rede Wi-Fi e plataforma de software de gestão) da instituição.
+                        <br>
+                        **Modelo de Referência:** É citado o modelo TP-Link EAP620 HD V3.20.
+                    </td>
+                    <td>
+                        SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 189 / item 4.27
+                        <br>
+                        SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 255 / item 6.1
+                        <br>
+                        SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 256 / item 6.2
+                    </td>
+                </tr>
+                <tr>
+                    <td>**22 (Switch PoE Tipo II)**</td>
+                    <td>**D-Link**</td>
+                    <td>
+                        **Modelo de Referência:** É citado o modelo de referência D-Link DGS-1250-52XMP.
+                    </td>
+                    <td>SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 271 / item 7.4</td>
+                </tr>
+                <tr>
+                    <td>**28 (Fonte alimentação HP Compaq Pro 6305)**</td>
+                    <td>**HP (Hewlett-Packard)**</td>
+                    <td>
+                        **Referência a Peça Proprietária (P/N):** A fonte deve ser original HP ou 100% compatível, correspondendo às especificações do Part Number **611481-001** / Spare Number **613762-001** e/ou modelo D10-240P1A (Chicony), indicando compatibilidade estrita com um modelo específico de desktop HP (HP Compaq Pro 6305 SFF).
+                    </td>
+                    <td>SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 274 / (Especificação Item 28)</td>
+                </tr>
+                <tr>
+                    <td>**29 (Fonte alimentação HP Elitedesk 800 G3)**</td>
+                    <td>**HP (Hewlett-Packard)**</td>
+                    <td>
+                        **Referência a Peça Proprietária (P/N):** A fonte deve ser original HP ou 100% compatível, correspondendo às especificações do Part Number HP **901762-001** e/ou modelo PA-1181-6HA (LITE-ON), indicando compatibilidade estrita com um modelo específico de desktop HP (HP EliteDesk 800 G3).
+                    </td>
+                    <td>SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 275 / (Especificação Item 29)</td>
+                </tr>
+                <tr>
+                    <td>**31 (Memória DDR3 8GB)**</td>
+                    <td>**Cisco**</td>
+                    <td>
+                        **Especificação de Uso em Equipamento Existente:** A descrição detalhada do item especifica o uso em "Servidor **Cisco C200 e C210**" (em vez de apenas descrever o tipo de módulo de memória), sugerindo a necessidade de módulos testados e certificados para esses modelos específicos de servidores Cisco.
+                    </td>
+                    <td>SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 169 / Item 31 (Tabela)</td>
+                </tr>
+                <tr>
+                    <td>**33 (Memória 32GB RDIMM DDR4)**</td>
+                    <td>**Dell**</td>
+                    <td>
+                        **Especificação de Uso em Equipamento Existente:** A descrição detalhada do item especifica o uso em "Servidor **Dell R750**" (em vez de apenas descrever o tipo de módulo de memória), sugerindo a necessidade de módulos testados e certificados para esse modelo específico de servidor Dell.
+                    </td>
+                    <td>SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 170 / Item 33 (Tabela)</td>
+                </tr>
+                <tr>
+                    <td>**35 (Servidor de Rede - Tipo 1)**</td>
+                    <td>**Dell**</td>
+                    <td>
+                        **Modelo de Referência:** É citado o modelo de referência **Dell PowerEdge R760xs** [SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf: 323, 13.8].
+                        <br>
+                        **Componentes Proprietários:** Exigência de itens como **Placa controladora dedicada para inicialização de SO com 2x SSDs M.2 de 480 GB em RAID 1** e que a solução adotada seja suportada pelo fabricante dos equipamentos [SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf: 304, 3.4].
+                    </td>
+                    <td>SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 323 / item 13.8</td>
+                </tr>
+                <tr>
+                    <td>**36 (Microcomputador Tipo 02)**</td>
+                    <td>**Dell / Intel**</td>
+                    <td>
+                        **Modelo de Referência:** É citado o modelo de referência **Novo Desktop Dell Pro Slim, Core™ i5 14500 vPro®** [SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf: 357, 19.8].
+                        <br>
+                        **Exigências Proprietárias:** Requisitos detalhados como: Placa mãe desenvolvida pelo mesmo fabricante do equipamento ou em regime de OEM [SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf: 328, 4.2] e BIOS desenvolvida pelo mesmo fabricante [SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf: 330, 5.7].
+                    </td>
+                    <td>SEI_IFRO - 2841403 - Edital 90047 e anexos.pdf / p. 357 / item 19.8</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
