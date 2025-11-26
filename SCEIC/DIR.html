@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Indícios de Direcionamento de Fabricante em Edital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #d9534f;
+            border-bottom: 2px solid #d9534f;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #337ab7;
+            margin-top: 25px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+        }
+        .manufacturer {
+            font-weight: bold;
+            color: #5cb85c;
+        }
+        .note {
+            background-color: #fcf8e3;
+            padding: 10px;
+            border: 1px solid #faebcc;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Análise de Indícios de Direcionamento de Fabricante no Pregão Eletrônico SCEIC 90012/2025</h1>
+
+    <div class="note">
+        <p>A análise do Termo de Referência indica um forte direcionamento à aquisição de uma **solução de plataforma unificada** (conhecida como "Cyber Security Mesh" ou "Infinity Platform") [1], obrigando que múltiplos componentes sejam da mesma marca do Firewall NGFW. Essa exigência de homogeneidade estrita, somada a um requisito específico de desempenho em teste de mercado de um ano específico, sugere uma limitação do universo competitivo a poucos fabricantes líderes que oferecem portfólios completos e integrados, como Check Point, Fortinet ou Palo Alto. No entanto, os requisitos de unificação são os mais restritivos.</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 10%;">Item</th>
+                <th style="width: 40%;">Indício de Direcionamento (Requisito)</th>
+                <th style="width: 20%;">Fabricante Direcionado (Indicação)</th>
+                <th style="width: 30%;">Fonte (Arquivo, Página, Item/Linha)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4" class="item-group">DIRECIONAMENTO POR INTEGRAÇÃO OBRIGATÓRIA ("Lote Único")</td>
+            </tr>
+            <tr>
+                <td>Geral</td>
+                <td>A contratação é em **lote único e indivisível**, fundamentada no agrupamento de atividades que "se completam e se dependem para o funcionamento integral e sem falhas" [SEI_0088668861_Edital (1).pdf, p. 82, item 3.2.15; p. 223, item 4.1.1].</td>
+                <td>Plataforma Unificada (e.g., Check Point Infinity, Fortinet Fortinet)</td>
+                <td>SEI_0088668861_Edital (1).pdf, p. 82, item 3.2.15</td>
+            </tr>
+            <tr>
+                <td>Wireless (AP)</td>
+                <td>Os equipamentos Wi-Fi, licenciamento de software e controladora em nuvem da solução Wi-Fi deverão ser **do mesmo fabricante dos FIREWALL NGFW** [SEI_0088668861_Edital (1).pdf, p. 88, item 3.3.7].</td>
+                <td><span class="manufacturer">Mesmo Fabricante do NGFW</span></td>
+                <td>SEI_0088668861_Edital (1).pdf, p. 88, item 3.3.7</td>
+            </tr>
+            <tr>
+                <td>Segurança Avançada (EPP/EDR/XDR)</td>
+                <td>A solução de proteção avançada de usuários em endpoint e proteção de servidores deverá ser da **mesma marca do NGFW**, para manter 100% da compatibilidade e facilidade na abertura de chamados / suporte [SEI_0088668861_Edital (1).pdf, p. 77, item 3.2.4].</td>
+                <td><span class="manufacturer">Mesmo Fabricante do NGFW</span></td>
+                <td>SEI_0088668861_Edital (1).pdf, p. 77, item 3.2.4</td>
+            </tr>
+            <tr>
+                <td>Autenticação Multifator (MFA)</td>
+                <td>A solução de autenticação forte em múltiplos fatores deverá ser da **mesma marca do NGFW**, para manter 100% da compatibilidade e facilidade na abertura de chamados / suporte [SEI_0088668861_Edital (1).pdf, p. 77, item 3.2.5].</td>
+                <td><span class="manufacturer">Mesmo Fabricante do NGFW</span></td>
+                <td>SEI_0088668861_Edital (1).pdf, p. 77, item 3.2.5</td>
+            </tr>
+            <tr>
+                <td>Gerenciamento / Console</td>
+                <td>A console de gerenciamento dos equipamentos deve ser fornecida pelo **mesmo fabricante dos FIREWALL NGFW** [SEI_0088668861_Edital (1).pdf, p. 90, item 3.5.3].</td>
+                <td><span class="manufacturer">Mesmo Fabricante do NGFW</span></td>
+                <td>SEI_0088668861_Edital (1).pdf, p. 90, item 3.5.3</td>
+            </tr>
+            <tr>
+                <td>Logs (Armazenamento)</td>
+                <td>O armazenamento de Logs deve ser em equipamento exclusivo e diferente do firewall, sendo aceito somente equipamento de **marca e fabricante cujo hardware esteja em produção** [SEI_0088668861_Edital (1).pdf, p. 108, item 3.6.8].</td>
+                <td><span class="manufacturer">Mesma marca do NGFW (Implícito)</span></td>
+                <td>SEI_0088668861_Edital (1).pdf, p. 108, item 3.6.8</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="item-group">DIRECIONAMENTO POR BENCHMARK ESPECÍFICO</td>
+            </tr>
+            <tr>
+                <td>NGFW</td>
+                <td>O fabricante do FIREWALL NGFW deverá ser avaliado pela **NSS Labs 2019** no Next Generation Firewall Comparative Analysis mais recente, com pontuação **acima de 95%** da avaliação de segurança efetiva [SEI_0088668861_Edital (1).pdf, p. 91, item 3.5.6].</td>
+                <td>Fabricantes com histórico específico em NSS Labs 2019 (Fortemente restritivo a empresas que alcançaram esse resultado em um ano específico).</td>
+                <td>SEI_0088668861_Edital (1).pdf, p. 91, item 3.5.6</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="item-group">DIRECIONAMENTO POR INTEGRAÇÃO DE MERCADO (Requisitos Múltiplos)</td>
+            </tr>
+            <tr>
+                <td>Segurança Avançada (EPP/EDR)</td>
+                <td>A solução deve ter participado da Avaliação do **MITRE** para a área corporativa em **2023 e 2024** [SEI_0088668861_Edital (1).pdf, p. 156, item 3.17.2].</td>
+                <td>Fabricantes com participação e foco contínuo nos testes de EDR/XDR do MITRE ATT&CK (Comum a líderes de mercado como Check Point e outros).</td>
+                <td>SEI_0088668861_Edital (1).pdf, p. 156, item 3.17.2</td>
+            </tr>
+            <tr>
+                <td>NDR</td>
+                <td>A solução de NDR deve permitir desabilitar usuários do **Microsoft Entra ID** (anteriormente Azure AD) e funcionar com o **Microsoft 365 por meio de um Conector** [SEI_0088668861_Edital (1).pdf, p. 194, item 3.19.129; p. 195, item 3.19.132].</td>
+                <td>Fabricantes com integração profunda com o ecossistema Microsoft.</td>
+                <td>SEI_0088668861_Edital (1).pdf, p. 195, item 3.19.132</td>
+            </tr>
+            <tr>
+                <td>Treinamento</td>
+                <td>A Contratada deverá possuir Engenheiro de Sistemas certificado pelo fabricante do FIREWALL (NGFW) como **instrutor oficial** [SEI_0088668861_Edital (1).pdf, p. 205, item 3.23.3; p. 221, item 3.28.7].</td>
+                <td>Fabricantes que mantêm um programa de certificação oficial de instrutores (MCP/CCSE da Check Point, ou equivalentes de outros fabricantes).</td>
+                <td>SEI_0088668861_Edital (1).pdf, p. 221, item 3.28.7</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
