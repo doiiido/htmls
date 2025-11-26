@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de Aderência Técnica - Edital Huawei</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 14px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .item-header {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .adherence-sim {
+            background-color: #d4edda;
+            color: #155724;
+            font-weight: bold;
+            text-align: center;
+        }
+        .adherence-na {
+            background-color: #f8d7da;
+            color: #721c24;
+            text-align: center;
+        }
+        .product-name {
+            font-weight: bold;
+            color: #2a6496;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Matriz de Aderência Técnica: Requisitos do Edital vs. Produtos Huawei Mínimos</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item/Requisito</th>
+                <th>Descrição do Requisito do Edital</th>
+                <th>Fonte Original (PDF, Pág., Para/Item)</th>
+                <th>Produto Huawei Mínimo Adotado</th>
+                <th>Especificação Mínima Adotada (Aderência Estrita)</th>
+                <th>Aderência</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="item-header"><td colspan="6">ITEM 1: SOLUÇÃO DE ARMAZENAMENTO (STORAGE ALL-FLASH)</td></tr>
+            <tr>
+                <td>1.1. Tipo de Solução</td>
+                <td>Solução de armazenamento (storage) All-Flash [3]</td>
+                <td>[1]-3919585_Edital_30_2025.pdf, P.1, 1.1</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V6</td>
+                <td>É um sistema de armazenamento All-Flash de médio/grande porte [5].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>1.2. Capacidade</td>
+                <td>Capacidade líquida de armazenamento de no mínimo 1.300 TiB [2, 3]</td>
+                <td>[8]-3830990_Estudo.pdf, P.4, Item 1; [1]-3919585_Edital_30_2025.pdf, P.1, 1.1</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V6</td>
+                <td>A série OceanStor Dorado é capaz de ser configurada para alcançar ou superar 1.300 TiB de capacidade líquida, sendo o modelo 5000/6000 a plataforma de entrada para alta disponibilidade e desempenho em Datacenter [5, 6]. A série 18000 escala até 24 PiB (24.000 TiB) [New-Gen OceanStor Dorado Converged All-Flash Storage Systems V700R001C01 Data Sheet_2025H2_.pdf, P.4, Table 1].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>1.3. Componentes Internos</td>
+                <td>Utilização de HSSDs (Huawei-developed SSDs)</td>
+                <td>(Requisito de arquitetura inerente ao produto)</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V6</td>
+                <td>Os sistemas OceanStor Dorado suportam SSDs desenvolvidos pela Huawei (HSSDs), otimizando a performance [9, 10].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr class="item-header"><td colspan="6">ITEM 2: SOLUÇÃO DE CONECTIVIDADE SWITCH SAN</td></tr>
+            <tr>
+                <td>2.1. Tipo de Solução</td>
+                <td>Solução de Conectividade Switch SAN [3]</td>
+                <td>[1]-3919585_Edital_30_2025.pdf, P.1, 1.1</td>
+                <td class="product-name">HUAWEI OceanStor SNS3664 Switches</td>
+                <td>O produto é um Switch Fibre Channel dedicado para infraestruturas de armazenamento de missão crítica (SAN) [7].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>2.2. Portas Mínimas</td>
+                <td>48 portas ativas e licenciadas, mínimo [3]</td>
+                <td>[1]-3919585_Edital_30_2025.pdf, P.1, 1.1</td>
+                <td class="product-name">HUAWEI OceanStor SNS3664 Switches</td>
+                <td>O modelo SNS3664 (64 portas) pode ser configurado com 48 portas ativas e licenciadas, atendendo ao requisito mínimo [7].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>2.3. Velocidade Mínima</td>
+                <td>Padrão fiber channel de, no mínimo, 32 Gbps full duplex [3]</td>
+                <td>[1]-3919585_Edital_30_2025.pdf, P.1, 1.1</td>
+                <td class="product-name">HUAWEI OceanStor SNS3664 Switches</td>
+                <td>Os switches SNS2624/SNS3664 utilizam a Gen 6 Fibre Channel, que entrega desempenho de 32 Gbps [7].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr class="item-header"><td colspan="6">REQUISITOS GERAIS E DE SUPORTE (APLICÁVEIS A AMBOS OS ITENS)</td></tr>
+            <tr>
+                <td>G.1. Suporte e Garantia</td>
+                <td>Garantia e suporte técnico por 60 (sessenta) meses, 24x7 [3]</td>
+                <td>[1]-3919585_Edital_30_2025.pdf, P.1, 1.1</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V6 e OceanStor SNS3664</td>
+                <td>Requisito contratual de serviço, plenamente atendível pelas políticas de suporte do fabricante [3, 4, 11].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.2. Suporte Abrangente</td>
+                <td>Abrangendo atualização de firmware, substituição de componentes defeituosos e assistência técnica especializada [3]</td>
+                <td>[1]-3919585_Edital_30_2025.pdf, P.1, 1.1</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V6 e OceanStor SNS3664</td>
+                <td>Requisito de serviço integral [3].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.3. Condição dos Ativos</td>
+                <td>Equipamentos novos, de primeiro uso, não recondicionados e em fase de comercialização normal (não end-of-life) [12, 13]</td>
+                <td>[14]-3904277_Termo.pdf, P.10, 7.16.1</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V6 e OceanStor SNS3664</td>
+                <td>As séries selecionadas são parte do portfólio de produtos atuais (V6 e Gen 6) [5, 7].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.4. Compatibilidade Física/Lógica</td>
+                <td>Componentes compatíveis entre si, sem uso de adaptadores, usinagens, furações, etc. [12, 13]</td>
+                <td>[14]-3904277_Termo.pdf, P.10, 7.16.2</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V6 e OceanStor SNS3664</td>
+                <td>Os produtos são projetados como uma solução integrada e coesa (Storage e SAN) [15].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.5. Organização Interna</td>
+                <td>Componentes internos instalados de forma organizada e livres de pressões [16, 17]</td>
+                <td>[14]-3904277_Termo.pdf, P.10, 7.16.3</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V6 e OceanStor SNS3664</td>
+                <td>Requisito padrão de instalação e fabricação.</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.6. Identificação</td>
+                <td>Número de série obrigatório, único, visível e válido para garantia no Brasil [16, 17]</td>
+                <td>[14]-3904277_Termo.pdf, P.10, 7.16.4</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V6 e OceanStor SNS3664</td>
+                <td>Requisito padrão de identificação do fabricante.</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+            <tr>
+                <td>G.7. Sustentabilidade</td>
+                <td>Adoção de um plano de descarte ou reuso dos ativos de TI (critério a ser priorizado) [18, 19]</td>
+                <td>[14]-3904277_Termo.pdf, P.9, 4.44.3</td>
+                <td class="product-name">OceanStor Dorado 5000/6000 V6 e OceanStor SNS3664</td>
+                <td>Requisito de política administrativa/ambiental (a ser fornecido pelo licitante) [18, 19].</td>
+                <td class="adherence-sim">Sim</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
