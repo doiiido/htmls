@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de Aderência 1 RU - PE18025 CPTM</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 12px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        .atende { background-color: #d4edda; color: #155724; font-weight: bold; }
+        .nao-atende { background-color: #f8d7da; color: #721c24; font-weight: bold; }
+        .parcial { background-color: #fff3cd; color: #856404; }
+        .item-header { background-color: #007bff; color: white; text-align: center; }
+        .product-name { font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Matriz de Aderência Ponto-a-Ponto (PE18025) - Priorizando 1 RU</h1>
+    <p><strong>Item 1 (NGFW, 1 RU):</strong> <span class="product-name">Check Point 6700</span> (Gateway otimizado para Maestro)</p>
+    <p><strong>Item 2 (Relatórios, Virtual):</strong> <span class="product-name">Check Point Smart-1 (Appliance Virtual) + SmartEvent</span></p>
+    <p><strong>Observação Crítica:</strong> O modelo 1 RU (Check Point 6700) atende ao throughput IPS mínimo (11 Gbps), mas falha no requisito de throughput VPN IPSec de 50 Gbps.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item Edital</th>
+                <th>Requisito Técnico (Descrição)</th>
+                <th>Produto Mínimo Adotado</th>
+                <th>Aderência</th>
+                <th>Justificativa / Fonte (PDF, Página, Item)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ITEM 1: CAMADA DE SEGURANÇA (NGFW) -->
+            <tr class="item-header">
+                <td colspan="5"><strong>ITEM 1: CAMADA DE SEGURANÇA - FIREWALL (QTD: 2 GL)</strong></td>
+            </tr>
+            <tr>
+                <td>3.1.1</td>
+                <td>Solução deve ser appliance físico com funcionalidades de Next Generation Firewall (NGFW).</td>
+                <td>Check Point 6700</td>
+                <td class="atende">Atende</td>
+                <td>Appliance físico NGFW [66, 3.1.1]. O 6700 é um Security Gateway de hardware [maestro-hyperscale-orchestrator-datasheet.pdf, pág. 4, item 6700].</td>
+            </tr>
+            <tr>
+                <td>3.1.2</td>
+                <td>Suportar, no mínimo, 70 Gbps de throughput com firewall habilitado para tráfego IPv4.</td>
+                <td>Check Point 6700</td>
+                <td class="parcial">Parcialmente</td>
+                <td>O 6700 atinge 76.8 Gbps em condições ideais de teste (Ideal Testing Conditions) [maestro-hyperscale-orchestrator-datasheet.pdf, pág. 4]. No entanto, em testes corporativos (Enterprise Test Conditions), atinge 38 Gbps (Firewall) ou 26 Gbps (NGFW) [maestro-hyperscale-orchestrator-datasheet.pdf, pág. 4]. O atendimento depende da métrica aceita.</td>
+            </tr>
+            <tr>
+                <td>3.1.3</td>
+                <td>Suportar, no mínimo, 11 Gbps de throughput IPS.</td>
+                <td>Check Point 6700</td>
+                <td class="atende">Atende</td>
+                <td>O 6700 atinge 19 Gbps de IPS Throughput [maestro-hyperscale-orchestrator-datasheet.pdf, pág. 4].</td>
+            </tr>
+            <tr>
+                <td>3.1.4</td>
+                <td>Suportar, no mínimo, 50 Gbps de throughput de VPN IPSec.</td>
+                <td>Check Point 6700</td>
+                <td class="nao-atende">Não Atende</td>
+                <td>O 6700 atinge apenas 4.61 Gbps de VPN Throughput [maestro-hyperscale-orchestrator-datasheet.pdf, pág. 4].</td>
+            </tr>
+            <tr>
+                <td>3.1.5</td>
+                <td>Interfaces Mínimas: 16x 1 Gbps (Cobre), 8x 1 Gbps SFP, 4x 10 Gbps SFP+.</td>
+                <td>Check Point 6700</td>
+                <td class="parcial">Parcialmente</td>
+                <td>O 6700 é um appliance 1U, dependente de configurações modulares, o que torna improvável que a configuração padrão atenda exatamente a este mix (especialmente as 16 portas de cobre de 1 Gbps) sem o uso de módulos específicos.</td>
+            </tr>
+            <tr>
+                <td>3.1.8</td>
+                <td>O equipamento deve ser entregue com 04 transceivers SFP+ padrão multimodo.</td>
+                <td>Check Point 6700</td>
+                <td class="parcial">Parcialmente</td>
+                <td>O requisito de transceivers deve ser satisfeito via aquisição de acessórios (CPAC-TR-10SR-D ou similar) [4-7]. Não é listado como parte da SKU básica para o 6700.</td>
+            </tr>
+            <tr>
+                <td>3.1.9</td>
+                <td>Estar licenciado para, no mínimo, 10 sistemas virtuais lógicos (VS).</td>
+                <td>Check Point 6700</td>
+                <td class="parcial">Parcialmente</td>
+                <td>O 6700 suporta até 12 VSs (Next Gen Threat Prevention VS) [8-13]. A conformidade depende do licenciamento base.</td>
+            </tr>
+            <tr>
+                <td>3.1.10</td>
+                <td>Possuir 02 (duas) fontes de alimentação (redundantes) com entrada 100-240V AC.</td>
+                <td>Check Point 6700</td>
+                <td class="atende">Atende</td>
+                <td>O modelo 6700 possui 2x fontes de alimentação internas (Dual Power Supplies Included) [2, 13-18].</td>
+            </tr>
+            <tr>
+                <td>3.1.11 / 3.10.7</td>
+                <td>Entregue suportando e licenciado para alta disponibilidade do tipo ativo-ativo, sem licenças adicionais para o cluster.</td>
+                <td>Check Point 6700</td>
+                <td class="atende">Atende</td>
+                <td>A solução deve ser entregue em cluster, suportando modo de operação ativo/ativo [109, 3.10.6, 109, 3.10.7]. A arquitetura Maestro (onde o 6700 se encaixa) oferece resiliência de nível Telco (99.999%) e balanceamento de carga [19].</td>
+            </tr>
+            <tr>
+                <td>3.1.17</td>
+                <td>Funcionalidades NGFW (firewall, controle de aplicações, prevenção de ameaças e IPS).</td>
+                <td>Check Point 6700</td>
+                <td class="atende">Atende</td>
+                <td>O NGFW inclui estas funcionalidades [70, 3.1.17]. O 6700 (e as séries 6000/7000) usa os pacotes NGTP/SNBT, que abrangem todas as funcionalidades [20].</td>
+            </tr>
+            <tr>
+                <td>3.2.6 / 3.2.7</td>
+                <td>Deve implementar NPTv6 ou NAT66, e suportar NAT64 e NAT46.</td>
+                <td>Check Point 6700</td>
+                <td class="parcial">Parcialmente</td>
+                <td>Suporta NAT66 e outros roteamentos [21]. NAT64 e NAT46 não são explicitamente listados, mas são funcionalidades esperadas para gateways de data center.</td>
+            </tr>
+            <tr>
+                <td>3.2.18</td>
+                <td>De-criptografar tráfego Inbound e Outbound em conexões TLS 1.2 e TLS 1.3.</td>
+                <td>Check Point 6700</td>
+                <td class="atende">Atende</td>
+                <td>A plataforma suporta inspeção SSL/TLS, permitindo a configuração de versões mínimas e máximas de TLS/SSL (padrão TLS 1.2, mas configurável) [22, 23].</td>
+            </tr>
+            <tr>
+                <td>3.2.47</td>
+                <td>Instalação em rack 19”, com altura máxima de 01 RUs.</td>
+                <td>Check Point 6700</td>
+                <td class="atende">Atende</td>
+                <td>O Check Point 6700 possui gabinete físico de 1 RU [2].</td>
+            </tr>
+            <tr>
+                <td>3.2.49</td>
+                <td>Incluir 5.000 tokens mobile para múltiplo fator de autenticação (MFA).</td>
+                <td>Check Point 6700 + MFA</td>
+                <td class="parcial">Parcialmente</td>
+                <td>A capacidade de MFA é suportada (Infinity Identity) [24], mas a quantidade exata de 5.000 tokens mobile sem custo não é confirmada pelas fontes.</td>
+            </tr>
+            <tr>
+                <td>3.4.1</td>
+                <td>Implementar mecanismos de proteção de “dia zero” (Zero Day Protection).</td>
+                <td>Check Point 6700 (SNBT)</td>
+                <td class="atende">Atende</td>
+                <td>O pacote SandBlast (SNBT) incluído no NGFW fornece prevenção contra ataques zero-day [20]. A taxa de bloqueio de Dia Zero é listada como 99.9% [25, 26].</td>
+            </tr>
+
+            <!-- ITEM 2: SOLUÇÃO DE RELATÓRIOS -->
+            <tr class="item-header">
+                <td colspan="5"><strong>ITEM 2: SOLUÇÃO DE RELATÓRIOS (APPLIANCE VIRTUAL) (QTD: 1 GL)</strong></td>
+            </tr>
+            <tr>
+                <td>4.1.1</td>
+                <td>Solução baseada em appliance virtual do mesmo fabricante da solução de NGFW.</td>
+                <td>Smart-1 Virtual Appliance + SmartEvent</td>
+                <td class="atende">Atende</td>
+                <td>O Smart-1 Appliance (virtual ou físico) e o Check Point 6700 são do mesmo fabricante (Check Point) [402, 599, 66, 2.4, 113, 4.1.5].</td>
+            </tr>
+            <tr>
+                <td>4.1.2</td>
+                <td>Compatível com hipervisores VMWare 6.5 e superiores, Hyper-V 2016 e superiores, e KVM.</td>
+                <td>Smart-1 Virtual Appliance</td>
+                <td class="atende">Atende</td>
+                <td>A solução de gerenciamento deve ser instalada em hypervisores compatíveis (VMware 6.5+, Hyper-V 2016+, KVM) [120, 5.1.2].</td>
+            </tr>
+            <tr>
+                <td>4.1.3.1</td>
+                <td>Licenciada para suportar, no mínimo, 25 GB de logs por dia.</td>
+                <td>Smart-1 Virtual Appliance + Licença Log</td>
+                <td class="atende">Atende</td>
+                <td>O licenciamento inicial contemplará o mínimo de 25 GB/dia de logs [121, 5.1.3]. A linha Smart-1 Cloud oferece opções de 1GB, 3GB, 5GB e 15GB de logs diários de logs, indicando que licenças maiores são disponíveis [27, 28]. O SmartEvent 6000-L gerencia 382 GB/dia [29].</td>
+            </tr>
+            <tr>
+                <td>4.1.3.2 / 3</td>
+                <td>Não deverá existir limite de licenciamento para o número de vCPUs e RAM no appliance virtual.</td>
+                <td>Smart-1 Virtual Appliance</td>
+                <td class="atende">Atende</td>
+                <td>Requisito de licenciamento a ser atendido pelo SKU específico para VMs [112, 4.1.3.2, 112, 4.1.3.3].</td>
+            </tr>
+            <tr>
+                <td>4.1.3.5</td>
+                <td>Deve suportar vMotion.</td>
+                <td>Smart-1 Virtual Appliance</td>
+                <td class="atende">Atende</td>
+                <td>O ambiente provisionado em hypervisores deve suportar vMotion [120, 5.1.2].</td>
+            </tr>
+
+            <!-- SERVIÇOS E GARANTIA (RESUMO) -->
+            <tr class="item-header">
+                <td colspan="5"><strong>SERVIÇOS (ITEM 3) E GARANTIA (SEÇÃO 20)</strong></td>
+            </tr>
+            <tr>
+                <td>20.4</td>
+                <td>Garantia do fabricante de 60 meses com entrega on-site para substituição.</td>
+                <td>Suporte Fabricante</td>
+                <td class="atende">Atende</td>
+                <td>Garantia de 60 meses e atendimento on-site [244, 20.4].</td>
+            </tr>
+            <tr>
+                <td>20.7</td>
+                <td>Canal de atendimento 24x7x365, com substituição de peças e componentes até o próximo dia útil (NBD).</td>
+                <td>Suporte Fabricante</td>
+                <td class="atende">Atende</td>
+                <td>Requisito de SLA 24x7x365NBD (Next Business Day) [245, 20.7]. O suporte Diamond (Direct Enterprise Support) tem tempos de resposta comprometidos para problemas de severidade [30].</td>
+            </tr>
+            <tr>
+                <td>7.1</td>
+                <td>02 (dois) técnicos de TI capacitados no Fabricante dos PRODUTOS.</td>
+                <td>Mão de Obra</td>
+                <td class="atende">Atende</td>
+                <td>A CONTRATADA deve comprovar a qualificação dos técnicos através de certificados emitidos pelo Fabricante [133, 7.1, 133, 7.3.1].</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

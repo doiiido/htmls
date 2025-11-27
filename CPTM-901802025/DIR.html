@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Análise de Indícios de Direcionamento – PE18025</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
+    h1 { color: #003366; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; vertical-align: top; }
+    th { background-color: #f2f6fb; color: #003366; }
+    .src { font-size: 12px; color: #555; }
+    .highlight { background-color: #fff8dc; }
+</style>
+</head>
+<body>
+<h1>Análise de Indícios de Direcionamento para Fabricante</h1>
+<p>Esta análise identifica trechos do edital que podem indicar direcionamento para fabricante específico, com referência ao arquivo, página e linha.</p>
+
+<table>
+<thead>
+<tr>
+    <th>Item</th>
+    <th>Indício</th>
+    <th>Possível Fabricante</th>
+    <th>Fonte (Arquivo / Página / Linha)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Item 1 – Camada de Segurança (NGFW)</td>
+    <td class="highlight">Exigência de que todos os modelos de firewalls sejam do mesmo fabricante e compatíveis com itens de gerência.</td>
+    <td>Indica solução integrada (fabricantes como Fortinet, Palo Alto, Check Point)</td>
+    <td class="src">PE18025_COM AVISO.pdf / p.20 / linha 3.1.12</td>
+</tr>
+<tr>
+    <td>Item 1 – Camada de Segurança (NGFW)</td>
+    <td class="highlight">Integração nativa com Let’s Encrypt para certificados SSL.</td>
+    <td>Fortinet (FortiGate) é um dos poucos com suporte nativo a Let’s Encrypt.</td>
+    <td class="src">PE18025_COM AVISO.pdf / p.24 / linha 3.2.43</td>
+</tr>
+<tr>
+    <td>Item 1 – Camada de Segurança (NGFW)</td>
+    <td class="highlight">Conectores nativos para VMware ESXi, Cisco ACI e Kubernetes.</td>
+    <td>Fortinet e Palo Alto possuem integração nativa com esses ambientes.</td>
+    <td class="src">PE18025_COM AVISO.pdf / p.24 / linha 3.2.45</td>
+</tr>
+<tr>
+    <td>Item 1 – Camada de Segurança (NGFW)</td>
+    <td class="highlight">Tokens móveis (5.000 por NGFW) sem custo adicional.</td>
+    <td>Fortinet (FortiToken) é conhecido por oferecer tokens móveis integrados.</td>
+    <td class="src">PE18025_COM AVISO.pdf / p.24 / linha 3.2.49</td>
+</tr>
+<tr>
+    <td>Item 2 – Solução de Relatórios</td>
+    <td class="highlight">Appliance virtual deve ser do mesmo fabricante da solução NGFW.</td>
+    <td>Indica fabricante que oferece NGFW + gerência integrada (Fortinet, Palo Alto, Check Point).</td>
+    <td class="src">PE18025_COM AVISO.pdf / p.31 / linha 4.1.1 e 4.1.5</td>
+</tr>
+<tr>
+    <td>Item 3 – Serviços</td>
+    <td class="highlight">Equipe certificada pelo fabricante da solução ofertada.</td>
+    <td>Indica necessidade de certificação específica (ex.: NSE para Fortinet).</td>
+    <td class="src">PE18025_COM AVISO.pdf / p.37 / linha 7.2</td>
+</tr>
+<tr>
+    <td>Requisitos Gerais</td>
+    <td class="highlight">Obrigatoriedade de homologação ANATEL para appliances NGFW.</td>
+    <td>Fabricantes com homologação ANATEL (Fortinet, Cisco, Palo Alto).</td>
+    <td class="src">PE18025_COM AVISO.pdf / p.24 / linha 3.1.24</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Resumo da Análise</h2>
+<ul>
+<li>Há forte indício de direcionamento para fabricantes que oferecem solução integrada NGFW + gerência + tokens móveis, como <strong>Fortinet</strong>, <strong>Palo Alto</strong> ou <strong>Check Point</strong>.</li>
+<li>Exigências como integração nativa com Let’s Encrypt, conectores para VMware/Cisco/Kubernetes e fornecimento de tokens móveis são características específicas de poucos fabricantes.</li>
+<li>A obrigatoriedade de que todos os itens sejam do mesmo fabricante reforça a restrição de mercado.</li>
+</ul>
+
+<p class="src">Fonte: <code>PE18025_COM AVISO.pdf</code>, páginas 19–39 (Anexo I – Termo de Referência).</p>
+</body>
+</html>

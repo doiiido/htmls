@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Matriz de Requisitos Técnicos – PE18025 (CPTM)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;margin:24px;color:#222}
+    h1,h2{color:#003366;margin-top:0}
+    .intro{margin-bottom:18px}
+    table{width:100%;border-collapse:collapse;margin:16px 0}
+    th,td{border:1px solid #ccc;padding:8px;vertical-align:top}
+    th{background:#f2f6fb;color:#003366}
+    .item-header{background:#e9f2ff;font-weight:bold}
+    .badge{display:inline-block;background:#eef;border:1px solid #ccd;padding:2px 6px;margin:2px;border-radius:4px;font-size:12px}
+    .src{font-size:12px;color:#555}
+    .foot{font-size:12px;color:#444;margin-top:24px}
+    ul{margin:0 0 8px 18px}
+    code{background:#f7f7f7;border:1px solid #e1e1e1;padding:0 4px;border-radius:3px}
+  </style>
+</head>
+<body>
+
+  <h1>Matriz de Requisitos Técnicos – Pregão Eletrônico PE18025</h1>
+  <p class="intro">
+    Objeto: fornecimento de solução de comunicação com camada de segurança para rede local (NGFW) e gerenciamento centralizado de logs, com serviços de instalação e configuração.<br>
+    Itens licitados conforme Modelo de Planilha (Anexo IV).
+  </p>
+
+  <h2>Itens da Licitação</h2>
+
+  <table aria-label="Matriz de requisitos técnicos">
+    <thead>
+      <tr>
+        <th style="width:12%">Item</th>
+        <th style="width:20%">Resumo</th>
+        <th style="width:38%">Principais requisitos técnicos (com valores)</th>
+        <th style="width:30%">Fonte (pdf / página / item)</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- ITEM 1 -->
+      <tr class="item-header">
+        <td colspan="4">Item 1 — Camada de Segurança (Solução de Segurança de Rede – NGFW)</td>
+      </tr>
+      <tr>
+        <td><span class="badge">Qtd:</span> 2 GL</td>
+        <td>
+          Plataforma de proteção de rede baseada em <strong>appliance físico NGFW</strong> com alta disponibilidade,
+          inspeção avançada (L7), IPS, antimalware, controle de aplicações, VPN IPsec
+          e filtro de conteúdo/DNS, incluindo integração com sandbox e gerenciamento central.<br>
+          <span class="src">Fonte: PE18025_COM AVISO.pdf, p.73 (Anexo IV)</span>
+        </td>
+        <td>
+          <ul>
+            <li><strong>Throughputs mínimos</strong>:
+              <ul>
+                <li>Firewall IPv4: <strong>≥ 70 Gbps</strong> <span class="src">PE18025_COM AVISO.pdf, p.19–20, item 3.1.2</span></li>
+                <li>IPS: <strong>≥ 11 Gbps</strong> <span class="src">PE18025_COM AVISO.pdf, p.19, item 3.1.3</span></li>
+                <li>VPN IPsec: <strong>≥ 50 Gbps</strong> <span class="src">PE18025_COM AVISO.pdf, p.19, item 3.1.4</span></li>
+              </ul>
+            </li>
+            <li><strong>Interfaces físicas</strong>:
+              <ul>
+                <li>Portas 1 Gbps: <strong>16</strong>; 1 Gbps SFP: <strong>8</strong>; 10 Gbps SFP+: <strong>4</strong> <span class="src">PE18025_COM AVISO.pdf, p.20, item 3.1.5–3.1.8</span></li>
+                <li>Transceivers SFP+ multimodo (OM3/OM4): <strong>4 unidades</strong> <span class="src">PE18025_COM AVISO.pdf, p.20, item 3.1.8</span></li>
+              </ul>
+            </li>
+            <li><strong>Virtualização/segmentação</strong>: <strong>≥ 10 sistemas virtuais lógicos por equipamento</strong> (licenciados) <span class="src">PE18025_COM AVISO.pdf, p.20, item 3.1.9</span></li>
+            <li><strong>Energia</strong>: 2 fontes 100–240V AC, 50–60Hz <span class="src">PE18025_COM AVISO.pdf, p.20, item 3.1.10</span></li>
+            <li><strong>Alta disponibilidade</strong>: ativo–ativo, equipamentos em cluster, sem queda de sessões; entrega já configurada e licenciada <span class="src">PE18025_COM AVISO.pdf, p.20, item 3.1.11; p.30–31, item 3.10.1–3.10.10</span></li>
+            <li><strong>Conformidade</strong>: equipamentos novos, em linha (sem EOS/EOL/EOSup), e <strong>homologação ANATEL</strong> válida na data do pregão <span class="src">PE18025_COM AVISO.pdf, p.19, itens 2.1–2.4; p.24, item 3.1.24</span></li>
+            <li><strong>Funcionalidades NGFW</strong> (firewall stateful + L7):
+              controle de aplicações, IPS, antimalware, sandbox, filtro de conteúdo/URL/DNS; inspeção TLS 1.2/1.3 (HTTP/3/SNI) <span class="src">PE18025_COM AVISO.pdf, p.20–26, itens 3.1.17–3.1.21; 3.2.18–3.2.20; 3.5.1–3.5.15</span></li>
+            <li><strong>Roteamento e rede</strong>: IPv4/IPv6 dual stack, NAT (incl. NAT66/NPTv6, NAT64/NAT46), DHCP, Multicast (PIM-SM/DM, IGMPv2/v3), RIP/RIPv2/RIPng/BGP/OSPF (v2/v3), VLAN 802.1Q, LACP 802.3ad <span class="src">PE18025_COM AVISO.pdf, p.21–24, itens 3.2.1–3.2.7; 3.2.9; 3.2.34–3.2.45</span></li>
+            <li><strong>Automação & Integrações</strong>: triggers para e-mail/Teams/API, threat feeds (IPs/hashes/domínios), conectores cloud (Azure/AWS/GCP), VMware ESXi/Cisco ACI/Kubernetes <span class="src">PE18025_COM AVISO.pdf, p.23, item 3.2.31; p.22–23, item 3.2.27; p.28, item 3.8.22; p.24, item 3.2.45</span></li>
+            <li><strong>Segurança avançada</strong>: Zero Day (retenção + análise em nuvem/appliance), DDoS, botnet detection, SSL inspection, antivírus em HTTP/FTP/IMAP/SMTP <span class="src">PE18025_COM AVISO.pdf, p.25, item 3.4.1–3.4.2; p.22, itens 3.2.21–3.2.29</span></li>
+            <li><strong>Autenticação</strong>: AD/LDAP/RADIUS/TACACS+, SSO TS/Citrix, SAML para navegação/VPN, portal cativo sem cliente <span class="src">PE18025_COM AVISO.pdf, p.26–27, itens 3.6.1–3.6.10</span></li>
+            <li><strong>Gerenciamento e visibilidade</strong>: GUI para updates, backup/restore, sessões TCP/UDP, CPU/links em tempo real, dashboards de tráfego/aplicações <span class="src">PE18025_COM AVISO.pdf, p.27, itens 3.7.2–3.7.6</span></li>
+            <li><strong>QoS & Balanceamento inteligente</strong>: PBR, health-check (ping/http/tcp/dns/twamp), MOS de voz, FEC, duplicação seletiva de pacotes, shaping por apps/URL/usuário (upload/download; agendamento) <span class="src">PE18025_COM AVISO.pdf, p.28–30, itens 3.8.1–3.8.25; 3.8.23.1–3.8.23.8</span></li>
+            <li><strong>Tokens MFA</strong>: <strong>5.000 tokens mobile por NGFW</strong> (sem custo) <span class="src">PE18025_COM AVISO.pdf, p.24, item 3.2.49</span></li>
+            <li><strong>Form factor</strong>: rack 19”, ≤ 1 RU; não virtualizado <span class="src">PE18025_COM AVISO.pdf, p.24, item 3.2.47</span></li>
+            <li><strong>Operação sem licenças</strong>: firewall continua operando com controle de apps/AV/IPS (sem atualizações) após expiração de licenças <span class="src">PE18025_COM AVISO.pdf, p.24, item 3.2.48</span></li>
+          </ul>
+        </td>
+        <td>
+          <div class="src">PE18025_COM AVISO.pdf, p.19–31, Anexo I (Termo de Referência), Itens 2; 3.1–3.10</div>
+          <div class="src">PE18025_COM AVISO.pdf, p.73 (Anexo IV – Planilha), “Item 1”</div>
+          <div class="src">RelacaoItens37320105901802025000.pdf, p.1 (critério menor preço; unidade “UNIDADE”; intervalo de lances)</div>
+        </td>
+      </tr>
+
+      <!-- ITEM 2 -->
+      <tr class="item-header">
+        <td colspan="4">Item 2 — Solução de Relatórios (Gerência de Logs/Incidentes – Appliance Virtual)</td>
+      </tr>
+      <tr>
+        <td><span class="badge">Qtd:</span> 1 GL</td>
+        <td>
+          <strong>Appliance virtual</strong> de gerenciamento central de firewalls do mesmo fabricante, com suporte a
+          alta disponibilidade via hipervisor, dashboards, correlação de eventos, relatórios e alertas
+          multi-canais, armazenamento e expansão por licenças.<br>
+          <span class="src">Fonte: PE18025_COM AVISO.pdf, p.73 (Anexo IV)</span>
+        </td>
+        <td>
+          <ul>
+            <li><strong>Compatibilidade de hipervisores</strong>: VMware ≥ 6.5, Hyper‑V ≥ 2016, KVM <span class="src">PE18025_COM AVISO.pdf, p.31, item 4.1.2</span></li>
+            <li><strong>Capacidade de logs</strong>: <strong>≥ 25 GB/dia</strong> (licença inicial), expansão modular; sem limite de vCPU/RAM por licença <span class="src">PE18025_COM AVISO.pdf, p.31, itens 4.1.3.1–4.1.3.3; 4.1.4</span></li>
+            <li><strong>Multi-tenancy</strong> e suporte a vMotion <span class="src">PE18025_COM AVISO.pdf, p.31, itens 4.1.3.4–4.1.3.5</span></li>
+            <li><strong>Mesma família do fabricante do NGFW</strong> (compatibilidade) <span class="src">PE18025_COM AVISO.pdf, p.31, item 4.1.5</span></li>
+            <li><strong>Acesso</strong>: via browser HTTP/HTTPS ou client do fabricante; interface web/CLI; concorrência de administradores <span class="src">PE18025_COM AVISO.pdf, p.31–33, itens 4.1.8; 4.1.20; 4.1.19</span></li>
+            <li><strong>Monitoração & relatórios</strong>: tempo real (web, apps, IPS, vírus, VPN), relatórios HTML/PDF (máquinas/serviços/usuários/URLs/categorias), dashboards com cruzamentos (máquinas × bloqueios etc.) <span class="src">PE18025_COM AVISO.pdf, p.32–33, itens 4.1.16–4.1.18</span></li>
+            <li><strong>Alertas</strong>: e‑mail, SNMP, Syslog, Webhook (ITSM/SIEM), com filtros por severidade/evento <span class="src">PE18025_COM AVISO.pdf, p.33, item 4.1.38</span></li>
+            <li><strong>SNMP</strong>: v2 e v3 (ou pelo hypervisor) <span class="src">PE18025_COM AVISO.pdf, p.33, item 4.1.25</span></li>
+            <li><strong>Logs externos</strong>: visualização centralizada, filtros, download de arquivos de log <span class="src">PE18025_COM AVISO.pdf, p.33, itens 4.1.28; 4.1.30</span></li>
+            <li><strong>Relatórios</strong>: predefinidos, personalização de capas/layout (gráficos, fontes, cores), filtros e agendamento/envio automático <span class="src">PE18025_COM AVISO.pdf, p.33, itens 4.1.26–4.1.37</span></li>
+          </ul>
+        </td>
+        <td>
+          <div class="src">PE18025_COM AVISO.pdf, p.31–34, Anexo I (Termo de Referência), Item 4</div>
+          <div class="src">PE18025_COM AVISO.pdf, p.73 (Anexo IV – Planilha), “Item 2”</div>
+        </td>
+      </tr>
+
+      <!-- ITEM 3 -->
+      <tr class="item-header">
+        <td colspan="4">Item 3 — Mão de Obra (Instalação e Configuração de Todas as Soluções)</td>
+      </tr>
+      <tr>
