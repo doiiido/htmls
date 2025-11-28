@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo de Documentos para Habilitação (Análise de Fontes)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #004085;
+            border-bottom: 2px solid #004085;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #0056b3;
+            margin-top: 25px;
+            border-left: 5px solid #007bff;
+            padding-left: 10px;
+        }
+        .requirement-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .requirement-list li {
+            background: #e9ecef;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid #007bff;
+        }
+        .source-number {
+            font-weight: bold;
+            color: #dc3545;
+        }
+        .timing {
+            font-style: italic;
+            color: #6c757d;
+        }
+        .disclaimer {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #ffeeba;
+            border: 1px solid #ffc107;
+            border-radius: 5px;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>RESUMO DE DOCUMENTOS PARA HABILITAÇÃO E CONFORMIDADE (Com base nas Fontes Técnicas)</h1>
+
+    <div class="disclaimer">
+        <strong>Aviso:</strong> As fontes analisadas não constituem um edital de licitação formal. Os requisitos listados abaixo derivam de documentação técnica, guias de configuração e políticas corporativas da Check Point, e referem-se à conformidade do sistema (Endpoint Compliance, certificados de servidor, ou acordos de parceiros), e não a documentos de habilitação legal para licitações.
+    </div>
+
+    <h2>1. Documentação Legal e Corporativa</h2>
+    <ul class="requirement-list">
+        <li>
+            <span class="source-number"></span> **Acordo de Processamento de Dados (DPA) Assinado:** O distribuidor ou revendedor deve fazer o download, assinar o DPA e enviá-lo para `privacy_inquiries@checkpoint.com` para receber uma cópia rubricada.
+            <br><span class="timing">Momento de Envio: Durante o estabelecimento do relacionamento formal como Distribuidor ou Revendedor.</span>
+        </li>
+        <li>
+            <span class="source-number">,</span> **Aceitação de Políticas Corporativas:** O fornecedor (parceiros de negócios ou cadeia de suprimentos) deve aderir ao **Código de Conduta da Cadeia de Suprimentos e Parceiros de Negócios**, bem como ao Código de Ética, Política Anti-Suborno e Política de Direitos Humanos e Trabalho.
+            <br><span class="timing">Momento de Envio/Adesão: Durante a formalização da relação comercial (Supply Chain Code of Conduct).</span>
+        </li>
+    </ul>
+
+    <h2>2. Documentos e Ações para Conformidade do Endpoint (Endpoint Compliance Enforcement)</h2>
+    <p>Documentos exigidos para garantir que o cliente de ponto final (*endpoint*) esteja em conformidade com as políticas de segurança (via Endpoint Security on Demand) antes de acessar o portal.</p>
+    <ul class="requirement-list">
+        <li>
+            <span class="source-number">,</span> **Arquivo XML ICSinfo.xml:** Gerado pela ferramenta `ICSinfo.exe`, executada em um computador de teste, para listar softwares de segurança detectados e obter as informações no formato correto (formato que varia de fornecedor para fornecedor) para a definição das regras de política de conformidade do endpoint.
+            <br><span class="timing">Momento de Envio/Geração: Antes de configurar as regras da Política de Conformidade do Endpoint.</span>
+        </li>
+        <li>
+            <span class="source-number">,</span> **Registro de Informações de Segurança:** O fornecedor deve registrar as informações obtidas do `ICSinfo.xml` para criar as regras da Política de Conformidade do Endpoint,.
+            <br><span class="timing">Momento de Envio/Uso: Durante a configuração das políticas em SmartDashboard/SmartConsole,.</span>
+        </li>
+        <li>
+            <span class="source-number">,</span> **Evidência de Software Ativo (Anti-Vírus/Firewall):** O endpoint deve demonstrar que possui software **Anti-Vírus** atualizado e um **Firewall** ativo para estar em conformidade com a política,.
+            <br><span class="timing">Momento de Envio/Verificação: Durante a varredura do endpoint para acesso ao portal,.</span>
+        </li>
+    </ul>
+
+    <h2>3. Documentos e Dados Técnicos para Aplicações de Acesso (Secure Workspace/Mobile Access)</h2>
+    <p>Documentos e metadados que devem ser apresentados ou configurados para que uma aplicação seja habilitada para acesso seguro, especialmente em ambientes *Secure Workspace*:</p>
+    <ul class="requirement-list">
+        <li>
+            <span class="source-number"></span> **Nome de Exibição (*Display Name*):** O nome obrigatório da aplicação aprovada, conforme aparece na área de trabalho.
+            <br><span class="timing">Momento de Envio: Ao adicionar ou editar a aplicação.</span>
+        </li>
+        <li>
+            <span class="source-number">,</span> **Arquivo Executável (*Executable File*) e Caminho (Requerido):** O caminho e o nome do arquivo para o executável selecionado. O formato pode ser caminho absoluto, apenas o nome do arquivo, ou caminho com variável de ambiente (e.g., `<disk>:\<folder_path>\<binary_name>` ou `\<binary_name>`),.
+            <br><span class="timing">Momento de Envio: Ao adicionar ou editar a aplicação.</span>
+        </li>
+        <li>
+            <span class="source-number">,</span> **Nome Original do Arquivo Executável (Opcional):** Necessário se o **Nome do Fornecedor Executável** também for selecionado, garantindo que o certificado do aplicativo atenda ao requisito. Deve corresponder ao nome original do arquivo que aparece nos detalhes do certificado do aplicativo.
+            <br><span class="timing">Momento de Envio: Ao adicionar ou editar a aplicação, se a verificação de fornecedor for necessária,.</span>
+        </li>
+        <li>
+            <span class="source-number"></span> **Nome do Fornecedor Executável (Opcional):** Se um fornecedor for selecionado, o *Secure Workspace* verifica se o certificado do aplicativo foi assinado por esse fornecedor.
+            <br><span class="timing">Momento de Envio: Ao adicionar ou editar a aplicação.</span>
+        </li>
+        <li>
+            <span class="source-number"></span> **Hash do Arquivo (*File hash*) (Opcional):** O MD5 ou SHA256 do aplicativo. Múltiplos hashes podem ser adicionados para diferentes versões.
+            <br><span class="timing">Momento de Envio: Ao adicionar ou editar a aplicação.</span>
+        </li>
+        <li>
+            <span class="source-number"></span> **Tipo de Aplicativo Embarcado (*embedded_application_type*):** Tipo da aplicação (e.g., `java_applet`, `linux_executable`, `mac_executable`, `windows_executable`) quando se trata de um aplicativo baixado do Gateway (*Downloaded-from-Gateway*).
+            <br><span class="timing">Momento de Envio: Configuração usando o GuiDBEdit Tool para adicionar um novo aplicativo *Downloaded-from-Gateway*,.</span>
+        </li>
+    </ul>
+
+    <h2>4. Documentos e Processos de Certificação de Rede (SSL/TLS e HSM)</h2>
+    <p>Certificados e etapas necessárias para estabelecer confiança e segurança na comunicação:</p>
+    <ul class="requirement-list">
+        <li>
+            <span class="source-number">,</span> **Certificado de Servidor (*Server Certificate*):** Necessário para que os *Security Gateways* estabeleçam confiança com os computadores dos *endpoints* para comunicação SSL segura. O campo **Common Name** é obrigatório e deve conter o FQDN (Nome de Domínio Totalmente Qualificado) do site que os usuários acessam (por exemplo: `portal.example.com`),,.
+            <br><span class="timing">Momento de Envio: Deve ser gerado e instalado no *Security Gateway* antes que os usuários acessem o portal.</span>
+        </li>
+        <li>
+            <span class="source-number">,,</span> **Certificado CA para Inspeção HTTPS (Harmony Mobile):** Deve ser gerado e baixado do Infinity Portal para ser implantado usando *Zero-Touch* para inspeção de tráfego HTTPS. O nome deve ser validado.
+            <br><span class="timing">Momento de Envio/Implantação: Após a configuração das *HTTPS Settings* e ativação do *HTTPS Inspection* no Global Policy do Infinity Portal.</span>
+        </li>
+        <li>
+            <span class="source-number">,,</span> **Certificados HSM (Gemalto):** A configuração de um *Security Gateway* para trabalhar com o Gemalto HSM Server exige que o fornecedor gere um novo certificado para o HSM Server (`server.pem`), crie o Certificado CA (usando *handles* obtidos pelo comando `cmu list`),, e **exporte o Certificado CA para um arquivo**.
+            <br><span class="timing">Momento de Envio/Instalação: O Certificado CA é exportado após a criação e antes de o Certificado CA ser importado para o *Security Gateway*.</span>
+        </li>
+        <li>
+            <span class="source-number">,</span> **Configuração HSM (hsm_configuration.C):** O fornecedor deve editar o arquivo `$FWDIR/conf/hsm_configuration.C` e configurar valores obrigatórios, como: `:enabled ("yes")`, `:hsm_vendor_name`, `:lib_filename`, e os *handles* dos certificados `:CA_cert_public_key_handle`, `:CA_cert_private_key_handle`, `:CA_cert_buffer_handle`, e a senha da partição no atributo `:token_id ()`,.
+            <br><span class="timing">Momento de Envio/Configuração: Após a instalação do cliente Gemalto HSM e o estabelecimento de um *Trust Link* entre o Gateway e o HSM Server,.</span>
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>
+```
